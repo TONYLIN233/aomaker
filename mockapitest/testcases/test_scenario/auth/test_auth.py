@@ -8,7 +8,7 @@ from aomaker.core.router import router
 from aomaker.core.api_object import BaseAPIObject
 
 @pytest.mark.auth
-def test_get_auth_right(self):
+def test_get_auth_right():
     """测试获取access_token"""
     request_body = LoginForAccessTokenApiLoginTokenPostAPI.RequestBodyModel(username="aomaker",password='123456')
 
@@ -21,7 +21,7 @@ def test_get_auth_right(self):
 @pytest.mark.auth
 def test_get_auth_without_username():
     """测试不输入uersname获取access_token"""
-    request_body = LoginForAccessTokenApiLoginTokenPostAPI.RequestBodyModel(username=None,password='123456')
+    request_body = LoginForAccessTokenApiLoginTokenPostAPI.RequestBodyModel(username='',password='123456')
 
     res = LoginForAccessTokenApiLoginTokenPostAPI(request_body = request_body).send()
 

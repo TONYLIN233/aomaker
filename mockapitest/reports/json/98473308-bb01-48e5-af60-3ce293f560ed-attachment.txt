@@ -1,0 +1,1200 @@
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_0'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001783s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_¡\U000f75e0a'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00157s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_×ᆅ'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001577s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_±·°\U0003595a'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001658s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000e892díÎ'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001661s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U00093f9f\U00087bc1𱉼\U00088fa0'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001672s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000d6d15\U000f88b5\x0enõ'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001649s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000cb5a7\U0004a681'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001632s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000becaf'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001693s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x17𣃸h\x85𤾝'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001608s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x8f\x1f'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001824s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x1a'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001729s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_q\U000e2daf\x12\U00036ff3.'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001549s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_q>'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001661s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_>>'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001628s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U00041700'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001647s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U00041700\U00041700'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001667s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_40'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001591s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_Ï'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001706s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_Ï\x1c\x1a\x84õ'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001751s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_Ï\x1c\x1a\x84\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001674s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x84\x1c\x1a\x84\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001686s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x84\x1c\x84\x84\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001648s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x84\x1c\x84\x84\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001881s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x1c\x1c\x84\x84\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001689s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_C\U00092e10d'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00149s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_C\U00092e10\U000409ad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001616s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_C\U00092e10\U000409ad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.0016s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_C\U000409ad\U000409ad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001607s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_C\U00050d00\x1aÎ'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00178s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:02 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U00050d00\U00050d00\x1aÎ'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001677s
+====================================================================================================
+2025-09-19 00:38:02 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U00050d00\U00050d00ȆÒÀ'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00165s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x0e'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001636s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000c0958#IQ×'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001711s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000c0958×IQ×'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001621s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000c0958×I××'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001468s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000c0958\U000c0958I××'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00159s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000c0958\U000c0958\U000897e5'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001742s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U000c0958\U000c0958\U000897e5\x10#'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001408s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x1a\x8d'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001562s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x8d\x8d'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001953s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x8d\x8dx¶\r'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001778s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x8d\x8dx\x8d\r'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001612s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x8d\x8dx\U000d0a00Ù'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001546s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x8d\x8dÙ\U000d0a00Ù'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001658s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x8d\x8dÙ\U000d0a00𤻌'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001574s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x90\U000e2977@øA'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00151s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x90\U000e2977\x90øA'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001741s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x90\U000e2977\x90ø\U000db692'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001608s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x90\U000e2977\x90ø\U000db692'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001831s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ø\U000e2977\x90ø\U000db692'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001703s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ø\U000e2977\x90ø\U000db692'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001715s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ø>'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001804s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_"\x01éï\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001471s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_"\x01"ï\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001813s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_"\x01ïï\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001723s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_"\x01ï\x84\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001628s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_"\x01ï3\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001548s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_"\x01ï3\x84'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001604s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_"\x01ï3\x01'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001615s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_%WK\U000b8367'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001824s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U00070c011z\U00079db9Z'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001803s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U00070c011z\U00079db9Z'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002048s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_z1z\U00079db9Z'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001681s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_Z1z\U00079db9Z'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001516s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_Z1z\U00079db9Z'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001668s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_Z1𑂔\U00033300W'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001637s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ĵî³ç\x0b'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001666s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ĵî³î\x0b'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001598s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ĵîĵî\x0b'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001603s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ĵîĵ\U000e0b05\x1e'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00205s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ĵîĵ\U000e0b05\U00069737'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002017s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ĵîĵ\U000e0b051'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00175s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_ĵ0'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00169s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_¿'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001645s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U0006efba\U0005dfd4ã'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001642s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U0006efba\U0005dfd4ã\U0005dfd4型'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001587s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U0006efba\U0005dfd4ã\U0005dfd4\x9d'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001635s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\U0006efba\U0005dfd4ã\U0005dfd4O'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00173s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_𢠁Ö'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001655s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_𢠁Ö𢠁\x8eÚ'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002065s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_U£'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001625s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_U7'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001737s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_UU'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001568s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_UU'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001689s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_3'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001591s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_1'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00161s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_1®¡X'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001651s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_y'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001648s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_yy<'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001619s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_yy<'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00197s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_yy<'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001686s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_yy<'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001577s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_yy<'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001699s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_yyy'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001534s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_\x8d'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001669s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_z\U0010e30f\xad\x07¹'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001559s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_z\U00012721@긂¹'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00159s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_z\U00012721@긂1'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001623s
+====================================================================================================
+2025-09-19 00:38:03 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:03 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': 'test_password_z\U0001272102\xad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001887s
+====================================================================================================

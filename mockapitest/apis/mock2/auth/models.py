@@ -1,6 +1,5 @@
 from __future__ import annotations
-
-from typing import Optional
+from typing import Optional, Union
 from attrs import define, field
 
 __ALL__ = ["TokenResponse", "TokenResponseData"]
@@ -18,4 +17,4 @@ class TokenResponseData:
     ret_code: Optional[int] = field(default=0)
     message: Optional[str] = field(default="success")
     data: Optional[TokenResponse] = field(default=None)
-    detail: Optional[str] = field(default=None)
+    detail: Optional[Union[str, list]] = field(default=None)

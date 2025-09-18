@@ -1,0 +1,1227 @@
+2025-09-19 00:37:57 Starting new HTTP connection (1): 127.0.0.1:9999
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 272
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': {}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.002602s
+====================================================================================================
+2025-09-19 00:37:57 [api_object.get_diff:276]-[WARNING]:[SchemaDiff] 模型<TokenResponseData> 发生变化：
+ {
+  "type_changes": {
+    "root['properties']['ret_code']['type']": {
+      "old_type": "str",
+      "new_type": "list",
+      "old_value": "integer",
+      "new_value": [
+        "integer",
+        "null"
+      ]
+    },
+    "root['properties']['message']['type']": {
+      "old_type": "str",
+      "new_type": "list",
+      "old_value": "string",
+      "new_value": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "dictionary_item_added": [
+    "root['properties']['detail']"
+  ]
+}
+2025-09-19 00:37:57 [api_object.update_schema_if_needed:291]-[INFO]:[SchemaDiff] 模型<TokenResponseData> ，已更新schema缓存
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 1155
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': '0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001914s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '\x8a\U0009b082\U0010bb6c㾀²«\U000cdc63s¹6L·kÉÿèGs\x0fÑ\x9b\U000bb68b퀨\x9búÓ\x13\x1c𪂽8Ì=$\U00108c11ß\x9c\U000d388f\x06\x12\U00067dba\U00101070\x87&\U0003575bc£â9\x84ÁìÑßÑ{\U000e21c9¡õ÷\U000f7c09\U000bf975Í·\x08M¯»·\x8e\uf09b\x98Ò\x9b\U000dfba2\x1d\x15@F¨f\U0008c831歱Z$\U00082e64§A\x92\U0005bc15\U0001597b\x18\x9aa\U0010d447𰛁¦\x86\U000eca25ºX\U000fb000/\x8b9\x83ÏØ\U000441eb\U000b0579Ó\U00036177Û¿\x97õ\x17\U000592a4 qw¯è\x05\x18\U000d2ec5\U000be5a8!Ì褓\x84À璀\U00071e53$T¶\U000ca181H\x00ÖR\x1c²%yꖬÆ\U000a0ecb\x84%±+\U00083234\U000faee4\x10E\x84jÞ\U000f9c62\x18\U00063bf2/iy."2ç\U000a2fee3¥b»d\x0f+Áí\U0007650a¯ð~n\x00 \x14H^\x84N®\xad\U000dd352°«uu犖ô\U0003362c\U000ef10b7k\x83䚈\U001039e0\U00033ea5\U00059d63}\x07\U00073977kÛò\U000b5dd5\x96\U00061300ó\U000d19ed\x14\U0001b148at\x82ûº\U0009f2ef§~\x91\x0b.V\x88M\x90\U000ea4aa\U0007b9ccÿ-\U00081127ÿ$𔒉¿\U000d9de928\U0006d507¬éÃfæ\U000dcee0c\U000f8d2f\x02\U0001e977ßï\U0004dd1aº\x10´)\U0008fc7c\U000b9b38Ó G³uá\U00073d3f\x94\U000ec551<\x88\x11ê&\U000c5572Ô@ìø×¡\U000c090b\x01âA³\x8c·^^¢|³`\x94¶I9𢹺rôÚ\x86¢\U000615f8Y\x10÷Xô\x87Þi¿𡲆ä&\U0007a37c\U0009aeec\x1cìv\U0005d643pC\U0004d140p\x18\U00108b60þÞ¨?û$`L\x01\U00100b66¹å4ú\x97𠚭}Ü\x8a\U000fea46êÓ\x93\U000bd2e4/hæ\x10ì\U0010cd98È\x89𘮝\U0002ec50<×xꮒS\x11W»V\x8eþoRl*Ý\x98\x07𡮣\x88\x9e\U00060a1b\x19\U00015849ö\nWúÿ[I\U0004bce2Þ\\\x05o,\U000a3bd4$Ú\U0005d3b3n\U000917c6A\U000dabef4Ð𣒼\x8c\x0f\U0010bdc8\x08×uy\x01=¯¶[DÌ\x81\U000a95a3\x19\x96\U00072eadÕ\x0eî¼Ï{3¢\x1dã`^𒀱\x8bLª\x02¿㉟õÞ\U000d789fFÊÚT»ä\x12pK8¡?I\U000e10f7{~\x8c¨+\U000333f2\U00010f96ÖÕ\x18µET\x82ôi\x87\x0fëvaä\U00046f25_Ý\x15çÒ«g¨$Þ\x03\U000851b2@oK\x11#Ý\x12ä²âß"j\U0002fc2bºÀ;FU0QfJäz\x0fÃ\x08Ù£\x10\x90\x00S\x8d\x85\x15ý\x9cAÿ\U000e80b2\x9b=EºÖ\x853\U00099f3eþ¤\U0007136c\x8bý_#²_\x14\x05ñ\x99Ø\x8f¸löî\x1bJ\U0009dab2ÑË\U0008f404\U000594b3\x04Èû^qpÂ\U0007ce22\x93^a𠙙ì¬«\x16o\x89\U0004eabb\U000ba34e\x94\t\U0009ac25\U000fd8d6\U00045f5eÝd\U000f5443´𮭄þ|\U000385b9\U000eb25a´á\uf44aw\x05òål\x8bÅ\x1cPþe\U00012cdb«\x98\U00064afc\x06\U000828c2JH\r/4\x13\U000d4d84\U000c1318+íGµ𢪓ÇâA\U0005e80fý𪛇0]ì\x15\x84\x85\U000bc80e\x1c떼3\U000dfc66\U000be30f\x98.H§ÄR\x1b\U00069f4a\x80\U000b29fd³;.QÖÂ:\x81B\x01\x10-\U000a510d\x87Ð\uf040ü\x0e\x8b\U000b23c8+`û+\U000618a8\x19¼\x0b´uA\U000576e7ñØ\x11\x00\U000a2c1b\x0c¹g\x8ar\U0003b35b\x16ï4o\U000fa12aàÝj\x92\U000be477\x18\U000d568fÜ\x1dx\x16\x8d\x88`ä~\x00su\U000f2aaeÀ\U000983e2𫻽-F\x96\x1ca\x8aN\r,𱀇ÕÉ&\x1d\U00012ddfÇï2\U0008e35a\rÒ(î\U000e6577\'\x10\x1d\U000c66a2A«\U00100054\U000df876\x147ôý\U0008a85f]ÀÎ!Ý\x90Mu\x1b\x9bÛå[ï\U000d4106éÜH\x98èÚc\U0003ff07\U000c64e9\U000a7c7fzo¸\x07颋[#\x95\U000d9511!¦®ñ·áG\x9a\x12õlÙ~n;\x01Û\x0fúh¸Õ\U0010d546v¬¼¹\U000f4b48\U000a01a8Ã\U000d3622\U00095a6c\U00102c42\x7f+Ý\x1b\t$±\U00033824+9𥷤\x117=\x93-\U0003f288\U0009fbcb8^\x98\xadPH¹!\x14²XQ\U000a132b\U000b4e30\U0005e520G¸\U000a8d43§\U0005aafbæ+é\x12\U0010d4a2Õæh쀊¥{Í~¥\U000fbdc5\U000f398b±£\x0b\x81\x9b\U0006238cÎ\x81ë¯\U00054060Þã\U000ad7a9ß\x10\U00104b46B¸\U000f1d6e\x85pµH쏼\U0003c4e2Ä\x0c\x11\x83\U00045f61*\x8e\tþ4R\nÎlÊ+-º\U001027b3\U000bbc0af_Nk\x9c\x97<\'2Ø\xa0ñT\x84»kHÊ¿\U0009ec68큹\x91[\U0006843dKÇ0\x1fÔtO\nö\x91\U0008c8cd\x8f\U000dd327êdu\x84M©\U000df2a5\U000c139e\x1e\U000bb1d5\x92\x88\x02\x06¿\U000bf15d¶\rØ½ÖV\x9c\U000de070\x0f}_{ëñ\x80eÃÊ%¸BÈ"m\U0007a208"FQ±Q\x92\U00102671\U000b30a8ð¼fpå\U0005c1d7ô\ue846ÒÎ\x9e\x1a¬\x93Z\x17\U0009007b?Í\x8eÞ\U00084109\U00061f80Ó\x87G\x98Ú\x7f\\Xï\U000a5f14C\U0004dc53·\U000ea72e\x91\n4H\U000f95d0\xa0%ïD4Æy§5\x1f¹&\x7f\U00100f86\x82\x9e´\x13{\U0001a50f«£\U00099ae7¶\x01\x1cÁgë\x8ec\x0c@\x07¶\x15\x98|\x1f\\#\x86\x94s괈\x97\x06,Ò\x93Î.\U0006248eè\x84E¿ªl\U00032ff4G\x95´>çÙì_]ÏÍ좶#7\U0003770bÒò\U000dd9e5\x13õ\U0006bd41\U0008b6d1\x10Ò¢Õå»\U000a4775\x1am\x10\U00052ef8Pc*\U0010f06d\U000b6f86{]\x86u\x8b\U000e6e9c2[OÁ\U0003873eI\x0f®*Çéc!\x0c\U000b6604?\x9a8\U000adcdbMDh\U000e928c\U000f7757\U00099170\U00059458\\\xa0¼é\x0f?\U000a379f@½1\x07vYy7*;/[ê\U00076dc9ôoc\U00065c7c訽¾ªÚ\U000dce92·\U000b1ff0\U0007822eÉ¶rÛ\x8c\x06¢¦áT{¼ðﯥ8\x10eÎ´\U0009b37b\U0004467e¬\x91gÄóÝJéc\x06õeå\U0010e74d\x19y\x19þ·á>»s2ç\U0007e4ff\x80A½W\U000b9246ÏA\U000a2226\U0005c41b\x12<\x84\U0004c1b7t\x7f\'ö\U000b255d\x90J\U000b052aèU)\\_¿o±õÄ\U00046af7\x08»Ï\x96ß\x05\x07o£¹\x19<î¼\U000dcf89yÍ\x0e\x02S\x84ß\x9cH\U001090d7\U00101e45¨(\x07ª\U0001b374=qỽ®M\x07R\U000be44c\U000e6032\x01êvÉ\U000c5435\x1fÇ\x85B$O¦ò\U0004df73\x88\x94\x10$\x9d\x94KBÓ\x12\xadA\x92\U0004fe65Ñ\x97E', 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001793s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 155
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ''}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': ''}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001833s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': False}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001774s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 170
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': "' OR '1'='1' --"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': "' OR '1'='1' --"}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001696s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 170
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': "<script>alert('xss')</script>", 'password': -28046}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -28046, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.002044s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 315
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': False}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': False}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001908s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 313
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': True}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001846s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 155
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'password': ''}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': {'password': ''}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.002067s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 307
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 0}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': 0}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.002164s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 167
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 125, 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 125, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.002006s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 323
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True, 'password': 189}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 189, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001767s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 324
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True, 'password': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001772s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 158
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '   '}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': '   '}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001717s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '   ', 'password': '  '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001627s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 168
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '     ', 'password': ['']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': [''], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001735s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 168
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '     ', 'password': ['']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': [''], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001744s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 334
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['', '', '1', ''], 'password': ['']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['', '', '1', ''], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': [''], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001745s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 334
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['', '', '1', ''], 'password': ['']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['', '', '1', ''], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': [''], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001845s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 313
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': [''], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': ['']}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001941s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '\U00045e54Æf\x8a³8;\U000b99b7D@\x0bL\x9f\x96þx\U0001ab96/Vºp\xad\x9cfÿ\x1f\x0e\U000bd99bäGANT¡.§\x1c\x13~;ÕB\U0001b8a0\U00058531}l\U0004af9c@ÏTê\U0001e4e2i\U000bd038\U0006709020\x1a_gMM3L¼≪_ñ\xa0-Ô-2É\U000b29b0\x9b\x9d§Q\x04𐂺M\U000e7f0f¢\U0003f2e1鑕Î\U0004fad5B¯HÓ7\U000f5810Ç(¯®𘠞ÎçÝ\x18\x1a\U000b9ef3yÔ𦒂Ùù\U000d8e5asÛ»6\x90\x9b:»ió\x05c\x9e𡐃\U000e1688N&𰰔ç\x1c\x83\U000e0b7cU\x96\U000dab1f\U000bff56ýø\x1f8éÐ\x8aÝÝ\U00012898𪶌\U0008c077ü遷\x11\x15\U000773f4\x8fsº𡍋6Qî\U0008db63\U000a85d7\U000d3996\U0009cef9®\U0009aff7?P²\x01|\U000aca29\U0009fa83o\U000744f9\U00061d41ÿ\x94ð\x05ÚÙ¦\x7f\U000bbb72\x1a\U000d8da0Ú𩤬R\U0003da65Y01C}\x1e\U00063492}´®\x00±x~&*LVµ\x1dauéÃô\U0001fa77\U000894af?áÓ\x9b\x92*𡌞ÄY*±ª\x14\U000bc71a\x00ô\x031ÊP$\x05ì\U000d3f52Q9w\x15ë\x88\U000f87ea\x80𬆋ÔL\x9c`\U0010cbc8~ß\x8a\x07ÎAâ\x11\x07:ïE\x14B4½we?R\U0010040b\r\U00090d6e\U00063d01ÏÙXÅ\x1bSÍ\U000672b3\x9a\x1dmA\U000113a6\U000c22d5r\U000c77a3\x9aEÈ\U000d6820Âþ`\x0c\U0005fcfcó\U00060d01\x88q\x9b\x81CR~Â÷\x08\x86©Ð[T\x14\U00036af1çÍ\U00094a09\x1a\U000bc1fd»\U000b405e\U000f9201<\x11i\U0010e6ac\x9e\x97w\x9fªÆ\U000abbddxþ\U0004f2beÊ§¹éì\U001045b5\U000b29e3t\x81"\U000ff3da9Ê\x10×@¶@Ué\U0004d31f¡óÝ@ö䠂î7ú]\U0005348a×0𡬉¯{«\U000d5247ã\U00040766藺KÁr\x89\U000af24d5\x9ag¬\'¤Ë\U000425c0÷ò(ö\x98\U000bfaef\x08\r龻P8\x9f¬\xad¥\x8fÚ?\U0008150fZ\x16~\U000369eb§H\U000b11cföM\x18ao\x13\x83i\U00075356ê\U0009f3ad\x1d\x7f]yÍ\U000c8399\U00041193\x10\U000b71cf\U00069eb2Fp\x856Ý;ºE£Ø\U000b2f85ÞIÍ\U00091ae0𰽵V\x97Ûç\U0009dc51ÀøÒ\x8f\U000f83b0ÉÏ\x95Ô|0§Lp\U00068fe9&,v𨪇µØêê:\x16}Jy\x1eÆ\U00087479Ï\x0e0\x07\U00079f62\x85ý\x05¤3_A¼ï\U0004ba87ï\x9aÈ»\'(cÓ\x1f]Ò\U000716a3\x90哨@\x93\x12þ\\\x1c\U00065684@ìÛÞÄ\U00065e28Ôg,qhÊ£\x90\x94\U000b2bc1ÜßJ¼Â\x10¢\x11\xadvÿ\x1d)\U000e6812/iE\U00061873¾ꉴ\x0b_RÔ\x8a\U000f8730Æ®8n\x9d÷Ú9éÚó\x1e\x00!\U000e9a65½\x80\x1fLU\U00045d0d\U00061456+óØ!Z\x95:\x93é·\x14\x1c\x96ËJ¦\x84.uÌ¶nö\U000ac7daÓÞýÂ\xa0\\迎m\x81¶ßL\x9dÀ9è\x9c\x8d\x14\U00046e9fùÔ\x14êðO+\U000f8c71xL,a\U00108c539Í®\x8dE¦â6\U000c87f0ê©Ãab\x1b\U0008547d@\x1fÏ콷>\x8bo\U00062513G\x88.\x18Å\x11\x83\x80\x8b\U0004e89dõ\x10.Ã\U00032741ââîÑ\U000c9eca¶\U0001ab54ýÚ\x17\x9bÞ\U0003d07d\x14\x12\x98\U000b86e8\x0fá¬¢댜\U00034688°´|\x9f\U0008d766ç¹ÐÑ1\x87H&B\x92oÌ÷ X\U00057ab3§\x8b\x04÷º\x19\U000e3617ê_í\U0003c84e\x00Là\U0001dd06ÏvI¹#6\U0008b8cdÿZ@\x90Ñ\U000ea1d40ÿ;\U000c031bcüø\x1a\x94éÝA\x0fÒä2ú+?`Õ\U0006cfd1\x88\U001059beqpÇ\x08\x9f\x01)\x14Û𧉪gá\x17¼\x1cF𢷭\U00091cd4Jâ~\U00039a0aôô\U00034de6\U000929a7{\xad𞲈þâväô\U000f01d6\U000dd9cdc «Äº¬\x933T\U000b0242-\U00067fcdm\U0004ec9fß\U000f9aeeçÊp\U000c4c4a\x89\U0005fc07G\x0c\U000584a9\x92ÕX!*¸Èg\n´ËN\U000ce3eeº\U0009ba9d\x05\U00019a15\U0008bc55Â\x9b\U000f98d3\U00056973\U000b178d\x82æ<\x0b\U0006805c·\x8c\x03OV\x87/;\U000a7ad0\\\x99\x07y\x11ð\U00107516üåî;\U0009192a\U00062b85s\x18\x848\x8f\U001025fe9ê¾«\x89\x0c©\x7f\U00032ee1\x85ø_\U0001ea51\x9e:áÚu\x92èÎ𨶂i\U000c9fffé\x0f\U000924a8dA\x17G\U0007b48d\U000ba4e8Ö»\U0006236f$¿\U000eb181°n\x9dh\x8cTL°;\U0007d6dfíA#\x91\x9bòÉ\x1cíõ2\x15\t\xa0\U000db710\x9cJà\t<\U00045e5c¨³\U000fd88fW´6\x00¹𥌪\x00u\U000e569e¼\U0006f946\U000a8738ú\x07Dël\x7f\x07\U0004ba2fD\x85ïL\x05xf\U000afa77\U0002fade\U000956a0\U000dc3b9´\U000e14e8·U,\x18¨4\U000738d0ÿ¬§\U00050cd0%G\U000d9ccc\U000f1c83\x1c\U0005847a\x93Y;!üXòl\x08\U00033497䬴\tÒyæ\U0001c763\U0007b305;\U000b3aff|#[T\'¤\U000a61e4)Ë\U00105a47\U00095ece\x7f', 'password': ''}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002231s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': ''}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001856s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 309
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': []}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': []}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.002028s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 216
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ' ', 'password': ['\U00059d60', '\U0009aedd½QhóãD\U00056186쒆T&', '', '77ÊwA', '\x8fMW']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': ['\U00059d60', '\U0009aedd½QhóãD\U00056186쒆T&', '', '77ÊwA', '\x8fMW'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001824s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 216
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ' ', 'password': ['\U00059d60', '\U0009aedd½QhóãD\U00056186쒆T&', '', '77ÊwA', '\x8fMW']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': ['\U00059d60', '\U0009aedd½QhóãD\U00056186쒆T&', '', '77ÊwA', '\x8fMW'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.002377s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 166
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ' ', 'password': []}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.002202s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ' ', 'password': ' '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001709s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 170
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'password': "' OR '1'='1' --"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': {'password': "' OR '1'='1' --"}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001646s
+====================================================================================================
+2025-09-19 00:37:57 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:57 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': "' OR '1'='1' --", 'password': ''}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00181s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 170
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': "' OR '1'='1' --"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': "' OR '1'='1' --"}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001815s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '𨔾Ô,f\U0004d130Ð\U000cf844ð\x92Ò\r\x15ö\x89\x08$9\U00032a31\U0006b5d3U\\\x1aI5\x8a\U00073187ÝÇ\U000b9387\x91}\U0007a020÷,𬚋\U000e0514,\tzo\U000ab337p¢\x9b²>:ë\x9e¼á×\U00041490\U000a4756\x1dÏ\x84𭡱ü\x17\x1b_\x83\U000985cf㗳6\U000ced05\x084FÚ\x9cà\x1cV×·\x9f%û鴓cèÀ\U000e5270\U00094796𥱭e\x8f\x0b´ö}öU\x7ff\x81×Ú\U000d260fnM\U0001a4c8\x99÷\U0003e012Ì¶\U0006509a\x86H¨\x1eìÜ°\U0007f0e0)Ü`\x0f´\x94\U000e22b3M\x1bE¹¸*){òêE¾\x1e¨+1\x03\x89¥¶¾\x96´9𑲃ÿ\U000d3174°僙m]Ô\U000e694bZé\x17hZå\x11\x91^\U000807f2\x00K"\x1fYü\U0007bc41\x9bÌ\U0010b7b7¶¬`\x8c\x9b3ò#\U00060e57(Õ5«\U00045840\x83ô\U000847ba\x85¤\U000c108c=\x90-[\x9c\'\x84\x0c\U000dcd6aZÄt\x0bñ´p\U0003b73c\U00083c9cõ¸\U00055e38\U000d5f2eÀ\t\U000eb4f8¢h\U0003d7d3\U000810a8ÿ\'Å{Ågê\x12Ã%Íbá£÷!]À\x9f\x1aÑ¿\x16kºSã¦Év\x97J\x17ò\x93H\x14¨\U0006e6de\U0006df2e\x84WÕãs\x9e}\U00098b9e³\U0004a1a2YÓî\x87z\x0b3£¡\U000e1836\x8e\x0c\U000e2448\x11ÈúµA1RØöÍ%\x1eÐ|ÖÔ\x9c\x91\x98\x7fóæü\x16F\x15\U00087ef2}\U000af9cc\x9e\r«zå\x8eR\U000b9706𘄰b\x02ñ,Ø\U000b3041\U000d9abcõï\x9e\x0fÂÜþ³\x96\x03\x97"Ü\U0007c4e0\x16\x1c~QG#Ì .\x06H\x9eZdV\x1axA%\U0008ea1c¤\x19¬\U000f7861ø\x82½E\U0010c1c9\U000a5265\x00\x9c\U000fea46!B\x06¾\t\xa0\U00048903F𭗷\x97\x86\x84Ñ\U000bfec4\x8f@Ï\x10𭑹\U000521c7Áá<É\U00043895簤½Ê\x03\x82±a\x9a¼f\x11\U000e6402\x91Æ+𰍝+»\U000a677f5\x03𭿟Á\x84\U0007ceabvPîó\U000149b2\x15\U00100f18\U000807c9]\U0001b920\x1eÈmM\x8f{e¯\U0003d557\U00011ded`\U00065457@}\x81\x8cï\x93\U0009c83e\x14¿\x19v¡\x8cïs*\U00066a4déE\U000b60a4àÙ𡈍\U0010701b=Ö\U00098dfcÎ\t\x97JE\x8d\x18µÕ«ãö¾}\U0007e03aoè\U000f40aeo°¶}É¢a\U000bd844\U0007ea0e\U000d75b8\x93C\U000320ab\x85x\U00047a2e\x05Ïïâó\U000aeee4ë\r\xad¼Ô \x8c\U000fd7e9\x885©~\U000cc6f0uÕ\x1f©ü~\U000327f3,I÷4䇡\U0006d9b7b@\U000ae135\U000d5a7aé¨¤D𧾥\U0004a45fØæðÇn\U000f84cc»\U000d65d7Oé[uú7]~\x85û\x1c\xad\x95çM\U0006680eÇ\x96\x89Ôß°w\U000a71c8\x17Rë/3\x8d\x89+\x80\x8e\xa0\U000b8d8b\x03\U000ff188ã\U000e5fa7~Tᢊ£ý:\x9a$ÿ«\x912\U000cd1efÛÒ\U0010c940?\U0008fe10\U0009cfb0O¶\x08÷¶ufÍ\x92P\U00052f59Ý\U0009fc90Ì𰬟Á\U000ba871,ë𪸦C\U00031eafÑ\x8eiº\U0007c2e5\x1a\x96\U000df129n\U0007ea0c2\x01\x82¼\U0002fc92\x88Ëtp¡\x92`/\xadú\U00059151q°¤\U00100696\x0cð{öþ¾\x0f\U0006d919\U000cde26뒌\x86\x8d\U00055c37o\U000357a9\U0003933cP\x81\x85D2\U0006da38\U000f9644Ë©\U0007098bÁ\U00097acbÿ¹\U000d8c22ÇWÍ·O\x98\U000ede8a\U000ca8f6ïYÖu\x87O+\U0003b978\x83íB𐑔wNúọ𑻲.A\U00109b79\U000db964\U000696a1-cóa\x8b\U0001fcb5zô¥~\x7f\x18\x81F±Ê\U000aaf199\x9bX\x93lpé\U000c346dý𔒠质\nÖ%&\x94\U000ac6d6,,\x88*\U0001e8f4Z.±Ð\U000ed83a¢\U000e4c6f\x9d\U000e23beÛU\x18\x0b\U00044fab[\x1bÎ\U0003b2b8ô6Àâ\\@\x9d¿{¤\xadI\U0009553eJ\x17\U0001bf85Æ\'\U0003cc19\x8b珲m\U00019ed4ÉÏB\x0c}\x8cïÖÓ\x07\x0b\x99¡\x82¶wÏdÁ÷\x08\x14\x84eñ\x96:ïï\x9a9±3.fºUß\U000fb346\x11씹\x9be:y\x80Ù\U000d356cð\x0cr\U000e3aa0©\\\U000669c0[\U00038730XÙ\U0002f68c#\x9f:|t\U00099aee9\U000dad2d\U0008c150\x84\x9f\x13õx\x15üÁ$5Åk7>GÙ9\x91ö¾é\U000acfd5úíÆ\U000a947bÒpð\U0004ccbb\x90Mz\U00032bc9Ú𑲤½1\U000bcd2d±\U000a3102£÷{\x9f\x0f²B.\x12\x9b5Ç\x87Ë\x17åè¥Z\U000d3900Ó\U00031f6eã\x86¡qÞ\x1bMÍ?"\x88»µZï|脾\U000dc866\x17¤PÛ¥\U00102d35𫤧üêpMN\x98\U00056346c\x03õ\x9dYµÔ\x9c\x91w\x85¦\U0003dd64\x87\U000fc5c6¼\U00096945\U000bca49\U000e7736¶q\U0006bddd\U000abdb1Â\x06£màÍG\x15\x16HæE£K\U0010a32c\U0004ef6d{\U0006ff4e~ét\x900\x17ä\U000b2e0eC\x81¬\x17P\U0006eacf\x84R\x87*\x8by«\x99\U00087349Ñ\U0007cb0b\x92\U0009b616Iw\x03¿\x91Ë\xadða𤜓vÜ\x1c\U000dac33w\U00091ceb\U000e94c9é\U000ef47bph\U00068c7c\x8cÙ\x8bë+ruk^\U00039636]\U0010fbc90(ÁmÌ\x90|²>º\x12}Á\U000eae18àÆ\x8b\x909\U0001c2ed¬\'\x87vE@×\U000528a8ÊÈ-!\U00109e6e#âp·|²\U000d82faâ𮋎\x8fâ\U00013599ýH=Øâù\U000ce575â\x84𘓯\U000828d8}\U0009de52\xa0\U000972c4öD,\x1bKj7591çg3þ\x90a\U000a09b8\U0003814cµí\U000842beMúõ\x9f©!ãß\x80Þ\x97\x84ËÓ\U000c8e89M\x87f\x98\x96\U000ed5c7\U000914bd\x14¸\x8a¾®µiÙãÊ\U0007b0deì\U000c5b02\U00050993\U0008d7b1\U0001ea123\x83\U00094639QÄF \x07ä{,\U00056af1ý@ùÜ\U00053dfe\x00³õìVò\U0001034d¾\U000473ee¾z$\x92𥖴\U0010e381킋Æ5À\U0009e4e5S\x1cèÂ\U0010e28a\x9a5pz\\§{', 'password': False}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001799s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 325
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': False, 'password': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001749s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 168
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True, 'password': ''}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001724s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 168
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001731s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': False, 'password': '\U00109275óô\U00053b8e`´¥(\x0f\U000470f4r\x17ö:VÝÆ\'µ¥\x1d𭠇ì\U00034fef\U000a17edNø7Jd\U000e9c82\U000ea954\x82\x05ð\x98nå\x0e£\nVP\U0006c1c6\U000e75da²c T¾\nÐ𪗞\U0004b351s\x1aìz\xa0\x94U5e\x8e\U000f9623¡@&\x91n°c\U000cc8dfÐ\U0005ac30R{8ô´·k(<ºó)\U000ed216î\x81]\x14ä\x04\x0e\n]\U000ed63eãL²i\U000f5f91,´\U000e24c4\x9bq1\x94片hÀöᴅ\U000d4113¬\x1c\U0010c7b6¯#m\x93#¥𖦡#\U00039703¥ó\x02\U000b69f1\x1dQ\x1f}\x96Ü\U00060244\U0004264dY\x9du\x87\x8b\x9fI\x0f÷R\x08µ\x80\x81X\'ÉÃl\x0c\x08Ô·sê\x8f\x116*\U000afcef\U000e7f49\U000fa66b\x87\x1f\x91w\x86s\x0ba\U000a543f&\x90àóbn\U000e9944ph\nZ\x18+*_ÒÑH\x9d\U0010736a\U000d91ad´Ý\U000c86fe\x042b𡐒ZÃú\x17\U0008241b\x1bk\U000995ac¤ç½Å\x8b¨\'\x06\U00078e49K=Ó\U000ae48e\U00013436Ñò1¾W]\x13\U0007be67²b¶Sc\x1aªÜÇNªXé}\x82ý\U0003ccb3O\U000dddd7Ç¿Ò\U00014b6b\U000635eaäR\x84\U00102298\xa0\nïÅä5\x06I)\x8d¿𘖀DôM𞋫®G6.𗱖À\xadù$\U00063892gø_õ\U0008462e«\U000e4550\x86û\U001077aa\U0010aad0\U000c8ecdNÊ\U0003651a\U0010e125\x1cËC\U00061b35\x9c\x04Ò\x97ÃÜ\x99\U0010b7a9û¿³,\x91Î\x10u·\r)ÕZ\x8dUX\x8c\x00Rù|\x11!l©\U000cc536¥{늴Çx\x1aê\U000ddc53\U000b35edü&\U000f07d0\U000ac639¾øÙ\U000f512d\U0009f0b9Pö;ñÎFýD\x9c\U000e4de9\x0f\xad\x95}\U0009c0fbÒªÃ\x97\rëº\U00055ab4\U000afc1a\U0004ef39Á\x9d\U000d70d8°\x8aH\U0005bd5c_\U000c2eb1\U00074da7ÿ\x02\x9dÖá\U0010a7a3ëIS²\U00049b7d\U000c8da2Þ,\x91ýÒý\x87𡷾þ\x90=o\U000d616a\'"¾äù\x80iáãlÑ\U000611bbå~¯\x90©\x9eh\x85Éñö?ìÌÄæDI\x94Ð\x0e\tª§h\x93r\x1dÖ\x1dÁýs\x82\U000bbc41¨~+i±\x93\x8e\x1aB\x8ecꩰu\x7fN\U000feb82´\'h\U00079073\x11\U000870cfÜ?\U0004f0a3i]\U00019013ª\x06Ãs\U0009b4deï\U000546df\x1d\U00066bc3Ø&¨\nô>±e\x0bh\x1c\x8aÎÜ{\x04\x1bUßk\U0009a8ee®\U000da055®V>\U00062727S\uf364NÆ!]\x06\x9b\U000ca8a9\U0009ad4bJ\x1e!\x00\x8abdá÷\U000bbb59y\x1e\x10\x91\x81\U0003fc59\x96\x9a°¯¤\U00052689!\x99\x11𤇤.\x82\x02D\'TfÃÅD\t\U0004bb20F\x96z\x12¹\x18\x04ÊÎä"\x13\x16\x03~Eò¸\x1d]X(\U0006c118Õ\x96\U000bb40df¢\x00©Á\x11ù·@õ\U0005e81d\U000f2d09U\U00042379\x9bG|\x02`4O\x8dH\x93䌰{\x07ó\U000d780cd\x92G\U000de031\U000c6fe1âÓÑ\x12\U0008bb40ä|D\U000f17b7«ù\U00058ae4Vx\x07\x18;D\x7fk\U00063b5fôQ\U000a3656*\x84Ab\x05\x0c\x9eKiÕçæð¨\x8c>\U0010e662\U000a78be\U00043060S\x00Ë\U00067164p\x81\U00104e65»þe\U0009dc78â\U0004be66\U000edbdf\r\U0003c7635A\U0005f62a\U0007bd06\U000b7477#3\x08>úä®\x85r,Q𭙳\U001076f4¨\U000b01c5\U00108272\x87þ\x9blþ\U0010c46eÄ®\x0b\x11]®Ä\rgü¾òPJ®Ú\U0003d45emãðÿ\U000a69561ú\x8fÇ\xa0ÍÊR»\U0008479dñÂ\x85²Õ3|"Þ3\U000650c4¤W>ç\x135n\U0003a903²\U000b56f4ìP×\U00078cc1\x8f|\U000e1836s\x19\x9b\U000fb0b9Ú£\x91Ì\n\x10>\x91¼\u1a8fÞ«\U001014c6c¥\x0e\x1e\x1c2\U0010f953ýª\U0010c64a|\x0b>\U000b9814\x8fË\U0005e0e8\U0001a119\nÊ×¹ú|\U00109b87<o\U000e33c0î\U00095c3f\x84\U00108680\\1\U000492beL\x01÷¼×Z\U000fbcf5\U00097a28,\x8cÌ\x80\x9bú$R7\U0007b5fa\x08\x1cÇ\U00107c0e\x0fòú\U00063f25E\x89\x12öò\U000fc1fb\x9ec¥\U00101cb6ªå´\r\x8b¬F#\U000f0b9a\U00067e3cÔ¼2lZ»k\x08\x0bÕ\U00062399\U000196caP\x0c\U000aa0db^/\U000bd80d[Æ\x9b\U000e06f8\x02Ö\x029á\tôM\x8e\U0005f1eck\U00063297\x19\x13\x89\U0005e8459CÇ®Ñ\x8dÔ¥ü墾¬é\x06ep®\U00066796\x8f𭝮\r\x19\x18\r\x88^\x86eö\U000c99f9I\x83}\x1fÒ.¨\U000867bf{\U000e5e91åå5\x8aÑu\U000d42e0𬵥\x83\x8a\U0005eb2b\x94Î\U0001ac95\U0006abf2,MÊ\x8et¤\x0f;I\x7f\x18\x8d;\U000c8da9áþ&\U000f9881;¯\U0009492bÄÅ\x8e\x9d¾\x87䟍KÞ\U00062f55òÀY\U000df8a5Z\U0008dd07äÈÛ\U000b496c_\x9d\U000d9990\U0010985b@\x9d\U000f2d6e\x9b§\x0f\x07×\U0004a483Ï0\x8e\U000d6125Ö\U0004d584¶q0Ú\x97\U0008f799*ß\U00087d4b\U0001502aßi\x01\x9fåÌ\U0008fb04𰡱\x07ó\U000a82b2\U0005675dÙ\'\U000a894dR\U00041529ý|Ý\x85\U000b69acE\U000146b0Ï\x07*ç\x9a?\U000aea97\U000cbe13õ^\U000a952cL\U0008f825+\U000d551c¬.\x0c/0\x94\x7f\x9eå\x8d\x8b*\U0004daa1\U000b13d8\x90\x0b¿C\x9byt\U0003ade9å\x0ci´¢¨f<\x93¿\x93ñÄâ/ä\U000e7de7\x1d\U000cd087wè!\x10\U00081716\n\x89\U0005bfaa-Ñ\U0008dd6f尌Ìq\x7f\U000a356d\U000fbd5a\U0004bdee\U0010d28a-_\x92v®m\x06D\U000adb85ì\x81\U000f5866EJÔ\x90V\x13=9Îõð\x8e»Æ3È8\x90\U0001bbb5\U0003abd2\x83\U00079584¨\U0010d1b0Ê×𩿨H\x1bñ\x95æ\x95LÚÑ\x0e\x8dK\x92B誧\x02\xa02ö\x13.\x05r\U000aea76s\x0eóí\x91 ÙE\x84ÄÍõ\U0005b882\U000a6600ì6³øòU\U000cc8b9Ô\U0010a250\x10\U0003b479Á\xa0Ûé\x04×$Ò\x89\t'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001764s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': False, 'password': '\U00109275óô\U00053b8e`´¥(\x0f\U000470f4r\x17ö:VÝÆ\'µ¥\x1d𭠇ì\U00034fef\U000a17edNø7Jd\U000e9c82\U000ea954\x82\x05ð\x98nå\x0e£\nVP\U0006c1c6\U000e75da²c T¾\nÐ𪗞\U0004b351s\x1aìz\xa0\x94U5e\x8e\U000f9623¡@&\x91n°c\U000cc8dfÐ\U0005ac30R{8ô´·k(<ºó)\U000ed216î\x81]\x14ä\x04\x0e\n]\U000ed63eãL²i\U000f5f91,´\U000e24c4\x9bq1\x94片hÀöᴅ\U000d4113¬\x1c\U0010c7b6¯#m\x93#¥𖦡#\U00039703¥ó\x02\U000b69f1\x1dQ\x1f}\x96Ü\U00060244\U0004264dY\x9du\x87\x8b\x9fI\x0f÷R\x08µ\x80\x81X\'ÉÃl\x0c\x08Ô·sê\x8f\x116*\U000afcef\U000e7f49\U000fa66b\x87\x1f\x91w\x86s\x0ba\U000a543f&\x90àóbn\U000e9944ph\nZ\x18+*_ÒÑH\x9d\U0010736a\U000d91ad´Ý\U000c86fe\x042b𡐒ZÃú\x17\U0008241b\x1bk\U000995ac¤ç½Å\x8b¨\'\x06\U00078e49K=Ó\U000ae48e\U00013436Ñò1¾W]\x13\U0007be67²b¶Sc\x1aªÜÇNªXé}\x82ý\U0003ccb3O\U000dddd7Ç¿Ò\U00014b6b\U000635eaäR\x84\U00102298\xa0\nïÅä5\x06I)\x8d¿𘖀DôM𞋫®G6.𗱖À\xadù$\U00063892gø_õ\U0008462e«\U000e4550\x86û\U001077aa\U0010aad0\U000c8ecdNÊ\U0003651a\U0010e125\x1cËC\U00061b35\x9c\x04Ò\x97ÃÜ\x99\U0010b7a9û¿³,\x91Î\x10u·\r)ÕZ\x8dUX\x8c\x00Rù|\x11!l©\U000cc536¥{늴Çx\x1aê\U000ddc53\U000b35edü&\U000f07d0\U000ac639¾øÙ\U000f512d\U0009f0b9Pö;ñÎFýD\x9c\U000e4de9\x0f\xad\x95}\U0009c0fbÒªÃ\x97\rëº\U00055ab4\U000afc1a\U0004ef39Á\x9d\U000d70d8°\x8aH\U0005bd5c_\U000c2eb1\U00074da7ÿ\x02\x9dÖá\U0010a7a3ëIS²\U00049b7d\U000c8da2Þ,\x91ýÒý\x87𡷾þ\x90=o\U000d616a\'"¾äù\x80iáãlÑ\U000611bbå~¯\x90©\x9eh\x85Éñö?ìÌÄæDI\x94Ð\x0e\tª§h\x93r\x1dÖ\x1dÁýs\x82\U000bbc41¨~+i±\x93\x8e\x1aB\x8ecꩰu\x7fN\U000feb82´\'h\U00079073\x11\U000870cfÜ?\U0004f0a3i]\U00019013ª\x06Ãs\U0009b4deï\U000546df\x1d\U00066bc3Ø&¨\nô>±e\x0bh\x1c\x8aÎÜ{\x04\x1bUßk\U0009a8ee®\U000da055®V>\U00062727S\uf364NÆ!]\x06\x9b\U000ca8a9\U0009ad4bJ\x1e!\x00\x8abdá÷\U000bbb59y\x1e\x10\x91\x81\U0003fc59\x96\x9a°¯¤\U00052689!\x99\x11𤇤.\x82\x02D\'TfÃÅD\t\U0004bb20F\x96z\x12¹\x18\x04ÊÎä"\x13\x16\x03~Eò¸\x1d]X(\U0006c118Õ\x96\U000bb40df¢\x00©Á\x11ù·@õ\U0005e81d\U000f2d09U\U00042379\x9bG|\x02`4O\x8dH\x93䌰{\x07ó\U000d780cd\x92G\U000de031\U000c6fe1âÓÑ\x12\U0008bb40ä|D\U000f17b7«ù\U00058ae4Vx\x07\x18;D\x7fk\U00063b5fôQ\U000a3656*\x84Ab\x05\x0c\x9eKiÕçæð¨\x8c>\U0010e662\U000a78be\U00043060S\x00Ë\U00067164p\x81\U00104e65»þe\U0009dc78â\U0004be66\U000edbdf\r\U0003c7635A\U0005f62a\U0007bd06\U000b7477#3\x08>úä®\x85r,Q𭙳\U001076f4¨\U000b01c5\U00108272\x87þ\x9blþ\U0010c46eÄ®\x0b\x11]®Ä\rgü{òPJ®Ú\U0003d45emãðÿ\U000a69561ú\x8fÇ\xa0ÍÊR»\U0008479dñÂ\x85²Õ3|"Þ3\U000650c4¤W>ç\x135n\U0003a903²\U000b56f4ìP×\U00078cc1\x8f|\U000e1836s\x19\x9b\U000fb0b9Ú£\x91Ì\n\x10>\x91¼\u1a8fÞ«\U001014c6c¥\x0e\x1e\x1c2\U0010f953ýª\U0010c64a|\x0b>\U000b9814\x8fË\U0005e0e8\U0001a119\nÊ×¹ú|\U00109b87<o\U000e33c0î\U00095c3f\x84\U00108680\\1\U000492beL\x01÷¼×Z\U000fbcf5\U00097a28,\x8cÌ\x80\x9bú$R7\U0007b5fa\x08\x1cÇ\U00107c0e\x0fòú\U00063f25E\x89\x12öò\U000fc1fb\x9ec¥\U00101cb6ªå´\r\x8b¬F#\U000f0b9a\U00067e3cÔ¼2lZ»k\x08\x0bÕ\U00062399\U000196caP\x0c\U000aa0db^/\U000bd80d[Æ\x9b\U000e06f8\x02Ö\x029á\tôM\x8e\U0005f1eck\U00063297\x19\x13\x89\U0005e8459CÇ®Ñ\x8dÔ¥ü墾¬é\x06ep®\U00066796\x8f𭝮\r\x19\x18\r\x88^\x86eö\U000c99f9I\x83}\x1fÒ.¨\U000867bf{\U000e5e91åå5\x8aÑu\U000d42e0𬵥\x83\x8a\U0005eb2b\x94Î\U0001ac95\U0006abf2,MÊ\x8et¤\x0f;I\x7f\x18\x8d;\U000c8da9áþ&\U000f9881;¯\U0009492bÄÅ\x8e\x9d¾\x87䟍KÞ\U00062f55òÀY\U000df8a5Z\U0008dd07äÈÛ\U000b496c_\x9d\U000d9990\U0010985b@\x9d\U000f2d6e\x9b§\x0f\x07×\U0004a483Ï0\x8e\U000d6125Ö\U0004d584¶q0Ú\x97\U0008f799*ß\U00087d4b\U0001502aßi\x01\x9fåÌ\U0008fb04𰡱\x07ó\U000a82b2\U0005675dÙ\'\U000a894dR\U00041529ý|Ý\x85\U000b69acE\U000146b0Ï\x07*ç\x9a?\U000aea97\U000cbe13õ^\U000a952cL\U0008f825+\U000d551c¬.\x0c/0\x94\x7f\x9eå\x8d\x8b*\U0004daa1\U000b13d8\x90\x0b¿C\x9byt\U0003ade9å\x0ci´¢¨f<\x93¿\x93ñÄâ/ä\U000e7de7\x1d\U000cd087wè!\x10\U00081716\n\x89\U0005bfaa-Ñ\U0008dd6f尌Ìq\x7f\U000a356d\U000fbd5a\U0004bdee\U0010d28a-_\x92v®m\x06D\U000adb85ì\x81\U000f5866EJÔ\x90V\x13=9Îõð\x8e»Æ3È8\x90\U0001bbb5\U0003abd2\x83\U00079584¨\U0010d1b0Ê×𩿨H\x1bñ\x95æ\x95LÚÑ\x0e\x8dK\x92B誧\x02\xa02ö\x13.\x05r\U000aea76s\x0eóí\x91 ÙE\x84ÄÍõ\U0005b882\U000a6600ì6³øòU\U000cc8b9Ô\U0010a250\x10\U0003b479Á\xa0Ûé\x04×$Ò\x89\t'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001861s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 168
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '1\U0003fc000(\U000369000000\U000470f4r\x17ö:VÝÆ\'µ¥\x1d𭠇ì\U00034fef\U000a17edNø7Jd\U000e9c82\U000ea954\x82\x05ð\x98nå\x0e£\nVP\U0006c1c6\U000e75da²c T¾\nÐ𪗞\U0004b351s\x1aìz\xa0\x94U5e\x8e\U000f9623¡@&\x91n°c\U000cc8dfÐ\U0005ac30R{8ô´·k(<ºó)\U000ed216î\x81]\x14ä\x04\x0e\n]\U000ed63eãL²i\U000f5f91,´\U000e24c4\x9bq1\x94片hÀöᴅ\U000d4113¬\x1c\U0010c7b6¯#m\x93#¥𖦡#\U00039703¥ó\x02\U000b69f1\x1dQ\x1f}\x96Ü\U00060244\U0004264dY\x9du\x87\x8b\x9fI\x0f÷R\x08µ\x80\x81X\'ÉÃl\x0c\x08Ô·sê\x8f\x116*\U000afcef\U000e7f49\U000fa66b\x87\x1f\x91w\x86s\x0ba\U000a543f&\x90àóbn\U000e9944ph\nZ\x18+*_ÒÑH\x9d\U0010736a\U000d91ad´Ý\U000c86fe\x042b𡐒ZÃú\x17\U0008241b\x1bk\U000995ac¤ç½Å\x8b¨\'\x06\U00078e49K=Ó\U000ae48e\U00013436Ñò1¾W]\x13\U0007be67²b¶Sc\x1aªÜÇNªXé}\x82ý\U0003ccb3O\U000dddd7Ç¿Ò\U00014b6b\U000635eaäR\x84\U00102298\xa0\nïÅä5\x06I)\x8d¿𘖀DôM𞋫®G6.𗱖À\xadù$\U00063892gø_õ\U0008462e«\U000e4550\x86û\U001077aa\U0010aad0\U000c8ecdNÊ\U0003651a\U0010e125\x1cËC\U00061b35\x9c\x04Ò\x97ÃÜ\x99\U0010b7a9û¿³,\x91Î\x10u·\r)ÕZ\x8dUX\x8c\x00Rù|\x11!l©\U000cc536¥{늴Çx\x1aê\U000ddc53\U000b35edü&\U000f07d0\U000ac639¾øÙ\U000f512d\U0009f0b9Pö;ñÎFýD\x9c\U000e4de9\x0f\xad\x95}\U0009c0fbÒªÃ\x97\rëº\U00055ab4\U000afc1a\U0004ef39Á\x9d\U000d70d8°\x8aH\U0005bd5c_\U000c2eb1\U00074da7ÿ\x02\x9dÖá\U0010a7a3ëIS²\U00049b7d\U000c8da2Þ,\x91ýÒý\x87𡷾þ\x90=o\U000d616a\'"¾äù\x80iáãlÑ\U000611bbå~¯\x90©\x9eh\x85Éñö?ìÌÄæDI\x94Ð\x0e\tª§h\x93r\x1dÖ\x1dÁýs\x82\U000bbc41¨~+i±\x93\x8e\x1aB\x8ecꩰu\x7fN\U000feb82´\'h\U00079073\x11\U000870cfÜ?\U0004f0a3i]\U00019013ª\x06Ãs\U0009b4deï\U000546df\x1d\U00066bc3Ø&¨\nô>±e\x0bh\x1c\x8aÎÜ{\x04\x1bUßk\U0009a8ee®\U000da055®V>\U00062727S\uf364NÆ!]\x06\x9b\U000ca8a9\U0009ad4bJ\x1e!\x00\x8abdá÷\U000bbb59y\x1e\x10\x91\x81\U0003fc59\x96\x9a°¯¤\U00052689!\x99\x11𤇤.\x82\x02D\'TfÃÅD\t\U0004bb20F\x96z\x12¹\x18\x04ÊÎä"\x13\x16\x03~Eò¸\x1d]X(\U0006c118Õ\x96\U000bb40df¢\x00©Á\x11ù·@õ\U0005e81d\U000f2d09U\U00042379\x9bG|\x02`4O\x8dH\x93䌰{\x07ó\U000d780cd\x92G\U000de031\U000c6fe1âÓÑ\x12\U0008bb40ä|D\U000f17b7«ù\U00058ae4Vx\x07\x18;D\x7fk\U00063b5fôQ\U000a3656*\x84Ab\x05\x0c\x9eKiÕçæð¨\x8c>\U0010e662\U000a78be\U00043060S\x00Ë\U00067164p\x81\U00104e65»þe\U0009dc78â\U0004be66\U000edbdf\r\U0003c7635A\U0005f62a\U0007bd06\U000b7477#3\x08>úä®\x85r,Q𭙳\U001076f4¨\U000b01c5\U00108272\x87þ\x9blþ\U0010c46eÄ®\x0b\x11]®Ä\rgü{òPJ®Ú\U0003d45emãðÿ\U000a69561ú\x8fÇ\xa0ÍÊR»\U0008479dñÂ\x85²Õ3|"Þ3\U000650c4¤W>ç\x135n\U0003a903²\U000b56f4ìP×\U00078cc1\x8f|\U000e1836s\x19\x9b\U000fb0b9Ú£\x91Ì\n\x10>\x91¼\u1a8fÞ«\U001014c6c¥\x0e\x1e\x1c2\U0010f953ýª\U0010c64a|\x0b>\U000b9814\x8fË\U0005e0e8\U0001a119\nÊ×¹ú|\U00109b87<o\U000e33c0î\U00095c3f\x84\U00108680\\1\U000492beL\x01÷¼×Z\U000fbcf5\U00097a28,\x8cÌ\x80\x9bú$R7\U0007b5fa\x08\x1cÇ\U00107c0e\x0fòú\U00063f25E\x89\x12öò\U000fc1fb\x9ec¥\U00101cb6ªå´\r\x8b¬F#\U000f0b9a\U00067e3cÔ¼2lZ»k\x08\x0bÕ\U00062399\U000196caP\x0c\U000aa0db^/\U000bd80d[Æ\x9b\U000e06f8\x02Ö\x029á\tôM\x8e\U0005f1eck\U00063297\x19\x13\x89\U0005e8459CÇ®Ñ\x8dÔ¥ü墾¬é\x06ep®\U00066796\x8f𭝮\r\x19\x18\r\x88^\x86eö\U000c99f9I\x83}\x1fÒ.¨\U000867bf{\U000e5e91åå5\x8aÑu\U000d42e0𬵥\x83\x8a\U0005eb2b\x94Î\U0001ac95\U0006abf2,MÊ\x8et¤\x0f;I\x7f\x18\x8d;\U000c8da9áþ&\U000f9881;¯\U0009492bÄÅ\x8e\x9d¾\x87䟍KÞ\U00062f55òÀY\U000df8a5Z\U0008dd07äÈÛ\U000b496c_\x9d\U000d9990\U0010985b@\x9d\U000f2d6e\x9b§\x0f\x07×\U0004a483Ï0\x8e\U000d6125Ö\U0004d584¶q0Ú\x97\U0008f799*ß\U00087d4b\U0001502aßi\x01\x9fåÌ\U0008fb04𰡱\x07ó\U000a82b2\U0005675dÙ\'\U000a894dR\U00041529ý|Ý\x85\U000b69acE\U000146b0Ï\x07*ç\x9a?\U000aea97\U000cbe13õ^\U000a952cL\U0008f825+\U000d551c¬.\x0c/0\x94\x7f\x9eå\x8d\x8b*\U0004daa1\U000b13d8\x90\x0b¿C\x9byt\U0003ade9å\x0ci´¢¨f<\x93¿\x93ñÄâ/ä\U000e7de7\x1d\U000cd087wè!\x10\U00081716\n\x89\U0005bfaa-Ñ\U0008dd6f尌Ìq\x7f\U000a356d\U000fbd5a\U0004bdee\U0010d28a-_\x92v®m\x06D\U000adb85ì\x81\U000f5866EJÔ\x90V\x13=9Îõð\x8e»Æ3È8\x90\U0001bbb5\U0003abd2\x83\U00079584¨\U0010d1b0Ê×𩿨H\x1bñ\x95æ\x95LÚÑ\x0e\x8dK\x92B誧\x02\xa02ö\x13.\x05r\U000aea76s\x0eóí\x91 ÙE\x84ÄÍõ\U0005b882\U000a6600ì6³øòU\U000cc8b9Ô\U0010a250\x10\U0003b479Á\xa0Ûé\x04×$Ò\x89\t', 'password': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001976s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 326
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': False, 'password': False}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001916s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 322
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True, 'password': 94}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 94, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001451s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 307
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 0}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': 0}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001681s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 320
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 0, 'password': 122}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 122, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.00144s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 318
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 0, 'password': 0}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001632s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 337
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 0, 'password': -4594951730957932466}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -4594951730957932466, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001591s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 334
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 0, 'password': -6247511253375295}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -6247511253375295, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001683s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 350
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': -6247511253375295, 'password': -6247511253375295}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': -6247511253375295, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -6247511253375295, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.002146s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': '\U0001a37b\U000e08f1\x11\x91\'彦\x87\x93J\U00055d5e\x0fÿ´\x13\U000443af+¬TK\x17CV\U00066404üòÇ<"±\x81ù¶ý\x9d?y\x07\U00039bda¢ñk\U000e38bb\x18\U001067faI\U00084cc46_AéÆvÙ]°V\x15ü\U000e332d\x8b\U0007934dOu@𧐟\x83¶Þ¥\U000812a9\U00064b76鄊÷\x8f\U000dace7\x95𩼳\x14\x12\U000689cb.,\U00016121\x86Í\U000ac795\x94"\x80Ø>â^º\U0004497e\x07\U0001ba9c,<8$ÖÎ«?\x9bî)õtzò¿*3\U0005ba7c \x84:*\U000f3147°¸\U000b6710Ò\U0005fcb4<ø\\\U00059564Ýú\x9c·8\U000a7c2cÅÆ\x8b\U0010fd9e\U00079861ZõM\x8câh\U0003eabdaù6yÚjS9+ºk\x87\x89pÏf\uf44e\x93\U000fbe08cÜ𧱌ö¿û\U000c037fî\x8cæÓ3\x01>I\U000f3802"\x8c\x87\x00«ÑNµ\U000b766cá\U00096af5\x99\rÈ^#ú>\r\\S£\x19#ds\U00079370ö\x0bG\U0003a42e\x84\x13\x02N\U00059eaeOÚ§\x7f\x96óÁ\x03\U0003ca3b ù\xad5Ç\x1e\x84\U00045782\U00092932~Û+²^\U00063b76\x1f\x06\U000c5b39\x13\x0c\U00073d67ãõË\x11yæø䴠\x11\U000cc4acÂ\x10\x07\x10Ü\U0004dc64\U000e5532\x1f\U000539cd\x8e#åÉ\x0bí\U0009b375\x87\x81\U000822d0\x95\U000df5c2\x08\U0009e03f\x85¤l@\U000cd0d6\x8fÈ\ueeea\x1d\x02\U000d90ddëÞE\'𨹖%\U000f7123í敇\x95\U0006d9c8\x14fÉ£y\U00083ffa\U0005aefarÌ¯_~5\'"3\U0009c892`Æ\x89âq\x9c-Ï\U001098d7\t\U0009bc62æ\U00068e97\x9a`å\U000c0b13\x88¤2p\x1dô{\U0008ed2fH\x9cg¢%\U0010734bóÙ\U000bc1e5óý\x82\U00056082\x1bwHÎ\x82\U0009ef5b\U000f44de\nüò\x05Ì»\U000fe0fd\U000e49d3\x957\x96\U000d5130\U0007cfea\x1aõ\U000cb70a\U000f7b29\x9c\U0003e1b1unCHQ\U0006d104ë\U0007ba73×ó«\U00081d1e\U000cee983ê럳Ì ¡á\x8dÈ&\x89ÒÐ@\U0010bfdbíB1_\x8f\x88_o\x9fk[E\U00036d8fÎ\U000c3992|-¾\x0f\U000d100c\U000f4c0d\x8c#\U000ecdb8ìi\x92CÜ%\u0a7d\x82\U0010ef32\U000f3380\\𡄼\U00071411\U000f6688¸ñT¬BR-\U0003d7beR\U000b34901¢\U000e715dÿ\x16Ò\x8cZ¼þ÷3ö憸o\U000d0759\x12^Ç|?\U00066a18%\x99𗷴\r\x95øÿêk\U000f974c\U0006dfe3-\x06\x901[\U000fd02b(\U000d70710 Ý?ö[\U000f61e2¨Ü«\x8e\x00\U000fa19f¯\nÇ²dð𤏼\x13\x80\x91ÄÞ!\U00042fb1\U00077cd6qö"VJ½a\x8b:qÂ\U000a690f\U000389afÒ§B{\x8a:4q_Ý\x99³/Ð-üÐ°)\U000a1f13m\U0001e8fa\x05\U0003221c\U00037608\x0e\U0005d520i7ë\x08t\x89\x92.ÄÐ\U000374e0E¯\r\x00l\U000f192a1\xad·¨$à!¦\U00013f71ª\U0005d304\U0003c717\x90\x06Û\x1cÌ\U0010764fø\x88Â\U00070ff1ª\x18\x9c\x98¬LhXß+ß\x17\x83¥\U000ae617¿\x82Äp\U0001355eîÒ\x00ú\U00054419\x00\x06\U000e7543𩲤\U000f96c1ý\U00058a9a\U00068773\U0007266f\x06𫖯#\x02Ô陲Ç\U000db2d2k7R\U000b455dúÜ\U000e0474(ñ-\x92¥M³Hã\x0c\x9c\x8cÀµ¼\x8d\U0003bb5fÍt*ù\x8cè¹!ÁUိ\U000fbbb8ºÀ𗠏\x88\U000bd66d\U000320f4\U00094df8\U00061510B~hò¢cYí¥\x06Ë\x0e\x08\U000bd019÷\U00073606P퇑Ç\xa0\x15{â\x8cÂ\x7f\x80©A*Ë\U00060555+»\U000901b9\U000cae05t~3O^üE:d>\x11Å\x19\x82\U000dc33cRG@H³y\x8c\x1d)\U0005cdef\U0008fb54È:\x8f«Ï8ím\'𗗂\U00019c42\U00054629Ã\U0003fac02IG§\x85䔄ÓD\x80𝠔\x7fÊ\x16\U000bc6a9~Xüë\U000d3b01\x15\x86\x8fÈ𣐟ñA\x0e\U001082fa\x1dÇ\x82\t\x85 X\x7f\U000a4474P\U0001965f\U00106125=\x05\U000dfadd¨ÅZ6𛉰U\U000a3a41`å\U000ccdb6G\x92Î\U000bf54d»¤ûåU\U000ecd64\x83\x82A!V\x83L\U000f65d6þ\U000f6952æ2\x99\x9c\x19µ\x89Ð\x81=\\ú\\\U00046fe7Ë\U000a98cd\U000a0e80\U00053bc2kg«þn\x9boC\x0eM\U00075220Ý!\x8d|\xad\x02Vú\x08\x16!´\U00085342\x99®\nq\U0009090f¬×\x10U\x98Àóå峤\x17ç{×ÃÐB\U0009a65a\x94\x7fÌ\x10\x18\U0001adf0\x9fà\\Ú®\x03É\x94Ô\x06£\x95ÖaÅ\U0008de58ÑäÞ\x9f\x8cóËn\x1cb¶\x95þ\U0006402dK \U00033f93\x8f\x1e\U001014f1Ë\x9bé\x9e\U00062d56\x80\x04\x16\U000e9261ê\x94𗵠\U0006f3d9ö\U000f59b1/"𪟛©Kb\x13\U000a84fa\U000621b9\x96T\x8f\U00096038.®%\x8cG\U000fb371\U0009250f\U0010e2b8\U0005a073é\U000d72b4Õ\U00074292ñb\U000c5dc8®ºR\x18Ú\x06ãÿ\x9e\U0006b1b4\x0eO\U000873de/È\x0f\x10G\x08<@\U000d77bfK§\U000e6c1aÓ\U000936b7=P¯&ÿs\x04Ð!U\U000bf111\U0008faed\U0009c0a5c§\U000f9929Æ¤"\U000c2718¤\U000d1926\x05\t𦒱\U000c63a7\U000f7662à9\U0009bbce&µÕ\U000470fc¥\x96ä\U000413d8f\x0b\x96\U0008c770zcÕÜîñ\x1a\U000540ec\U000ae6af*\U0005638bú5\U000ae50a\x1d\x0f\U0006db79ó«~cýeü\x8eõ\U000ad5d4Í{:\x18\x1c¹\xad\U0004256e\U0008c1e1Ø÷\x81@ð\x18ên-\x95\tøMq@R𮬈|s¶/\U0006a8f5wí\x82\nPGÃy\x12ö\x10©#`µ/âÍU/÷\x88´\x12`\U0004b951r\x05\U000949a1\U000a3d71\U000f8017\x0bØ\x0e\x12\U00062431>£°\U000acd75\x15RM$<ø輾L\x189»\x8bÐ³\U0010780d\x91!\x1fú\x88î蹅ó\U0009daf0\x0f~R\U000c3eb6\U000f7a231u\x9dD^Â𗼄\x1aG\U0007ef22nñ`\U000da360÷@\n\x80/¬\nÂÐ\U000b728f𦗌\U0001de87®z\x03\U00059104\U00108e16\x9d\U0001f1e1É\U0005e7306Ë\x8a\x81,𤢕\xad8\U000e97f4Ú\x80\x96\x01ç*»\x02tV\x10\x88\U0010e9de=\'\U000cc276\x8fì\x95¥N\x0c\x11\x02Ç\x13\x1añ\U000e8022\x0eè\U000a763e\U000f64b1rfîó?-Ò\U0010b715)Kö\x90²\U000d0369³U½X\x82Èñ¹Må5\x12\x04×OÙ96\xad\x16ü\x170\U0010b66f\x0f\U0008bdcf#´\x13<£ûÍ\x8eaI\x1aµ\x99Õg\U0006739f&¼&\x8e\U0001dee0\U00070feb=Ò\U000666a6\x88h\U000912f3uS\U00073781ÌrË\U00048882\U000f56aeÔ\U0010f2d16½²óäßÜ®K©\x00㌼Y\x9dx\U0009fd35Æò\x8aÈÙ\x10\U000bc77eX\x1c\U0008ac7cç\U0008abe6|¿ÙoTËÇLq\ue024\x98\U000ce75b\U0001dd56\x11𠴂ëy\uf5fe3\x96\U00019c40\U0010e33fÑ\U00062d69´\U000f67ea\x04ꈺ\x1aæÿ\x0b\xad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001676s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': '\U0001a37b\U000e08f1\x11\x91\'彦\x87\x93J\U00055d5e\x0fÿ´\x13\U000443af+¬TK\x17CV\U00066404üòÇ<"±\x81ù¶ý\x9d?y\x07\U00039bda¢ñk\U000e38bb\x18\U001067faI\U00084cc46_AéÆvÙ]°V\x15ü\U000e332d\x8b\U0007934dOu@𧐟\x83¶Þ¥\U000812a9\U00064b76鄊÷\x8f\U000dace7\x95𩼳\x14\x12\U000689cb.,\U00016121\x86Í\U000ac795\x94"\x80Ø>â^º\U0004497e\x07\U0001ba9c,<8$ÖÎ«?\x9bî)õtzò¿*3\U0005ba7c \x84:*\U000f3147°¸\U000b6710Ò\U0005fcb4<ø\\\U00059564Ýú\x9c·8\U000a7c2cÅÆ\x8b\U0010fd9e\U00079861ZõM\x8câh\U0003eabdaù6yÚjS9+ºk\x87\x89pÏf\uf44e\x93\U000fbe08cÜ𧱌ö¿û\U000c037fî\x8cæÓ3\x01>I\U000f3802"\x8c\x87\x00«ÑNµ\U000b766cá\U00096af5\x99\rÈ^#ú>\r\\S£\x19#ds\U00079370ö\x0bG\U0003a42e\x84\x13\x02N\U00059eaeOÚ§\x7f\x96óÁ\x03\U0003ca3b ù\xad5Ç\x1e\x84\U00045782\U00092932~Û+²^\U00063b76\x1f\x06\U000c5b39\x13\x0c\U00073d67ãõË\x11yæø䴠\x11\U000cc4acÂ\x10\x07\x10Ü\U0004dc64\U000e5532\x1f\U000539cd\x8e#åÉ\x0bí\U0009b375\x87\x81\U000822d0\x95\U000df5c2\x08\U0009e03f\x85¤l@\U000cd0d6\x8fÈ\ueeea\x1d\x02\U000d90ddëÞE\'𨹖%\U000f7123í敇\x95\U0006d9c8\x14fÉ£y\U00083ffa\U0005aefarÌ¯_~5\'"3\U0009c892`Æ\x89âq\x9c-Ï\U001098d7\t\U0009bc62æ\U00068e97\x9a`å\U000c0b13\x88¤2p\x1dô{\U0008ed2fH\x9cg¢%\U0010734bóÙ\U000bc1e5óý\x82\U00056082\x1bwHÎ\x82\U0009ef5b\U000f44de\nüò\x05Ì»\U000fe0fd\U000e49d3\x957\x96\U000d5130\U0007cfea\x1aõ\U000cb70a\U000f7b29\x9c\U0003e1b1unCHQ\U0006d104ë\U0007ba73×ó«\U00081d1e\U000cee983ê럳Ì ¡á\x8dÈ&\x89ÒÐ@\U0010bfdbíB1_\x8f\x88_o\x9fk[E\U00036d8fÎ\U000c3992|-¾\x0f\U000d100c\U000f4c0d\x8c#\U000ecdb8ìi\x92CÜ%\u0a7d\x82\U0010ef32\U000f3380\\𡄼\U00071411\U000f6688¸ñT¬BR-\U0003d7beR\U000b34901¢\U000e715dÿ\x16Ò\x8cZ¼þ÷3ö憸o\U000d0759\x12^Ç|?\U00066a18%\x99𗷴\r\x95øÿêk\U000f974c\U0006dfe3-\x06\x901[\U000fd02b(\U000d70710 Ý?ö[\U000f61e2¨Ü«\x8e\x00\U000fa19f¯\nÇ²dð𤏼\x13\x80\x91ÄÞ!\U00042fb1\U00077cd6qö"VJ½a\x8b:qÂ\U000a690f\U000389afÒ§B{\x8a:4q_Ý\x99³/Ð-üÐ°)\U000a1f13m\U0001e8fa\x05\U0003221c\U00037608\x0e\U0005d520i7ë\x08t\x89\x92.ÄÐ\U000374e0E¯\r\x00l\U000f192a1\xad·¨$à!¦\U00013f71ª\U0005d304\U0003c717\x90\x06Û\x1cÌ\U0010764fø\x88Â\U00070ff1ª\x18\x9c\x98¬LhXß+ß\x17\x83¥\U000ae617¿\x82Äp\U0001355eîÒ\x00ú\U00054419\x00\x06\U000e7543𩲤\U000f96c1ý\U00058a9a\U00068773\U0007266f\x06𫖯#\x02Ô陲Ç\U000db2d2k7R\U000b455dúÜ\U000e0474(ñ-\x92¥M³Hã\x0c\x9c\x8cÀµ¼\x8d\U0003bb5fÍt*ù\x8cè¹!ÁUိ\U000fbbb8ºÀ𗠏\x88\U000bd66d\U000320f4\U00094df8\U00061510B~hò¢cYí¥\x06Ë\x0e\x08\U000bd019÷\U00073606P퇑Ç\xa0\x15{â\x8cÂ\x7f\x80©A*Ë\U00060555+»\U000901b9\U000cae05t~3O^üE:d>\x11Å\x19\x82\U000dc33cRG@H³y\x8c\x1d)\U0005cdef\U0008fb54È:\x8f«Ï8ím\'𗗂\U00019c42\U00054629Ã\U0003fac02IG§\x85䔄ÓD\x80𝠔\x7fÊ\x16\U000bc6a9~Xüë\U000d3b01\x15\x86\x8fÈ𣐟ñA\x0e\U001082fa\x1dÇ\x82\t\x85 X\x7f\U000a4474P\U0001965f\U00106125=\x05\U000dfadd¨ÅZ6𛉰U\U000a3a41`å\U000ccdb6G\x92Î\U000bf54d»¤ûåU\U000ecd64\x83\x82A!V\x83L\U000f65d6þ\U000f6952æ2\x99\x9c\x19µ\x89Ð\x81=\\ú\\\U00046fe7Ë\U000a98cd\U000a0e80\U00053bc2kg«þn\x9boC\x0eM\U00075220Ý!\x8d|\xad\x02Vú\x08\x16!´\U00085342\x99®\nq\U0009090f¬×\x10U\x98Àóå峤\x17ç{×ÃÐB\U0009a65a\x94\x7fÌ\x10\x18\U0001adf0\x9fà\\Ú®\x03É\x94Ô\x06£\x95ÖaÅ\U0008de58ÑäÞ\x9f\x8cóËn\x1cb¶\x95þ\U0006402dK \U00033f93\x8f\x1e\U001014f1Ë\x9bé\x9e\U00062d56\x80\x04\x16\U000e9261ê\x94𗵠\U0006f3d9ö\U000f59b1/"𪟛©Kb\x13\U000a84fa\U000621b9\x96T\x8f\U00096038.®%\x8cG\U000fb371\U0009250f\U0010e2b8\U0005a073é\U000d72b4Õ\U00074292ñb\U000c5dc8®ºR\x18Ú\x06ãÿ\x9e\U0006b1b4\x0eO\U000873de/È\x0f\x10G\x08<@\U000d77bfK§\U000e6c1aÓ\U000936b7=P¯&ÿs\x04Ð!U\U000bf111\U0008faed\U0009c0a5c§\U000f9929Æ¤"\U000c2718¤\U000d1926\x05\t𦒱\U000c63a7\U000f7662à9\U0009bbce&µÕ\U000470fc¥\x96ä\U000413d8f\x0b\x96\U0008c770zcÕÜîñ\x1a\U000540ec\U000ae6af*\U0005638bú5\U000ae50a\x1d\x0f\U0006db79ó«~cýeü\x8eõ\U000ad5d4Í{:\x18\x1c¹\xad\U0004256e\U0008c1e1Ø÷\x81@ð\x18ên-\x95\tøMq@R𮬈|s¶/\U0006a8f5wí\x82\nPGÃy\x12ö\x10©=`µ/âÍU/÷\x88´\x12`\U0004b951r\x05\U000949a1\U000a3d71\U000f8017\x0bØ\x0e\x12\U00062431>£°\U000acd75\x15RM$<ø輾L\x189»\x8bÐ³\U0010780d\x91!\x1fú\x88î蹅ó\U0009daf0\x0f~R\U000c3eb6\U000f7a231u\x9dD^Â𗼄\x1aG\U0007ef22nñ`\U000da360÷@\n\x80/¬\nÂÐ\U000b728f𦗌\U0001de87®z\x03\U00059104\U00108e16\x9d\U0001f1e1É\U0005e7306Ë\x8a\x81,𤢕\xad8\U000e97f4Ú\x80\x96\x01ç*»\x02tV\x10\x88\U0010e9de=\'\U000cc276\x8fì\x95¥N\x0c\x11\x02Ç\x13\x1añ\U000e8022\x0eè\U000a763e\U000f64b1rfîó?-Ò\U0010b715)Kö\x90²\U000d0369³U½X\x82Èñ¹Må5\x12\x04×OÙ96\xad\x16ü\x170\U0010b66f\x0f\U0008bdcf#´\x13<£ûÍ\x8eaI\x1aµ\x99Õg\U0006739f&¼&\x8e\U0001dee0\U00070feb=Ò\U000666a6\x88h\U000912f3uS\U00073781ÌrË\U00048882\U000f56aeÔ\U0010f2d16½²óäßÜ®K©\x00㌼Y\x9dx\U0009fd35Æò\x8aÈÙ\x10\U000bc77eX\x1c\U0008ac7cç\U0008abe6|¿ÙoTËÇLq\ue024\x98\U000ce75b\U0001dd56\x11𠴂ëy\uf5fe3\x96\U00019c40\U0010e33fÑ\U00062d69´\U000f67ea\x04ꈺ\x1aæÿ\x0b\xad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001802s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': '\U0001a37b\U000e08f1\x11\x91\'彦\x87\x93J\U00055d5e\x0fÿ´\x13\U000443af+¬TK\x17CV\U00066404üòÇ<"±\x81ù¶ý\x9d?y\x07\U00039bda¢ñk\U000e38bb\x18\U001067faI\U00084cc46_AéÆvÙ]°V\x15ü\U000e332d\x8b\U0007934dOu@𧐟\x83¶Þ¥\U000812a9\U00064b76鄊÷\x8f\U000dace7\x95𩼳\x14\x12\U000689cb.,\U00016121\x86Í\U000ac795\x94"\x80Ø>â^º\U0004497e\x07\U0001ba9c,<8$ÖÎ«?\x9bî)õtzò¿*3\U0005ba7c \x84:*\U000f3147°¸\U000b6710Ò\U0005fcb4<ø\\\U00059564Ýú\x9c·8\U000a7c2cÅÆ\x8b\U0010fd9e\U00079861ZõM\x8câh\U0003eabdaù6yÚjS9+ºk\x87\x89pÏf\uf44e\x93\U000fbe08cÜ𧱌ö¿û\U000c037fî\x8cæÓ3\x01>I\U000f3802"\x8c\x87\x00«ÑNµ\U000b766cá\U00096af5\x99\rÈ^#ú>\r\\S£\x19#ds\U00079370ö\x0bG\U0003a42e\x84\x13\x02N\U00059eaeOÚ§\x7f\x96óÁ\x03\U0003ca3b ù\xad5Ç\x1e\x84\U00045782\U00092932~Û+²^\U00063b76\x1f\x06\U000c5b39\x13\x0c\U00073d67ãõË\x11yæø䴠\x11\U000cc4acÂ\x10\x07\x10Ü\U0004dc64\U000e5532\x1f\U000539cd\x8e#åÉ\x0bí\U0009b375\x87\x81\U000822d0\x95\U000df5c2\x08\U0009e03f\x85¤l@\U000cd0d6\x8fÈ\ueeea\x1d\x02\U000d90ddëÞE\'𨹖%\U000f7123í敇\x95\U0006d9c8\x14fÉ£y\U00083ffa\U0005aefarÌ¯_~5\'"3\U0009c892`Æ\x89âq\x9c-Ï\U001098d7\t\U0009bc62æ\U00068e97\x9a`å\U000c0b13\x88¤2p\x1dô{\U0008ed2fH\x9cg¢%\U0010734bóÙ\U000bc1e5óý\x82\U00056082\x1bwHÎ\x82\U0009ef5b\U000f44de\nüò\x05Ì»\U000fe0fd\U000e49d3\x957\x96\U000d5130\U0007cfea\x1aõ\U000cb70a\U000f7b29\x9c\U0003e1b1unCHQ\U0006d104ë\U0007ba73×ó«\U00081d1e\U000cee983ê럳Ì ¡á\x8dÈ&\x89ÒÐ@\U0010bfdbíB1_\x8f\x88_o\x9fk[E\U00036d8fÎ\U000c3992|-¾\x0f\U000d100c\U000f4c0d\x8c#\U000ecdb8ìi\x92CÜ%\u0a7d\x82\U0010ef32\U000f3380\\𡄼\U00071411\U000f6688¸ñT¬BR-\U0003d7beR\U000b34901¢\U000e715dÿ\x16Ò\x8cZ¼þ÷3ö憸o\U000d0759\x12^Ç|?\U00066a18%\x99𗷴\r\x95øÿêk\U000f974c\U0006dfe3-\x06\x901[\U000fd02b(\U000d70710 Ý?ö[\U000f61e2¨Ü«\x8e\x00\U000fa19f¯\nÇ²dð𤏼\x13\x80\x91ÄÞ!\U00042fb1\U00077cd6qö"VJ½a\x8b:qÂ\U000a690f\U000389afÒ§B{\x8a:4q_Ý\x99³/Ð-üÐ°)\U000a1f13m\U0001e8fa\x05\U0003221c\U00037608\x0e\U0005d520i7ë\x08t\x89\x92.ÄÐ\U000374e0E¯\r\x00l\U000f192a1\xad·¨$à!¦\U00013f71ª\U0005d304\U0003c717\x90\x06Û\x1cÌ\U0010764fø\x88Â\U00070ff1ª\x18\x9c\x98¬LhXß+ß\x17\x83¥\U000ae617¿\x82Äp\U0001355eîÒ\x00ú\U00054419\x00\x06\U000e7543𩲤\U000f96c1ý\U00058a9a\U00068773\U0007266f\x06𫖯#\x02Ô陲Ç\U000db2d2k7R\U000b455dúÜ\U000e0474(ñ-\x92¥M³Hã\x0c\x9c\x8cÀµ¼\x8d\U0003bb5fÍt*ù\x8cè¹!ÁUိ\U000fbbb8ºÀ𗠏\x88\U000bd66d\U000320f4\U00094df8\U00100901111111Ȁ\U0006ae000Ë\x0e\x08\U000bd019÷\U00073606P퇑Ç\xa0\x15{â\x8cÂ\x7f\x80©A*Ë\U00060555+»\U000901b9\U000cae05t~3O^üE:d>\x11Å\x19\x82\U000dc33cRG@H³y\x8c\x1d)\U0005cdef\U0008fb54È:\x8f«Ï8ím\'𗗂\U00019c42\U00054629Ã\U0003fac02IG§\x85䔄ÓD\x80𝠔\x7fÊ\x16\U000bc6a9~Xüë\U000d3b01\x15\x86\x8fÈ𣐟ñA\x0e\U001082fa\x1dÇ\x82\t\x85 X\x7f\U000a4474P\U0001965f\U00106125=\x05\U000dfadd¨ÅZ6𛉰U\U000a3a41`å\U000ccdb6G\x92Î\U000bf54d»¤ûåU\U000ecd64\x83\x82A!V\x83L\U000f65d6þ\U000f6952æ2\x99\x9c\x19µ\x89Ð\x81=\\ú\\\U00046fe7Ë\U000a98cd\U000a0e80\U00053bc2kg«þn\x9boC\x0eM\U00075220Ý!\x8d|\xad\x02Vú\x08\x16!´\U00085342\x99®\nq\U0009090f¬×\x10U\x98Àóå峤\x17ç{×ÃÐB\U0009a65a\x94\x7fÌ\x10\x18\U0001adf0\x9fà\\Ú®\x03É\x94Ô\x06£\x95ÖaÅ\U0008de58ÑäÞ\x9f\x8cóËn\x1cb¶\x95þ\U0006402dK \U00033f93\x8f\x1e\U001014f1Ë\x9bé\x9e\U00062d56\x80\x04\x16\U000e9261ê\x94𗵠\U0006f3d9ö\U000f59b1/"𪟛©Kb\x13\U000a84fa\U000621b9\x96T\x8f\U00096038.®%\x8cG\U000fb371\U0009250f\U0010e2b8\U0005a073é\U000d72b4Õ\U00074292ñb\U000c5dc8®ºR\x18Ú\x06ãÿ\x9e\U0006b1b4\x0eO\U000873de/È\x0f\x10G\x08<@\U000d77bfK§\U000e6c1aÓ\U000936b7=P¯&ÿs\x04Ð!U\U000bf111\U0008faed\U0009c0a5c§\U000f9929Æ¤"\U000c2718¤\U000d1926\x05\t𦒱\U000c63a7\U000f7662à9\U0009bbce&µÕ\U000470fc¥\x96ä\U000413d8f\x0b\x96\U0008c770zcÕÜîñ\x1a\U000540ec\U000ae6af*\U0005638bú5\U000ae50a\x1d\x0f\U0006db79ó«~cýeü\x8eõ\U000ad5d4Í{:\x18\x1c¹\xad\U0004256e\U0008c1e1Ø÷\x81@ð\x18ên-\x95\tøMq@R𮬈|s¶/\U0006a8f5wí\x82\nPGÃy\x12ö\x10©=`µ/âÍU/÷\x88´\x12`\U0004b951r\x05\U000949a1\U000a3d71\U000f8017\x0bØ\x0e\x12\U00062431>£°\U000acd75\x15RM$<ø輾L\x189»\x8bÐ³\U0010780d\x91!\x1fú\x88î蹅ó\U0009daf0\x0f~R\U000c3eb6\U000f7a231u\x9dD^Â𗼄\x1aG\U0007ef22nñ`\U000da360÷@\n\x80/¬\nÂÐ\U000b728f𦗌\U0001de87®z\x03\U00059104\U00108e16\x9d\U0001f1e1É\U0005e7306Ë\x8a\x81,𤢕\xad8\U000e97f4Ú\x80\x96\x01ç*»\x02tV\x10\x88\U0010e9de=\'\U000cc276\x8fì\x95¥N\x0c\x11\x02Ç\x13\x1añ\U000e8022\x0eè\U000a763e\U000f64b1rfîó?-Ò\U0010b715)Kö\x90²\U000d0369³U½X\x82Èñ¹Må5\x12\x04×OÙ96\xad\x16ü\x170\U0010b66f\x0f\U0008bdcf#´\x13<£ûÍ\x8eaI\x1aµ\x99Õg\U0006739f&¼&\x8e\U0001dee0\U00070feb=Ò\U000666a6\x88h\U000912f3uS\U00073781ÌrË\U00048882\U000f56aeÔ\U0010f2d16½²óäßÜ®K©\x00㌼Y\x9dx\U0009fd35Æò\x8aÈÙ\x10\U000bc77eX\x1c\U0008ac7cç\U0008abe6|¿ÙoTËÇLq\ue024\x98\U000ce75b\U0001dd56\x11𠴂ëy\uf5fe3\x96\U00019c40\U0010e33fÑ\U00062d69´\U000f67ea\x04ꈺ\x1aæÿ\x0b\xad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002082s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': '\U0001a37b\U000e08f1\x11\x91\'彦\x87\x93J\U00055d5e\x0fÿ´\x13\U000443af+¬TK\x17CV\U00066404üòÇ<"±\x81ù¶ý\x9d?y\x07\U00039bda¢ñk\U000e38bb\x18\U001067faI\U00084cc46_AéÆvÙ]°V\x15ü\U000e332d\x8b\U0007934dOu@𧐟\x83¶Þ¥\U000812a9\U00064b76鄊÷\x8f\U000dace7\x95𩼳\x14\x12\U000689cb.,\U00016121\x86Í\U000ac795\x94"\x80Ø>â^º\U0004497e\x07\U0001ba9c,<8$ÖÎ«?\x9bî)õtzò¿*3\U0005ba7c \x84:*\U000f3147°¸\U000b6710Ò\U0005fcb4<ø\\\U00059564Ýú\x9c·8\U000a7c2cÅÆ\x8b\U0010fd9e\U00079861ZõM\x8câh\U0003eabdaù6yÚjS9+ºk\x87\x89pÏf\uf44e\x93\U000fbe08cÜ𧱌ö¿û\U000c037fî\x8cæÓ3\x01>I\U000f3802"\x8c\x87\x00«ÑNµ\U000b766cá\U00096af5\x99\rÈ^#ú>\r\\S£\x19#ds\U00079370ö\x0bG\U0003a42e\x84\x13\x02N\U00059eaeOÚ§\x7f\x96óÁ\x03\U0003ca3b ù\xad5Ç\x1e\x84\U00045782\U00092932~Û+²^\U00063b76\x1f\x06\U000c5b39\x13\x0c\U00073d67ãõË\x11yæø䴠\x11\U000cc4acÂ\x10\x07\x10Ü\U0004dc64\U000e5532\x1f\U000539cd\x8e#åÉ\x0bí\U0009b375\x87\x81\U000822d0\x95\U000df5c2\x08\U0009e03f\x85¤l@\U000cd0d6\x8fÈ\ueeea\x1d\x02\U000d90ddëÞE\'𨹖%\U000f7123í敇\x95\U0006d9c8\x14fÉ£y\U00083ffa\U0005aefarÌ¯_~5\'"3\U0009c892`Æ\x89âq\x9c-Ï\U001098d7\t\U0009bc62æ\U00068e97\x9a`å\U000c0b13\x88¤2p\x1dô{\U0008ed2fH\x9cg¢%\U0010734bóÙ\U000bc1e5óý\x82\U00056082\x1bwHÎ\x82\U0009ef5b\U000f44de\nüò\x05Ì»\U000fe0fd\U000e49d3\x957\x96\U000d5130\U0007cfea\x1aõ\U000cb70a\U000f7b29\x9c\U0003e1b1unCHQ\U0006d104ë\U0007ba73×ó«\U00081d1e\U000cee983ê럳Ì ¡á\x8dÈ&\x89ÒÐ@\U0010bfdbíB1_\x8f\x88_o\x9fk[E\U00036d8fÎ\U000c3992|-¾\x0f\U000d100c\U000f4c0d\x8c#\U000ecdb8ìi\x92CÜ%\u0a7d\x82\U0010ef32\U000f3380\\𡄼\U00071411\U000f6688¸ñT¬BR-\U0003d7beR\U000b34901¢\U000e715dÿ\x16Ò\x8cZ¼þ÷3ö憸o\U000d0759\x12^Ç|?\U00066a18%\x99𗷴\r\x95øÿêk\U000f974c\U0006dfe3-\x06\x901[\U000fd02b(\U000d70710 Ý?ö[\U000f61e2¨Ü«\x8e\x00\U000fa19f¯\nÇ²dð𤏼\x13\x80\x91ÄÞ!\U00042fb1\U00077cd6qö"VJ½a\x8b:qÂ\U000a690f\U000389afÒ§B{\x8a:4q_Ý\x99³/Ð-üÐ°)\U000a1f13m\U0001e8fa\x05\U0003221c\U00037608\x0e\U0005d520i7ë\x08t\x89\x92.ÄÐ\U000374e0E¯\r\x00l\U000f192a1\xad·¨$à!¦\U00013f71ª\U0005d304\U0003c717\x90\x06Û\x1cÌ\U0010764fø\x88Â\U00070ff1ª\x18\x9c\x98¬LhXß+ß\x17\x83¥\U000ae617¿\x82Äp\U0001355eîÒ\x00ú\U00054419\x00\x06\U000e7543𩲤\U000f96c1ý\U00058a9a\U00068773\U0007266f\x06𫖯#\x02Ô陲Ç\U000db2d2k7R\U000b455dúÜ\U000e0474(ñ-\x92¥M³Hã\x0c\x9c\x8cÀµ¼\x8d\U0003bb5fÍt*ù\x8cè¹!ÁUိ\U000fbbb8ºÀ𗠏\x88\U000bd66d\U000320f4\U00094df8\U00100901111111Ȁ\U0006ae000Ë\x0e\x08\U000bd019÷\U00073606P퇑Ç\xa0\x15{â\x8cÂ\x7f\x80©A*Ë\U00060555+»\U000901b9\U000cae05t~3O^üE:d>\x11Å\x19\x82\U000dc33cRG@H³y\x8c\x1d)\U0005cdef\U0008fb54È:\x8f«Ï8ím\'𗗂\U00019c42\U00054629Ã\U0003fac02IG§\x85䔄ÓD\x80𝠔\x7fÊ\x16\U000bc6a9~Xüë\U000d3b01\x15\x86\x8fÈ𣐟ñA\x0e\U001082fa\x1dÇ\x82\t\x85 X\x7f\U000a4474P\U0001965f\U00106125=\x05\U000dfadd¨ÅZ6𛉰U\U000a3a41`å\U000ccdb6G\x92Î\U000bf54d»¤ûåU\U000ecd64\x83\x82A!V\x83L\U000f65d6þ\U000f6952æ2\x99\x9c\x19µ\x89Ð\x81=\\ú\\\U00046fe7Ë\U000a98cd\U000a0e80\U00053bc2kg«þn\x9boC\x0eM\U00075220Ý!\x8d|\xad\x02Vú\x08\x16!´\U00085342\x99®\nq\U0009090f¬×\x10U\x98Àóå峤\x17ç{×ÃÐB\U0009a65a\x94\x7fÌ\x10\x18\U0001adf0\x9fà\\Ú®\x03É\x94Ô\x06£\x95ÖaÅ\U0008de58ÑäÞ\x9f\x8cóËn\x1cb¶\x95þ\U0006402dK \U00033f93\x8f\x1e\U001014f1Ë\x9bé\x9e\U00062d56\x80\x04\x16\U000e9261ê\x94𗵠\U0006f3d9ö\U000f59b1/"𪟛©Kb\x13\U000a84fa\U000621b9\x96T\x8f\U00096038.®%\x8cG\U000fb371\U0009250f\U0010e2b8\U0005a073é\U000d72b4Õ\U00074292ñb\U000c5dc8®ºR\x18Ú\x06ãÿ\x9e\U0006b1b4\x0eO\U000873de/È\x0f\x10G\x08<@\U000d77bfK§\U000e6c1aÓ\U000936b7=P¯&ÿs\x04Ð!U\U000bf111\U0008faed\U0009c0a5c§\U000f9929Æ¤"\U000c2718¤\U000d1926\x05\t𦒱\U000c63a7\U000f7662à9\U0009bbce&µÕ\U000470fc¥\x96ä\U000413d8f\x0b\x96\U0008c770zcÕÜîñ\x1a\U000540ec\U000ae6af*\U0005638bú5\U000ae50a\x1d\x0f\U0006db79ó«~cýeü\x8eõ\U000ad5d4Í{:\x18\x1c¹\xad\U0004256e\U0008c1e1Ø÷\x81@ð\x18ên-\x95\tøMq@R𮬈|s¶/\U0006a8f5wí\x82\nPGÃy\x12ö\x10©=`µ/âÍU/÷\x88´\x12`\U0004b951r\x05\U000949a1\U000a3d71\U000f8017\x0bØ\x0e\x12\U00062431>£°\U000acd75\x15RM$<ø輾L\x189»\x8bÐ³\U0010780d\x91!\x1fú\x88î蹅ó\U0009daf0\x0f~R\U000c3eb6\U000f7a231u\x9dD^Â𗼄\x1aG\U0007ef22nñ`\U000da360÷@\n\x80/¬\nÂÐ\U000b728f𦗌\U0001de87®z\x03\U00059104\U00108e16\x9d\U0001f1e1É\U0005e7306Ë\x8a\x81,𤢕\xad8\U000e97f4Ú\x80\x96\x01ç*»\x02tV\x10\x88\U0010e9de=\'\U000cc276\x8fì\x95¥N\x0c\x11\x02Ç\x13\x1añ\U000e8022\x0eè\U000a763e\U000f64b1rfîó?-Ò\U0010b715)Kö\x90²\U000d0369³U½X\x82Èñ¹Må5\x12\x04×OÙ96\xad\x16ü\x170\U0010b66f\x0f\U0008bdcf#´\x13<£ûÍ\x8eaI\x1aµ\x99Õg\U0006739f&¼&\x8e\U0001dee0\U00070feb=Ò\U000666a6\x88h\U000912f3uS\U00073781ÌrË\U00048882\U000f56aeÔ\U0010f2d16½²óäJÜ®K©\x00㌼Y\x9dx\U0009fd35Æò\x8aÈÙ\x10\U000bc77eX\x1c\U0008ac7cç\U0008abe6|¿ÙoTËÇLq\ue024\x98\U000ce75b\U0001dd56\x11𠴂ëy\uf5fe3\x96\U00019c40\U0010e33fÑ\U00062d69´\U000f67ea\x04ꈺ\x1aæÿ\x0b\xad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002058s
+====================================================================================================
+2025-09-19 00:37:58 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:58 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': '\U0001a37b\U000e08f1\x11\x91\'彦\x87\x93J\U00055d5e\x0fÿ´\x13\U000443af+¬TK\x17CV\U00066404üòÇ<"±\x81ù¶ý\x9d?y\x07\U00039bda¢ñk\U000e38bb\x18\U001067faI\U00084cc46_AéÆvÙ]°V\x15ü\U000e332d\x8b\U0007934dOu@𧐟\x83¶Þ¥\U000812a9\U00064b76鄊È\x8f\U000dace7\x95𩼳\x14\x12\U000689cb.,\U00016121\x86Í\U000ac795\x94"\x80Ø>â^º\U0004497e\x07\U0001ba9c,<8$ÖÎ«?\x9bî)õtzò¿*3\U0005ba7c \x84:*\U000f3147°¸\U000b6710Ò\U0005fcb4<ø\\\U00059564Ýú\x9c·8\U000a7c2cÅÆ\x8b\U0010fd9e\U00079861ZõM\x8câh\U0003eabdaù6yÚjS9+ºk\x87\x89pÏf\uf44e\x93\U000fbe08cÜ𧱌ö¿û\U000c037fî\x8cæÓ3\x01>I\U000f3802"\x8c\x87\x00«ÑNµ\U000b766cá\U00096af5\x99\rÈ^#ú>\r\\S£\x19#ds\U00079370ö\x0bG\U0003a42e\x84\x13\x02N\U00059eaeOÚ§\x7f\x96óÁ\x03\U0003ca3b ù\xad5Ç\x1e\x84\U00045782\U00092932~Û+²^\U00063b76\x1f\x06\U000c5b39\x13\x0c\U00073d67ãõË\x11yæø䴠\x11\U000cc4acÂ\x10\x07\x10Ü\U0004dc64\U000e5532\x1f\U000539cd\x8e#åÉ\x0bí\U0009b375\x87\x81\U000822d0\x95\U000df5c2\x08\U0009e03f\x85¤l@\U000cd0d6\x8fÈ\ueeea\x1d\x02\U000d90ddëÞE\'𨹖%\U000f7123í敇\x95\U0006d9c8\x14fÉ£y\U00083ffa\U0005aefarÌ¯_~5\'"3\U0009c892`Æ\x89âq\x9c-Ï\U001098d7\t\U0009bc62æ\U00068e97\x9a`å\U000c0b13\x88¤2p\x1dô{\U0008ed2fH\x9cg¢%\U0010734bóÙ\U000bc1e5óý\x82\U00056082\x1bwHÎ\x82\U0009ef5b\U000f44de\nüò\x05Ì»\U000fe0fd\U000e49d3\x957\x96\U000d5130\U0007cfea\x1aõ\U000cb70a\U000f7b29\x9c\U0003e1b1unCHQ\U0006d104ë\U0007ba73×ó«\U00081d1e\U000cee983ê럳Ì ¡á\x8dÈ&\x89ÒÐ@\U0010bfdbíB1_\x8f\x88_o\x9fk[E\U00036d8fÎ\U000c3992|-¾\x0f\U000d100c\U000f4c0d\x8c#\U000ecdb8ìi\x92CÜ%\u0a7d\x82\U0010ef32\U000f3380\\𡄼\U00071411\U000f6688¸ñT¬BR-\U0003d7beR\U000b34901¢\U000e715dÿ\x16Ò\x8cZ¼þ÷3ö憸o\U000d0759\x12^Ç|?\U00066a18%\x99𗷴\r\x95øÿêk\U000f974c\U0006dfe3-\x06\x901[\U000fd02b(\U000d70710 Ý?ö[\U000f61e2¨Ü«\x8e\x00\U000fa19f¯\nÇ²dð𤏼\x13\x80\x91ÄÞ!\U00042fb1\U00077cd6qö"VJ½a\x8b:qÂ\U000a690f\U000389afÒ§B{\x8a:4q_Ý\x99³/Ð-üÐ°)\U000a1f13m\U0001e8fa\x05\U0003221c\U00037608\x0e\U0005d520i7ë\x08t\x89\x92.ÄÐ\U000374e0E¯\r\x00l\U000f192a1\xad·¨$à!¦\U00013f71ª\U0005d304\U0003c717\x90\x06Û\x1cÌ\U0010764fø\x88Â\U00070ff1ª\x18\x9c\x98¬LhXß+ß\x17\x83¥\U000ae617¿\x82Äp\U0001355eîÒ\x00ú\U00054419\x00\x06\U000e7543𩲤\U000f96c1ý\U00058a9a\U00068773\U0007266f\x06𫖯#\x02Ô陲Ç\U000db2d2k7R\U000b455dúÜ\U000e0474(ñ-\x92¥M³Hã\x0c\x9c\x8cÀµ¼\x8d\U0003bb5fÍt*ù\x8cè¹!ÁUိ\U000fbbb8ºÀ𗠏\x88\U000bd66d\U000320f4\U00094df8\U00100901111111Ȁ\U0006ae000Ë\x0e\x08\U000bd019÷\U00073606P퇑Ç\xa0\x15{â\x8cÂ\x7f\x80©A*Ë\U00060555+»\U000901b9\U000cae05t~3O^üE:d>\x11Å\x19\x82\U000dc33cRG@H³y\x8c\x1d)\U0005cdef\U0008fb54È:\x8f«Ï8ím\'𗗂\U00019c42\U00054629Ã\U0003fac02IG§\x85䔄ÓD\x80𝠔\x7fÊ\x16\U000bc6a9~Xüë\U000d3b01\x15\x86\x8fÈ𣐟ñA\x0e\U001082fa\x1dÇ\x82\t\x85 X\x7f\U000a4474P\U0001965f\U00106125=\x05\U000dfadd¨ÅZ6𛉰U\U000a3a41`å\U000ccdb6G\x92Î\U000bf54d»¤ûåU\U000ecd64\x83\x82A!V\x83L\U000f65d6þ\U000f6952æ2\x99\x9c\x19µ\x89Ð\x81=\\ú\\\U00046fe7Ë\U000a98cd\U000a0e80\U00053bc2kg«þn\x9boC\x0eM\U00075220Ý!\x8d|\xad\x02Vú\x08\x16!´\U00085342\x99®\nq\U0009090f¬×\x10U\x98Àóå峤\x17ç{×ÃÐB\U0009a65a\x94\x7fÌ\x10\x18\U0001adf0\x9fà\\Ú®\x03É\x94Ô\x06£\x95ÖaÅ\U0008de58ÑäÞ\x9f\x8cóËn\x1cb¶\x95þ\U0006402dK \U00033f93\x8f\x1e\U001014f1Ë\x9bé\x9e\U00062d56\x80\x04\x16\U000e9261ê\x94𗵠\U0006f3d9ö\U000f59b1/"𪟛©Kb\x13\U000a84fa\U000621b9\x96T\x8f\U00096038.®%\x8cG\U000fb371\U0009250f\U0010e2b8\U0005a073é\U000d72b4Õ\U00074292ñb\U000c5dc8®ºR\x18Ú\x06ãÿ\x9e\U0006b1b4\x0eO\U000873de/È\x0f\x10G\x08<@\U000d77bfK§\U000e6c1aÓ\U000936b7=P¯&ÿs\x04Ð!U\U000bf111\U0008faed\U0009c0a5c§\U000f9929Æ¤"\U000c2718¤\U000d1926\x05\t𦒱\U000c63a7\U000f7662à9\U0009bbce&µÕ\U000470fc¥\x96ä\U000413d8f\x0b\x96\U0008c770zcÕÜîñ\x1a\U000540ec\U000ae6af*\U0005638bú5\U000ae50a\x1d\x0f\U0006db79ó«~cýeü\x8eõ\U000ad5d4Í{:\x18\x1c¹\xad\U0004256e\U0008c1e1Ø÷\x81@ð\x18ên-\x95\tøMq@R𮬈|s¶/\U0006a8f5wí\x82\nPGÃy\x12ö\x10©=`µ/âÍU/÷\x88´\x12`\U0004b951r\x05\U000949a1\U000a3d71\U000f8017\x0bØ\x0e\x12\U00062431>£°\U000acd75\x15RM$<ø輾L\x189»\x8bÐ³\U0010780d\x91!\x1fú\x88î蹅ó\U0009daf0\x0f~R\U000c3eb6\U000f7a231u\x9dD^Â𗼄\x1aG\U0007ef22nñ`\U000da360÷@\n\x80/¬\nÂÐ\U000b728f𦗌\U0001de87®z\x03\U00059104\U00108e16\x9d\U0001f1e1É\U0005e7306Ë\x8a\x81,𤢕\xad8\U000e97f4Ú\x80\x96\x01ç*»\x02tV\x10\x88\U0010e9de=\'\U000cc276\x8fì\x95¥N\x0c\x11\x02Ç\x13\x1añ\U000e8022\x0eè\U000a763e\U000f64b1rfîó?-Ò\U0010b715)Kö\x90²\U000d0369³U½X\x82Èñ¹Må5\x12\x04×OÙ96\xad\x16ü\x170\U0010b66f\x0f\U0008bdcf#´\x13<£ûÍ\x8eaI\x1aµ\x99Õg\U0006739f&¼&\x8e\U0001dee0\U00070feb=Ò\U000666a6\x88h\U000912f3uS\U00073781ÌrË\U00048882\U000f56aeÔ\U0010f2d16½²óäJÜ®K©\x00㌼Y\x9dx\U0009fd35Æò\x8aÈÙ\x10\U000bc77eX\x1c\U0008ac7cç\U0008abe6|¿ÙoTËÇLq\ue024\x98\U000ce75b\U0001dd56\x11𠴂ëy\uf5fe3\x96\U00019c40\U0010e33fÑ\U00062d69´\U000f67ea\x04ꈺ\x1aæÿ\x0b\xad'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001772s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 31611, 'password': "' OR '1'='1' --"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 31611, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001737s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 31611, 'password': '../../etc/passwd'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 31611, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001597s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 31611, 'password': '../../etc/passwd'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 31611, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001618s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 361
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['öþXÛ\x18s\U000c44b1^}ÎÖYI\U00013d4f捲¬R3¢'], 'password': 14}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['öþXÛ\x18s\U000c44b1^}ÎÖYI\U00013d4f捲¬R3¢'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 14, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001953s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 368
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['öþXÛ\x18s\U000c44b1^}ÎÖYI\U00013d4f捲¬R3¢'], 'password': -17701465}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['öþXÛ\x18s\U000c44b1^}ÎÖYI\U00013d4f捲¬R3¢'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -17701465, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001728s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 372
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['öþXÛ𠸃75\x1f54\U0003d7065\U00060c19\U00013d4f捲¬R3¢'], 'password': -17701465}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['öþXÛ𠸃75\x1f54\U0003d7065\U00060c19\U00013d4f捲¬R3¢'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -17701465, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001728s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 370
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['öþXÛ𠸃75\x1f54\U0003d7065\U00060c19\U00013d4f捲¬R3¢'], 'password': 8457754}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['öþXÛ𠸃75\x1f54\U0003d7065\U00060c19\U00013d4f捲¬R3¢'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 8457754, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001862s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': '   '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001718s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 219
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['\x18', '\x91\x0b>\U0008a7fc\x10"a', '\x83«Wq', '\U0003d10e\U00081df6'], 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['\x18', '\x91\x0b>\U0008a7fc\x10"a', '\x83«Wq', '\U0003d10e\U00081df6'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001769s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 217
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['\x18', '\x91\x0b>\U00055a081', '"a', '\x83«Wq', '\U0003d10e\U00081df6'], 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['\x18', '\x91\x0b>\U00055a081', '"a', '\x83«Wq', '\U0003d10e\U00081df6'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001809s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 216
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['\x18', '\x91\x0b>\U00055a081', '"a', 'W«Wq', '\U0003d10e\U00081df6'], 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['\x18', '\x91\x0b>\U00055a081', '"a', 'W«Wq', '\U0003d10e\U00081df6'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001999s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 216
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['\x18', '\x91\x0b>\U00055a081', '"a', 'W«Wq', '\U0003d10e\U00081df6'], 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['\x18', '\x91\x0b>\U00055a081', '"a', 'W«Wq', '\U0003d10e\U00081df6'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001641s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 216
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['\x18', '\x91\x0b>\U00055a081', '"a', 'W«Wq', '\U0003d10e\U00081df6'], 'password': '../../etc/passwd'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['\x18', '\x91\x0b>\U00055a081', '"a', 'W«Wq', '\U0003d10e\U00081df6'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001688s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 221
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['\x18', '\x91\x0b>\U00055a081', '\U0003d10e\U00081df6', 'W«Wq', '\U0003d10e\U00081df6'], 'password': '../../etc/passwd'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['\x18', '\x91\x0b>\U00055a081', '\U0003d10e\U00081df6', 'W«Wq', '\U0003d10e\U00081df6'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.00175s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 221
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['\x18', '\x91\x0b>\U00055a08', '3\U0003d10e\U00081df6', 'W«Wq', '\U0003d10e\U00081df6'], 'password': '../../etc/passwd'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['\x18', '\x91\x0b>\U00055a08', '3\U0003d10e\U00081df6', 'W«Wq', '\U0003d10e\U00081df6'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001781s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 325
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True, 'password': False}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001824s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '£å3Í\r·\x0c¬\U0005ad5c\U00042c07ç\U0003fec6#V\\Î\x0fý\U0008b01d\x91\U000f12b4ä\ná\x95å\U000d2fb99~\x10\x81\tl\U000e6d6c\U000e2cd6\x9f\U000c1d91QQaí~\x12\x83¥\U00082b35Y\x17\U000c6e98ꚖQÝ¹\x84\U000b4913q©|D\U000fe4a0ª\x8dµ\U000fb873\x8dL"\U00048083\U0004b8ce\x88ïa?\U000acc7b\U0001ee6bP\r\U000f80d5e\x95\U00048b5e\x14"·\U0005d2f7Ôe\x1ccäaV\x16\U000cc4a9\x94ç§}\'p\U0007dc28p\U00100981ãù¢ñ\U000da359\x19r\x86𫼥\x07þuô;©\x1aÂMx\U000780e1\x1e\U000f76ef½e\x92\x89\t\x8e%\x8c\x02\x7fù\U000477d2q,\x03|\x85·n¾\U0010a342\x96yýé\U00099b80\x99\U0005b15a_ðáµÎ\U0010fd55\U000d72f9ö~Û\x05¸¾GOÊ#*\U0006ec03\x9a\U0003b6e1\x92Ó2\x98tM\U000327eb\U000ad736c𡳍\U0009354c\U000cf721\x1eA¨5ôÐ\U000acd22𮦯\x8fàü\U00098bddàÑ\x0c\xadC\x13tWµ-T\x99R\x1eX/¤Ø\U000d08fb¿È¬\U000867e0¸³´\tP\x8b\x03¿\U0004d63er\U0008341f1ó\x1emÀ\U000e95bb\x11ðf\U000f26efª\x11ÝN\x89§\U00088316\x9bãâ\U0008f9b0ÚØ\x93Dq\U00047f9aûGEn©\U00105bd1\U0002ef37Ú\U001037c5\x99\rÑ\U00099b41¬\x04\x94\x19ó\x92K\U0005c2fb\x9f\x14\x0e¥\x86\x8bÔ\x00lÆËùËF\x88\x1e\x8eüºò\U000d868a\U000731d1\x12\x04\U0003aae1\x97%Â\xad\U000aec96\x17ý\x96røÆ🮙\x98µ6½\xadþ¸óñü_÷Ñõ%©Í£8²%¿ñ𠕻\U000cad10\U000e3a3e\U00047e5a\\7J7=Æ\U000e2bb7I5g\U0007ea8d\U0010bf9e\ne\U000a1f0aá¡\x81\U000af0ebE\x9e\U000834b3Â&óè\x800\x9e\U000c94cf\x97«\x83·\U0006b3b9,\U000a8266i¾\U000cd369:\x11\x0f\x07\U0010115b¼\U000ef742K\x7fJ\U00051d27#됧\U00054c7em\U0008efb0\x07²\x1c\x0eò\U0006210e\U0008bcf4{\U000f2210Í\x8d\U000bde30à\U00010f85·Cüé°í^\U00014ab7k;\U001091123\x90º\U000b3d34øµr!«ý\U000df94ad\x0e\U000d1114M_ËQ𥭥\x18\U00065576\x0btG¦E\x84L\x1d\x05\U000cc4d3\x0c¦\x8f\U0005b75c\x89\U0003979d\U000d05a6\x95%\U000e56c5Ü\U000d657fÊ\x98ª-fj@Ã.ïL𰤽\x12\x90w©|\x8c \\\U0004a1d9Å?¾×\x1f\U00015af5\U00067bb3\U000c7c17L§\x89\n\x19$\x17\U000f3e8aý\U000e662c\x9d«Foë𭫜\U00046a16\x00Ò\U00105bff\x14\x84¡\U000812ef\U000b54bf\U0005e8e1⟌Ñ%JÅ\x90ú\x9béUK`¦ﮡ(iãb\U0003e7f1êp=\x08\U000e75c2\U000c6590D\U00014d17P\U000feca0\x17sDÓéá\x88L_,¼·2\x9e¯Ëì\U0003a028Q\U000cca00üÉ)\x82\U00055ff2|ø\x181.\xa0\U00049648Ù_\x8c\U000fdc70\x94𑋶`¦°xqû;D0K\x13]Qo06\x02\U0006b2f8´4\x99Ù\U0003fa8e渗ß\x0e»\U000da231¯Kî\U000ba133ÍÔ9ú#\U000a29c7\U000ae8b4Õ\x90ßÒå~¤H𧌾\U000a7022£\xadÛ\x0bÑ/\U00084715Á\U00050008\U00062668Ë\U000b9350\x84·é"\U00102fdd\U000a994e\U0003ceabRý~\x8e(¢𨧱ÅE\x116<¬£øKv\U000c1621¶e\xad\U0009cef5©¿M\x19fK\'?Ôv\U00105e60q\x15\x80\x8eß\x04Å\U0008f183\x1a\x9b$\U000c9da6Ô\x1d\x17ý\x1a}\U000e5ed3#\U0006bdd9\r\U000f323b\x03Gä\U0006df35o0¯^¦ip×\x083¿4ÕÜ\x12\x02𛆢@\x16\x1f\x19ÿ\x0e*\x0f¨Ê¨쬓¬u\x1bõ\x04º\x19V\x97\U00105267𠿈DuU\U000cfba13ÂÁÏ\U00031565Ý\U0003c02bè\x80\U000b2389\x9d\x0b\x04xP\x94ôîE;\x0bä\x1f\xadj.\\\x83\x88\U0004a6e4ú¹\U00087d60¤\nþ\x1dvІI\x15A\x92N\x19\x8f\x1a\xadá\x1ctb½MàR\x05ú²/É\U0003eed3\U000dab74¢\U000bb668𭰚IÍ\U000dafd2ñ\U000e1f88[\x04r𥡸Ø\x9e\U0003846e$RP\U000a2730\x0bTt\U000d74e6\U0008f47b\x9f\x16Åô3\U0004941e^\U000ca978\x12\x06\x0c\U000fcf81£\x94\U000a4e4dmë«³Ý¡\x81¡ëð-ÒáÔÇTtNïÝS\x07\U0003ba2d¿u\x97"\x8dQq$\U000b9719\U000d4703\U000a7529\x9a}\x8c\x8c\U000689c3¼893Ðþ7µzF\U000c50caÁ¢𭄓\U000c44bd_4\U0005146abK\U0009981cW\x1a\U0003a8e8´\U00010a360D\x00ù®\x90\x1c¦¿m\x02iÌ9叕8\ue3b9巛\U00047ee9åÂ@¶S\x9a\x00\x89\x81𭥑<aBU¶¨V\x8e$6\x9e°Ð\U00092782õ\x88NC<N\t\x80󠇎¸àd\U000c3c3aª2\U0001ab5d\U000ebf2bÕ붽Dd\x84õwra\U0005e0bc}Ø:\U0001e8fc\U000cf896\U00043169\U000341cf\U0002f24a\U00061fbf\U000b7f04\U000ac060\U00036af3¹f´æ\x17út\U000922dew䁎\U00093a1aHâ\x92;\x80X\x87Ì\x82\x07j±\U000d1b1avü-UÙ\U0003e8dfÉ\x0bä\x94\U000ac10e=ãw¸\x98\U00085d37«\x89là§úªXÝÎT\'S2\x82ÑYn\x96\x00\U000c42f1QÄ\x06ÚóûQ\U00061dc3ã©¦\xad0ÆZg\U000cdbe1<B\x1cXc\x82\x0bwÐ\x06\U0001c8bc\x8e\xa0\x9d\U0003cbfe\\\\\U00046e6b\x18\U0001ce63\x80\U00098b46&\x0bIT\U000e86c0\t\U000bb40a\U000ac8cc\U00102089梦ï¸Ó𰧎êl\U00035445\U0001e6b9¨V\U000e8ee4¢R\x1d\U0010cf54(\U00038483\x9c0\xadãÛ\x03\\Ø\x07À÷Æ"üg´©á\x86`\x05\U00016263HFì\U0010cee1\x00\U000abb80x.\U0008b9c5\U000c1de7\rø{\x1b\x9bÛ\U000b46d1EÙ¥n¾\x9e³\x85/:¹\x05\r\x98\U0008e9122\U0001b3c6æÏ\U0004d8b4Õ%ç}¹\x18\U000399ca\U000eb196<@\x1fæ\x7f\x97\x8e£Ê\x14Ú\U0004b7a1\U000edb30>Xß\x9f\U00055552\x98&\x18Å\x8fR+ì`\x97ü\U00051134\U000a5e56\x1f\x90\x18\U00051d70\U000100ff9r\x02\U000489f5"=\U0008694b\x95°\x85à#æ够\U0006a36fÁM\U0006d19dMà\U000ed40d\U000bd85e', 'password': ' '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001773s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '£å3Í\r·\x0c¬\U0005ad5c\U00042c07ç\U0003fec6#V\\Î\x0fý\U0008b01d\x91\U000f12b4ä\ná\x95å\U000d2fb99~\x10\x81\tl\U000e6d6c\U000e2cd6\x9f\U000c1d91QQaí~\x12\x83¥\U00082b35Y\x17\U000c6e98ꚖQÝ¹\x84\U000b4913q©|D\U000fe4a0ª\x8dµ\U000fb873\x8dL"\U00048083\U0004b8ce\x88ïa?\U000acc7b\U0001ee6bP\r\U000f80d5e\x95\U00048b5e\x14"·\U0005d2f7Ôe\x1ccäaV\x16\U000cc4a9\x94ç§}\'p\U0007dc28p\U00100981ãù¢ñ\U000da359\x19r\x86𫼥\x07þuô;©\x1aÂMx\U000780e1\x1e\U000f76ef½e\x92\x89\t\x8e%\x8c\x02\x7fù\U000477d2q,\x03|\x85·n¾\U0010a342\x96yýé\U00099b80\x99\U0005b15a_ðáµÎ\U0010fd55\U000d72f9ö~Û\x05¸¾GOÊ#*\U0006ec03\x9a\U0003b6e1\x92Ó2\x98tM\U000327eb\U000ad736c𡳍\U0009354c\U000cf721\x1eA¨5ôÐ\U000acd22𮦯\x8fàü\U00098bddàÑ\x0c\xadC\x13tWµ-T\x99R\x1eX/¤Ø\U000d08fb¿È¬\U000867e0¸³´\tP\x8b\x03¿\U0004d63er\U0008341f1ó\x1emÀ\U000e95bb\x11ðf\U000f26efª\x11ÝN\x89§\U00088316\x9bãâ\U0008f9b0ÚØ\x93Dq\U00047f9aûGEn©\U00105bd1\U0002ef37Ú\U001037c5\x99\rÑ\U00099b41¬\x04\x94\x19ó\x92K\U0005c2fb\x9f\x14\x0e¥\x86\x8bÔ\x00lÆËùËF\x88\x1e\x8eüºò\U000d868a\U000731d1\x12\x04\U0003aae1\x97%Â\xad\U000aec96\x17ý\x96røÆ🮙\x98µ6½\xadþ¸óñü_÷Ñõ%©Í£8²%¿ñ𠕻\U000cad10\U000e3a3e\U00047e5a\\7J7=Æ\U000e2bb7I5g\U0007ea8d\U0010bf9e\ne\U000a1f0aá¡\x81\U000af0ebE\x9e\U000834b3Â&óè\x800\x9e\U000c94cf\x97«\x83·\U0006b3b9,\U000a8266i¾\U000cd369:\x11\x0f\x07\U0010115b¼\U000ef742K\x7fJ\U00051d27#됧\U00054c7em\U0008efb0\x07²\x1c\x0eò\U0006210e\U0008bcf4{\U000f2210Í\x8d\U000bde30à\U00010f85·Cüé°í^\U00014ab7k;\U001091123\x90º\U000b3d34øµr!«ý\U000df94ad\x0e\U000d1114M_ËQ𥭥\x18\U00065576\x0btG¦E\x84L\x1d\x05\U000cc4d3\x0c¦\x8f\U0005b75c\x89\U0003979d\U000d05a6\x95%\U000e56c5Ü\U000d657fÊ\x98ª-fj@Ã.ïL𰤽\x12\x90w©|\x8c \\\U0004a1d9Å?¾×\x1f\U00015af5\U00067bb3\U000c7c17L§\x89\n\x19$\x17\U000f3e8aý\U000e662c\x9d«Foë𭫜\U00046a16\x00Ò\U00105bff\x14\x84¡\U000812ef\U000b54bf\U0005e8e1⟌Ñ%JÅ\x90ú\x9béUK`¦ﮡ(iãb\U0003e7f1êp=\x08\U000e75c2\U000c6590D\U00014d17P\U000feca0\x17sDÓéá\x88L_,¼·2\x9e¯Ëì\U0003a028Q\U000cca00üÉ)\x82\U00055ff2|ø\x181.\xa0\U00049648Ù_\x8c\U000fdc70\x94𑋶`¦°xqû;D0K\x13]Qo06\x02\U0006b2f8´4\x99Ù\U0003fa8e渗ß\x0e»\U000da231¯Kî\U000ba133ÍÔ9ú#\U000a29c7\U000ae8b4Õ\x90ßÒå~¤H𧌾\U000a7022£\xadÛ\x0bÑ/\U00084715Á\U00050008\U00062668Ë\U000b9350\x84·é"\U00102fdd\U000a994e\U0003ceabRý~\x8e(¢𨧱ÅE\x116<¬£øKv\U000c1621¶e\xad\U0009cef5©¿M\x19fK\'?Ôv\U00105e60q\x15\x80\x8eß\x04Å\U0008f183\x1a\x9b$\U000c9da6Ô\x1d\x17ý\x1a}\U000e5ed3#\U0006bdd9\r\U000f323b\x03Gä\U0006df35o0¯^¦ip×\x083¿4ÕÜ\x12\x02𛆢@\x16\x1f\x19ÿ\x0e*\x0f¨Ê¨쬓¬u\x1bõ\x04º\x19V\x97\U00105267𠿈DuU\U000cfba13ÂÁÏ\U00031565Ý\U0003c02bè\x80\U000b2389\x9d\x0b\x04xP\x94ôîE;\x0bä\x1f\xadj.\\\x83\x88\U0004a6e4ú¹\U00087d60¤\nþ\x1dvІI\x15A\x92N\x19\x8f\x1a\xad¸\x1ctb½MàR\x05ú²/É\U0003eed3\U000dab74¢\U000bb668𭰚IÍ\U000dafd2ñ\U000e1f88[\x04r𥡸Ø\x9e\U0003846e$RP\U000a2730\x0bTt\U000d74e6\U0008f47b\x9f\x16Åô3\U0004941e^\U000ca978\x12\x06\x0c\U000fcf81£\x94\U000a4e4dmë«³Ý¡\x81¡ëð-ÒáÔÇTtNïÝS\x07\U0003ba2d¿u\x97"\x8dQq$\U000b9719\U000d4703\U000a7529\x9a}\x8c\x8c\U000689c3¼893Ðþ7µzF\U000c50caÁ¢𭄓\U000c44bd_4\U0005146abK\U0009981cW\x1a\U0003a8e8´\U00010a360D\x00ù®\x90\x1c¦¿m\x02iÌ9叕8\ue3b9巛\U00047ee9åÂ@¶S\x9a\x00\x89\x81𭥑<aBU¶¨V\x8e$6\x9e°Ð\U00092782õ\x88NC<N\t\x80󠇎¸àd\U000c3c3aª2\U0001ab5d\U000ebf2bÕ붽Dd\x84õwra\U0005e0bc}Ø:\U0001e8fc\U000cf896\U00043169\U000341cf\U0002f24a\U00061fbf\U000b7f04\U000ac060\U00036af3¹f´æ\x17út\U000922dew䁎\U00093a1aHâ\x92;\x80X\x87Ì\x82\x07j±\U000d1b1avü-UÙ\U0003e8dfÉ\x0bä\x94\U000ac10e=ãw¸\x98\U00085d37«\x89là§úªXÝÎT\'S2\x82ÑYn\x96\x00\U000c42f1QÄ\x06ÚóûQ\U00061dc3ã©¦\xad0ÆZg\U000cdbe1<B\x1cXc\x82\x0bwÐ\x06\U0001c8bc\x8e\xa0\x9d\U0003cbfe\\\\\U00046e6b\x18\U0001ce63\x80\U00098b46&\x0bIT\U000e86c0\t\U000bb40a\U000ac8cc\U00102089梦ï¸Ó𰧎êl\U00035445\U0001e6b9¨V\U000e8ee4¢R\x1d\U0010cf54(\U00038483\x9c0\xadãÛ\x03\\Ø\x07À÷Æ"üg´©á\x86`\x05\U00016263HFì\U0010cee1\x00\U000abb80x.\U0008b9c5\U000c1de7\rø{\x1b\x9bÛ\U000b46d1EÙ¥n¾\x9e³\x85/:¹\x05\r\x98\U0008e9122\U0001b3c6æÏ\U0004d8b4Õ%ç}¹\x18\U000399ca\U000eb196<@\x1fæ\x7f\x97\x8e£Ê\x14Ú\U0004b7a1\U000edb30>Xß\x9f\U00055552\x98&\x18Å\x8fR+ì`\x97ü\U00051134\U000a5e56\x1f\x90\x18\U00051d70\U000100ff9r\x02\U000489f5"=\U0008694b\x95°\x85à#æ够\U0006a36fÁM\U0006d19dMà\U000ed40d\U000bd85e', 'password': ' '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001845s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '£å3Í\r·\x0c¬\U0005ad5c\U00042c07ç\U0003fec6#V\\Î\x0fý\U0008b01d\x91\U000f12b4ä\ná\x95å\U000d2fb99~\x10\x81\tl\U000e6d6c\U000e2cd6\x9f\U000c1d91QQaí~\x12\x83¥\U00082b35Y\x17\U000c6e98ꚖQÝ¹\x84\U000b4913q©|D\U000fe4a0ª\x8dµ\U000fb873\x8dL"\U00048083\U0004b8ce\x88ïa?\U000acc7b\U0001ee6bP\r\U000f80d5e\x95\U00048b5e\x14"·\U0005d2f7Ôe\x1ccäaV\x16\U000cc4a9\x94ç§}\'p\U0007dc28p\U00100981ãù¢ñ\U000da359\x19r\x86𫼥\x07þuô;©\x1aÂMx\U000780e1\x1e\U000f76ef½e\x92\x89\t\x8e%\x8c\x02\x7fù\U000477d2q,\x03|\x85·n¾\U0010a342\x96yýé\U00099b80\x99\U0005b15a_ðáµÎ\U0010fd55\U000d72f9ö~Û\x05¸¾GOÊ#*\U0006ec03\x9a\U0003b6e1\x92Ó2\x98tM\U000327eb\U000ad736c𡳍\U0009354c\U000cf721\x1eA¨5ôÐ\U000acd22𮦯\x8fàü\U00098bddàÑ\x0c\xadC\x13tWµ-T\x99R\x1eX/¤Ø\U000d08fb¿È¬\U000867e0¸³´\tP\x8b\x03¿\U0004d63er\U0008341f1ó\x1emÀ\U000e95bb\x11ðf\U000f26efª\x11ÝN\x89§\U00088316\x9bãâ\U0008f9b0ÚØ\x93Dq\U00047f9aûGEn©\U00105bd1\U0002ef37Ú\U001037c5\x99\rÑ\U00099b41¬\x04\x94\x19ó\x92K\U0005c2fb\x9f\x14\x0e¥\x86\x8bÔ\x00lÆËùËF\x88\x1e\x8eüºò\U000d868a\U000731d1\x12\x04\U0003aae1\x97%Â\xad\U000aec96\x17ý\x96røÆ🮙\x98µ0½\xadþ¸óñü_÷Ñõ%©Í£8²%¿ñ𠕻\U000cad10\U000e3a3e\U00047e5a\\7J7=Æ\U000e2bb7I5g\U0007ea8d\U0010bf9e\ne\U000a1f0aá¡\x81\U000af0ebE\x9e\U000834b3Â&óè\x800\x9e\U000c94cf\x97«\x83·\U0006b3b9,\U000a8266i¾\U000cd369:\x11\x0f\x07\U0010115b¼\U000ef742K\x7fJ\U00051d27#됧\U00054c7em\U0008efb0\x07²\x1c\x0eò\U0006210e\U0008bcf4{\U000f2210Í\x8d\U000bde30à\U00010f85·Cüé°í^\U00014ab7k;\U001091123\x90º\U000b3d34øµr!«ý\U000df94ad\x0e\U000d1114M_ËQ𥭥\x18\U00065576\x0btG¦E\x84L\x1d\x05\U000cc4d3\x0c¦\x8f\U0005b75c\x89\U0003979d\U000d05a6\x95%\U000e56c5Ü\U000d657fÊ\x98ª-fj@Ã.ïL𰤽\x12\x90w©|\x8c \\\U0004a1d9Å?¾×\x1f\U00015af5\U00067bb3\U000c7c17L§\x89\n\x19$\x17\U000f3e8aý\U000e662c\x9d«Foë𭫜\U00046a16\x00Ò\U00105bff\x14\x84¡\U000812ef\U000b54bf\U0005e8e1⟌Ñ%JÅ\x90ú\x9béUK`¦ﮡ(iãb\U0003e7f1êp=\x08\U000e75c2\U000c6590D\U00014d17P\U000feca0\x17sDÓéá\x88L_,¼·2\x9e¯Ëì\U0003a028Q\U000cca00üÉ)\x82\U00055ff2|ø\x181.\xa0\U00049648Ù_\x8c\U000fdc70\x94𑋶`¦°xqû;D0K\x13]Qo06\x02\U0006b2f8´4\x99Ù\U0003fa8e渗ß\x0e»\U000da231¯Kî\U000ba133ÍÔ9ú#\U000a29c7\U000ae8b4Õ\x90ßÒå~¤H𧌾\U000a7022£\xadÛ\x0bÑ/\U00084715Á\U00050008\U00062668Ë\U000b9350\x84·é"\U00102fdd\U000a994e\U0003ceabRý~\x8e(¢𨧱ÅE\x116<¬£øKv\U000c1621¶e\xad\U0009cef5©¿M\x19fK\'?Ôv\U00105e60q\x15\x80\x8eß\x04Å\U0008f183\x1a\x9b$\U000c9da6Ô\x1d\x17ý\x1a}\U000e5ed3#\U0006bdd9\r\U000f323b\x03Gä\U0006df35o0¯^¦ip×\x083¿4ÕÜ\x12\x02𛆢@\x16\x1f\x19ÿ\x0e*\x0f¨Ê¨쬓¬u\x1bõ\x04º\x19V\x97\U00105267𠿈DuU\U000cfba13ÂÁÏ\U00031565Ý\U0003c02bè\x80\U000b2389\x9d\x0b\x04xP\x94ôîE;\x0bä\x1f\xadj.\\\x83\x88\U0004a6e4ú¹\U00087d60¤\nþ\x1dvІI\x15A\x92N\x19\x8f\x1a\xad¸\x1ctb½MàR\x05ú²/É\U0003eed3\U000dab74¢\U000bb668𭰚IÍ\U000dafd2ñ\U000e1f88[\x04r𥡸Ø\x9e\U0003846e$RP\U000a2730\x0bTt\U000d74e6\U0008f47b\x9f\x16Åô3\U0004941e^\U000ca978\x12\x06\x0c\U000fcf81£\x94\U000a4e4dmë«³Ý¡\x81¡ëð-ÒáÔÇTtNïÝS\x07\U0003ba2d¿u\x97"\x8dQq$\U000b9719\U000d4703\U000a7529\x9a}\x8c\x8c\U000689c3¼893Ðþ7µzF\U000c50caÁ¢𭄓\U000c44bd_4\U0005146abK\U0009981cW\x1a\U0003a8e8´\U00010a360D\x00ù®\x90\x1c¦¿m\x02iÌ9叕8\ue3b9巛\U00047ee9åÂ@¶S\x9a\x00\x89\x81𭥑<aBU¶¨V\x8e$6\x9e°Ð\U00092782õ\x88NC<N\t\x80󠇎¸àd\U000c3c3aª2\U0001ab5d\U000ebf2bÕ붽Dd\x84õwra\U0005e0bc}Ø:\U0001e8fc\U000cf896\U00043169\U000341cf\U0002f24a\U00061fbf\U000b7f04\U000ac060\U00036af3¹f´æ\x17út\U000922dew䁎\U00093a1aHâ\x92;\x80X\x87Ì\x82\x07j±\U000d1b1avü-UÙ\U0003e8dfÉ\x0bä\x94\U000ac10e=ãw¸\x98\U00085d37«\x89là§úªXÝÎT\'S2\x82ÑYn\x96\x00\U000c42f1QÄ\x06ÚóûQ\U00061dc3ã©¦\xad0ÆZg\U000cdbe1<B\x1cXc\x82\x0bwÐ\x06\U0001c8bc\x8e\xa0\x9d\U0003cbfe\\\\\U00046e6b\x18\U0001ce63\x80\U00098b46&\x0bIT\U000e86c0\t\U000bb40a\U000ac8cc\U00102089梦ï¸Ó𰧎êl\U00035445\U0001e6b9¨V\U000e8ee4¢R\x1d\U0010cf54(\U00038483\x9c0\xadãÛ\x03\\Ø\x07À÷Æ"üg´©á\x86`\x05\U00016263HFì\U0010cee1\x00\U000abb80x.\U0008b9c5\U000c1de7\rø{\x1b\x9bÛ\U000b46d1EÙ¥n¾\x9e³\x85/:¹\x05\r\x98\U0008e9122\U0001b3c6æÏ\U0004d8b4Õ%ç}¹\x18\U000399ca\U000eb196<@\x1fæ\x7f\x97\x8e£Ê\x14Ú\U0004b7a1\U000edb30>Xß\x9f\U00055552\x98&\x18Å\x8fR+ì`\x97ü\U00051134\U000a5e56\x1f\x90\x18\U00051d70\U000100ff9r\x02\U000489f5"=\U0008694b\x95°\x85à#æ够\U0006a36fÁM\U0006d19dMà\U000ed40d\U000bd85e', 'password': ' '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001834s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '£å3Í\r·\x0c¬\U0005ad5c\U00042c07ç\U0003fec6#V\\Î\x0fý\U0008b01d\x91\U000f12b4ä\ná\x95å\U000d2fb99~\x10\x81\tl\U000e6d6c\U000e2cd6\x9f\U000c1d91QQaí~\x12\x83¥\U00082b35Y\x17\U000c6e98ꚖQÝ¹\x84\U000b4913q©|D\U000fe4a0ª\x8dµ\U000fb873\x8dL"\U00048083\U0004b8ce\x88ïa?\U000acc7b\U0001ee6bP\r\U000f80d5e\x95\U00048b5e\x14"·\U0005d2f7Ôe\x1ccäaV\x16\U000cc4a9\x94ç§}\'p\U0007dc28p\U00100981ãù¢ñ\U000da359\x19r\x86𫼥\x07þuô;©\x1aÂMx\U000780e1\x1e\U000f76ef½e\x92\x89\t\x8e%\x8c\x02\x7fù\U000477d2q,\x03|\x85·n¾\U0010a342\x96yýé\U00099b80\x99\U0005b15a_ðáµÎ\U0010fd55\U000d72f9ö~Û\x05¸¾GOÊ#*\U0006ec03\x9a\U0003b6e1\x92Ó2\x98tM\U000327eb\U000ad736c𡳍\U0009354c\U000cf721\x1eA¨5ôÐ\U000acd22𮦯\x8fàü\U00098bddàÑ\x0c\xadC\x13tWµ-T\x99R\x1eX/¤Ø\U000d08fb¿È¬\U000867e0¸³´\tP\x8b\x03¿\U0004d63er\U0008341f1ó\x1emÀ\U000e95bb\x11ðf\U000f26efª\x11ÝN\x89§\U00088316\x9bãâ\U0008f9b0ÚØ\x93Dq\U00047f9aûGEn©\U00105bd1\U0002ef37Ú\U001037c5\x99\rÑ\U00099b41¬\x04\x94\x19ó\x92K\U0005c2fb\x9f\x14\x0e¥\x86\x8bÔ\x00lÆËùËF\x88\x1e\x8eüºò\U000d868a\U000731d1\x12\x04\U0003aae1\x97%Â\xad\U000aec96\x17ý\x96røÆ🮙\x98µ0½\xadþ¸óñü_÷Ñõ%©Í£8²%¿ñ𠕻\U000cad10\U000e3a3e\U00047e5a\\7J7=Æ\U000e2bb7I5g\U0007ea8d\U0010bf9e\ne\U000a1f0aá¡\x81\U000af0ebE\x9e\U000834b3Â&óè\x800\x9e\U000c94cf\x97«\x83·\U0006b3b9,\U000a8266i¾\U000cd369:\x11\x0f\x07\U0010115b¼\U000ef742K\x7fJ\U00051d27#됧\U00054c7em\U0008efb0\x07²\x1c\x0eò\U0006210e\U0008bcf4{\U000f2210Í\x8d\U000bde30à\U00010f85·Cüé°í^\U00014ab7k;\U001091123\x90º\U000b3d34øµr!«ý\U000df94ad\x0e\U000d1114M_ËQ𥭥\x18\U00065576\x0btG¦E\x84L\x1d\x05\U000cc4d3\x0c¦7\U0005b75c\x89\U0003979d\U000d05a6\x95%\U000e56c5Ü\U000d657fÊ\x98ª-fj@Ã.ïL𰤽\x12\x90w©|\x8c \\\U0004a1d9Å?¾×\x1f\U00015af5\U00067bb3\U000c7c17L§\x89\n\x19$\x17\U000f3e8aý\U000e662c\x9d«Foë𭫜\U00046a16\x00Ò\U00105bff\x14\x84¡\U000812ef\U000b54bf\U0005e8e1⟌Ñ%JÅ\x90ú\x9béUK`¦ﮡ(iãb\U0003e7f1êp=\x08\U000e75c2\U000c6590D\U00014d17P\U000feca0\x17sDÓéá\x88L_,¼·2\x9e¯Ëì\U0003a028Q\U000cca00üÉ)\x82\U00055ff2|ø\x181.\xa0\U00049648Ù_\x8c\U000fdc70\x94𑋶`¦°xqû;D0K\x13]Qo06\x02\U0006b2f8´4\x99Ù\U0003fa8e渗ß\x0e»\U000da231¯Kî\U000ba133ÍÔ9ú#\U000a29c7\U000ae8b4Õ\x90ßÒå~¤H𧌾\U000a7022£\xadÛ\x0bÑ/\U00084715Á\U00050008\U00062668Ë\U000b9350\x84·é"\U00102fdd\U000a994e\U0003ceabRý~\x8e(¢𨧱ÅE\x116<¬£øKv\U000c1621¶e\xad\U0009cef5©¿M\x19fK\'?Ôv\U00105e60q\x15\x80\x8eß\x04Å\U0008f183\x1a\x9b$\U000c9da6Ô\x1d\x17ý\x1a}\U000e5ed3#\U0006bdd9\r\U000f323b\x03Gä\U0006df35o0¯^¦ip×\x083¿4ÕÜ\x12\x02𛆢@\x16\x1f\x19ÿ\x0e*\x0f¨Ê¨쬓¬u\x1bõ\x04º\x19V\x97\U00105267𠿈DuU\U000cfba13ÂÁÏ\U00031565Ý\U0003c02bè\x80\U000b2389\x9d\x0b\x04xP\x94ôîE;\x0bä\x1f\xadj.\\\x83\x88\U0004a6e4ú¹\U00087d60¤\nþ\x1dvІI\x15A\x92N\x19\x8f\x1a\xad¸\x1ctb½MàR\x05ú²/É\U0003eed3\U000dab74¢\U000bb668𭰚IÍ\U000dafd2ñ\U000e1f88[\x04r𥡸Ø\x9e\U0003846e$RP\U000a2730\x0bTt\U000d74e6\U0008f47b\x9f\x16Åô3\U0004941e^\U000ca978\x12\x06\x0c\U000fcf81£\x94\U000a4e4dmë«³Ý¡\x81¡ëð-ÒáÔÇTtNïÝS\x07\U0003ba2d¿u\x97"\x8dQq$\U000b9719\U000d4703\U000a7529\x9a}\x8c\x8c\U000689c3¼893Ðþ7µzF\U000c50caÁ¢𭄓\U000c44bd_4\U0005146abK\U0009981cW\x1a\U0003a8e8´\U00010a360D\x00ù®\x90\x1c¦¿m\x02iÌ9叕8\ue3b9巛\U00047ee9åÂ@¶S\x9a\x00\x89\x81𭥑<aBU¶¨V\x8e$6\x9e°Ð\U00092782õ\x88NC<N\t\x80󠇎¸àd\U000c3c3aª2\U0001ab5d\U000ebf2bÕ붽Dd\x84õwra\U0005e0bc}Ø:\U0001e8fc\U000cf896\U00043169\U000341cf\U0002f24a\U00061fbf\U000b7f04\U000ac060\U00036af3¹f´æ\x17út\U000922dew䁎\U00093a1aHâ\x92;\x80X\x87Ì\x82\x07j±\U000d1b1avü-UÙ\U0003e8dfÉ\x0bä\x94\U000ac10e=ãw¸\x98\U00085d37«\x89là§úªXÝÎT\'S2\x82ÑYn\x96\x00\U000c42f1QÄ\x06ÚóûQ\U00061dc3ã©¦\xad0ÆZg\U000cdbe1<B\x1cXc\x82\x0bwÐ\x06\U0001c8bc\x8e\xa0\x9d\U0003cbfe\\\\\U00046e6b\x18\U0001ce63\x80\U00098b46&\x0bIT\U000e86c0\t\U000bb40a\U000ac8cc\U00102089梦ï¸Ó𰧎êl\U00035445\U0001e6b9¨V\U000e8ee4¢R\x1d\U0010cf54(\U00038483\x9c0\xadãÛ\x03\\Ø\x07À÷Æ"üg´©á\x86`\x05\U00016263HFì\U0010cee1\x00\U000abb80x.\U0008b9c5\U000c1de7\rø{\x1b\x9bÛ\U000b46d1EÙ¥n¾\x9e³\x85/:¹\x05\r\x98\U0008e9122\U0001b3c6æÏ\U0004d8b4Õ%ç}¹\x18\U000399ca\U000eb196<@\x1fæ\x7f\x97\x8e£Ê\x14Ú\U0004b7a1\U000edb30>Xß\x9f\U00055552\x98&\x18Å\x8fR+ì`\x97ü\U00051134\U000a5e56\x1f\x90\x18\U00051d70\U000100ff9r\x02\U000489f5"=\U0008694b\x95°\x85à#æ够\U0006a36fÁM\U0006d19dMà\U000ed40d\U000bd85e', 'password': ' '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001716s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '£å3Í\r·\x0c¬\U0005ad5c\U00042c07ç\U0003fec6#V\\Î\x0fý\U0008b01d\x91\U000f12b4ä\ná\x95å\U000d2fb99~\x10\x81\tl\U000e6d6c\U000e2cd6\x9f\U000c1d91QQaí~\x12\x83¥\U00082b35Y\x17\U000c6e98ꚖQÝ¹\x84\U000b4913q©|D\U000fe4a0ª\x8dµ\U000fb873\x8dL"\U00048083\U0004b8ce\x88ïa?\U000acc7b\U0001ee6bP\r\U000f80d5e\x95\U00048b5e\x14"·\U0005d2f7Ôe\x1ccäaV\x16\U000cc4a9\x94ç§}\'p\U0007dc28p\U00100981ãù¢ñ\U000da359\x19r\x86𫼥\x07þuô;©\x1aÂMx\U000780e1\x1e\U000f76ef½e\x92\x89\t\x8e%\x8c\x02\x7fù\U000477d2q,\x03|\x85·n¾\U0010a342\x96yýé\U00099b80\x99\U0005b15a_ðáµÎ\U0010fd55\U000d72f9ö~Û\x05¸¾GOÊ#*\U0006ec03\x9a\U0003b6e1\x92Ó2\x98tM\U000327eb\U000ad736c𡳍\U0009354c\U000cf721\x1eA¨5ôÐ\U000acd22𮦯\x8fàü\U00098bddàÑ\x0c\xadC\x13tWµ-T\x99R\x1eX/¤Ø\U000d08fb¿È¬\U000867e0¸³´\tP\x8b\x03¿\U0004d63er\U0008341f1ó\x1emÀ\U000e95bb\x11ðf\U000f26efª\x11ÝN\x89§\U00088316\x9bãâ\U0008f9b0ÚØ\x93Dq\U00047f9aûGEn©\U00105bd1\U0002ef37Ú\U001037c5\x99\rÑ\U00099b41¬\x04\x94\x19ó\x92K\U0005c2fb\x9f\x14\x0e¥\x86\x8bÔ\x00lÆËùËF\x88\x1e\x8eüºò\U000d868a\U000731d1\x12\x04\U0003aae1\x97%Â\xad\U000aec96\x17ý\x96røÆ🮙\x98µ0½\xadþ¸óñü_÷Ñõ%©Í£8²%¿ñ𠕻\U000cad10\U000e3a3e\U00047e5a\\7J7=Æ\U000e2bb7I5g\U0007ea8d\U0010bf9e\ne\U000a1f0aá¡\x81\U000af0ebE\x9e\U000834b3Â&óè\x800\x9e\U000c94cf\x97«\x83·\U0006b3b9,\U000a8266i¾\U000cd369:\x11\x0f\x07\U0010115b¼\U000ef742K\x7fJ\U00051d27#됧\U00054c7em\U0008efb0\x07²\x1c\x0eò\U0006210e\U0008bcf4{\U000f2210Í\x8d\U000bde30à\U00010f85·Cüé°í^\U00014ab7k;\U001091123\x90º\U000b3d34øµr!«ý\U000df94ad\x0e\U000d1114M_ËQ𥭥\x18\U00065576\x0btG¦E\x84L\x1d\x05\U000cc4d3\x0c¦7\U0005b75c\x89\U0003979d\U000d05a6\x95%\U000e56c5Ü\U000d657fÊ\x98ª-fj@Ã.ïL𰤽\x12\x90w©|\x8c \\\U0004a1d9Å?¾×\x1f\U00015af5\U00067bb3\U000c7c17L§\x89\n\x19$\x17\U000f3e8aý\U000e662c\x9d«Foë𭫜\U00046a16\x00Ò\U00105bff\x14\x84¡\U000812ef\U000b54bf\U0005e8e1⟌Ñ%JÅ\x90ú\x9béUK`¦ﮡ(iãb\U0003e7f1êp=\x08\U000e75c2\U000c6590D\U00014d17P\U000feca0\x17sDÓéá\x88L_,¼·2\x9e¯Ëì\U0003a028Q\U000cca00üÉ)\x82\U00055ff2|ø\x181.\xa0\U00049648Ù_\x8c\U000fdc70\x94𑋶`¦°xqû;D0K\x13]Qo06\x02\U0006b2f8´4\x99Ù\U0003fa8e渗ß\x0e»\U000da231¯Kî\U000ba133ÍÔ9ú#\U000a29c7\U000ae8b4Õ\x90ßÒå~¤H𧌾\U000a7022£\xadÛ\x0bÑ/\U00084715Á\U00050008\U00062668Ë\U000b9350\x84·é"\U00102fdd\U000a994e\U0003ceabRý~\x8e(¢𨧱ÅE\x116<¬£øKv\U000c1621¶e\xad\U0009cef5©¿M\x19fK\'?Ôv\U00105e60q\x15\x80\x8eß\x04Å\U0008f183\x1a\x9b$\U000c9da6Ô\x1d\x17ý\x1a}\U000e5ed3#\U0006bdd9\r\U000f323b\x03Gä\U0006df35o0¯^¦ip×\x083¿4ÕÜ\x12\x02𛆢@\x16\x1f\x19ÿ\x0e*\x0f¨Ê¨쬓¬u\x1bõ\x04º\x19V\x97\U00105267𠿈DuU\U000cfba13ÂÁÏ\U00031565Ý\U0003c02bè\x80\U000b2389\x9d\x0b\x04xP\x94ôîE;\x0bä\x1f\xadj.\\\x83\x88\U0004a6e4ú¹\U00087d60¤\nþ\x1dvІI\x15A\x92N\x19\x8f\x1a\xad¸\x1ctb½MàR\x05ú²/É\U0003eed3\U000dab74¢\U000bb668𭰚IÍ\U000dafd2ñ\U000e1f88[\x04r𥡸Ø\x9e\U0003846e$RP\U000a2730\x0bTt\U000d74e6\U0008f47b\x9f\x16Åô3\U0004941e^\U000ca978\x12\x06\x0c\U000fcf81£\x94\U000a4e4dmë«³Ý¡\x81¡ëð-ÒáÔÇTtNïÝS\x07\U0003ba2d¿u\x97"\x8dQq$\U000b9719\U000d4703\U000a7529\x9a}\x8c\x8c\U000689c3¼893Ðþ7µzF\U000c50caÁ¢𭄓\U000c44bd_4\U0005146abK\U0009981cW\x1a\U0003a8e8´\U00010a360D\x00ù®\x90\x1c¦¿m\x02iÌ9叕8\ue3b9巛\U00047ee9åÂ@¶S\x9a\x00\x89\x81𭥑<aBU¶¨V\x8e$6\x9e°Ð\U00092782õ\x88NC<N\t\x80󠇎¸àd\U000c3c3aª2\U0001ab5d\U000ebf2bÕ붽Dd\x84õwra\U0005e0bc}Ø:\U0001e8fc\U000cf896\U00043169\U000341cf\U0002f24a\U00061fbf\U000b7f04\U000ac060\U00036af3¹f´æ\x17út\U000922dew䁎\U00093a1aHâ\x92;\x80X\x87Ì\x82\x07j±\U000d1b1avü-UÙ\U0003e8dfÉ\x0bä\x94\U000ac10e=ãw¸\x98\U00085d37«\x89là§úªXÝÎT\'S2\x82ÑYn\x96\x00\U000c42f1QÄ\x06ÚóûQ\U00061dc3ã©¦\xad0ÆZg\U000cdbe1<B\x1cXc\x82\x0bwÐ\x06\U0001c8bc\x8e\xa0\x9d\U0003cbfe\\\\\U00046e6b\x18\U0001ce63\x80\U00098b46&\x0bIT\U000e86c0\t\U000bb40a\U000ac8ccEtã@.g06513\x0cèÑ~\x15\U0001e6b9¨V\U000e8ee4¢R\x1d\U0010cf54(\U00038483\x9c0\xadãÛ\x03\\Ø\x07À÷Æ"üg´©á\x86`\x05\U00016263HFì\U0010cee1\x00\U000abb80x.\U0008b9c5\U000c1de7\rø{\x1b\x9bÛ\U000b46d1EÙ¥n¾\x9e³\x85/:¹\x05\r\x98\U0008e9122\U0001b3c6æÏ\U0004d8b4Õ%ç}¹\x18\U000399ca\U000eb196<@\x1fæ\x7f\x97\x8e£Ê\x14Ú\U0004b7a1\U000edb30>Xß\x9f\U00055552\x98&\x18Å\x8fR+ì`\x97ü\U00051134\U000a5e56\x1f\x90\x18\U00051d70\U000100ff9r\x02\U000489f5"=\U0008694b\x95°\x85à#æ够\U0006a36fÁM\U0006d19dMà\U000ed40d\U000bd85e', 'password': ' '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001886s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '£å3Í\r·\x0c¬\U0005ad5c\U00042c07ç\U0003fec6#V\\Î\x0fý\U0008b01d\x91\U000f12b4ä\ná\x95å\U000d2fb99~\x10\x81\tl\U000e6d6c\U000e2cd6\x9f\U000c1d91QQaí~\x12\x83¥\U00082b35Y\x17\U000c6e98ꚖQÝ¹\x84\U000b4913q©|D\U000fe4a0ª\x8dµ\U000fb873\x8dL"\U00048083\U0004b8ce\x88ïa?\U000acc7b\U0001ee6bP\r\U000f80d5e\x95\U00048b5e\x14"·\U0005d2f7Ôe\x1ccäaV\x16\U000cc4a9\x94ç§}\'p\U0007dc28p\U00100981ãù¢ñ\U000da359\x19r\x86𫼥\x07þuô;©\x1aÂMx\U000780e1\x1e\U000f76ef½e\x92\x89\t\x8e%\x8c\x02\x7fù\U000477d2q,\x03|\x85·n¾\U0010a342\x96yýé\U00099b80\x99\U0005b15a_ðáµÎ\U0010fd55\U000d72f9ö~Û\x05¸¾GOÊ#*\U0006ec03\x9a\U0003b6e1\x92Ó2\x98tM\U000327eb\U000ad736c𡳍\U0009354c\U000cf721\x1eA¨5ôÐ\U000acd22𮦯\x8fàü\U00098bddàÑ\x0c\xadC\x13tWµ-T\x99R\x1eX/¤Ø\U000d08fb¿È¬\U000867e0¸³´\tP\x8b\x03¿\U0004d63er\U0008341f1ó\x1emÀ\U000e95bb\x11ðf\U000f26efª\x11ÝN\x89§\U00088316\x9bãâ\U0008f9b0ÚØ\x93Dq\U00047f9aûGEn©\U00105bd1\U0002ef37Ú\U001037c5\x99\rÑ\U00099b41¬\x04\x94\x19ó\x92K\U0005c2fb\x9f\x14\x0e¥\x86\x8bÔ\x00lÆËùËF\x88\x1e\x8eüºò\U000d868a\U000731d1\x12\x04\U0003aae1\x97%Â\xad\U000aec96\x17ý\x96røÆ🮙\x98µ0½\xadþ¸óñü_÷Ñõ%©Í£8²%¿ñ𠕻\U000cad10\U000e3a3e\U00047e5a\\7J7=Æ\U000e2bb7I5g\U0007ea8d\U0010bf9e\ne\U000a1f0aá¡\x81\U000af0ebE\x9e\U000834b3Â&óè\x800\x9e\U000c94cf\x97«\x83·\U0006b3b9,\U000a8266i¾\U000cd369:\x11\x0f\x07\U0010115b¼\U000ef742K\x7fJ\U00051d27#됧\U00054c7em\U0008efb0\x07²\x1c\x0eò\U0006210e\U0008bcf4{\U000f2210Í\x8d\U000bde30à\U00010f85·Cüé°í^\U00014ab7k;\U001091123\x90º\U000b3d34øµr!«ý\U000df94ad\x0e\U000d1114M_ËQ𥭥\x18\U00065576\x0btG¦E\x84L\x1d\x05\U000cc4d3\x0c¦7\U0005b75c\x89\U0003979d\U000d05a6\x95%\U000e56c5Ü\U000d657fÊ\x98ª-fj@Ã.ïL𰤽\x12\x90w©|\x8c \\\U0004a1d9Å?¾×\x1f\U00015af5\U00067bb3\U000c7c17L§\x89\n\x19$\x17\U000f3e8aý\U000e662c\x9d«Foë𭫜\U00046a16\x00Ò\U00105bff\x14\x84¡\U000812ef\U000b54bf\U0005e8e1⟌Ñ%JÅ\x90ú\x9béUK`¦ﮡ(iãb\U0003e7f1êp=\x08\U000e75c2\U000c6590D\U00014d17P\U000feca0\x17sDÓéá\x88L_,¼·2\x9e¯Ëì\U0003a028Q\U000cca00üÉ)\x82\U00055ff2|ø\x181.\xa0\U00049648Ù_\x8c\U000fdc70\x94𑋶`¦°xqû;D0K\x13]Qo06\x02\U0006b2f8´4\x99Ù\U0003fa8e渗ß\x0e»\U000da231¯Kî\U000ba133ÍÔ9ú#\U000a29c7\U000ae8b4Õ\x90ßÒå~¤H𧌾\U000a7022£\xadÛ\x0bÑ/\U00084715Á\U00050008\U00062668Ë\U000b9350\x84·é"\U00102fdd\U000a994e\U0003ceabRý~\x8e(¢𨧱ÅE\x116<¬£øKv\U000c1621¶e\xad\U0009cef5©¿M\x19fK\'?Ôv\U00105e60q\x15\x80\x8eß\x04Å\U0008f183\x1a\x9b$\U000c9da6Ô\x1d\x17ý\x1a}\U000e5ed3#\U0006bdd9\r\U000f323b\x03Gä\U0006df35o0¯^¦ip×\x083¿4ÕÜ\x12\x02𛆢@\x16\x1f\x19ÿ\x0e*\x0f¨Ê¨쬓¬u\x1bõ\x04º\x19V\x97\U00105267𠿈DuU\U000cfba13ÂÁÏ\U00031565Ý\U0003c02bè\x80\U000b2389\x9d\x0b\x04xP\x94ôîE;\x0bä\x1f\xadj.\\\x83\x88\U0004a6e4ú¹\U00087d60¤\nþ\x1dvІI\x15A\x92N\x19\x8f\x1a\xad¸\x1ctb½MàR\x05ú²/É\U0003eed3\U000dab74¢\U000bb668𭰚IÍ\U000dafd2ñ\U000e1f88[\x04r𥡸Ø\x9e\U0003846e$RP\U000a2730\x0bTt\U000d74e6\U0008f47b\x9f\x16Åô3\U0004941e^\U000ca978\x12\x06\x0c\U000fcf81£\x94\U000a4e4dmë«³Ý¡\x81¡ëð-ÒáÔÇTtNïÝS\x07\U0003ba2d¿u\x97"\x8dQq$\U000b9719\U000d4703\U000a7529\x9a}\x8c\x8c\U000689c3¼893Ðþ7µzF\U000c50caÁ¢𭄓\U000c44bd_4\U0005146abK\U0009981cW\x1a\U0003a8e8´\U00010a360D\x00ù®\x90\x1c¦¿m\x02iÌ9叕8\ue3b9巛\U00047ee9åÂ@¶S\x9a\x00\x89\x81𭥑<aBU¶¨V\x8e$w\x9e°Ð\U00092782õ\x88NC<N\t\x80󠇎¸àd\U000c3c3aª2\U0001ab5d\U000ebf2bÕ붽Dd\x84õwra\U0005e0bc}Ø:\U0001e8fc\U000cf896\U00043169\U000341cf\U0002f24a\U00061fbf\U000b7f04\U000ac060\U00036af3¹f´æ\x17út\U000922dew䁎\U00093a1aHâ\x92;\x80X\x87Ì\x82\x07j±\U000d1b1avü-UÙ\U0003e8dfÉ\x0bä\x94\U000ac10e=ãw¸\x98\U00085d37«\x89là§úªXÝÎT\'S2\x82ÑYn\x96\x00\U000c42f1QÄ\x06ÚóûQ\U00061dc3ã©¦\xad0ÆZg\U000cdbe1<B\x1cXc\x82\x0bwÐ\x06\U0001c8bc\x8e\xa0\x9d\U0003cbfe\\\\\U00046e6b\x18\U0001ce63\x80\U00098b46&\x0bIT\U000e86c0\t\U000bb40a\U000ac8ccEtã@.g06513\x0cèÑ~\x15\U0001e6b9¨V\U000e8ee4¢R\x1d\U0010cf54(\U00038483\x9c0\xadãÛ\x03\\Ø\x07À÷Æ"üg´©á\x86`\x05\U00016263HFì\U0010cee1\x00\U000abb80x.\U0008b9c5\U000c1de7\rø{\x1b\x9bÛ\U000b46d1EÙ¥n¾\x9e³\x85/:¹\x05\r\x98\U0008e9122\U0001b3c6æÏ\U0004d8b4Õ%ç}¹\x18\U000399ca\U000eb196<@\x1fæ\x7f\x97\x8e£Ê\x14Ú\U0004b7a1\U000edb30>Xß\x9f\U00055552\x98&\x18Å\x8fR+ì`\x97ü\U00051134\U000a5e56\x1f\x90\x18\U00051d70\U000100ff9r\x02\U000489f5"=\U0008694b\x95°\x85à#æ够\U0006a36fÁM\U0006d19dMà\U000ed40d\U000bd85e', 'password': ' '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001759s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 359
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True, 'password': -95106942353737891001704287625762805083}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -95106942353737891001704287625762805083, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001732s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 330
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True, 'password': 1200418378}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 1200418378, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001654s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 321
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 0, 'password': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001936s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 321
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 1, 'password': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 1, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001661s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 323
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': True, 'password': 252}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 252, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001711s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '../../etc/passwd', 'password': ''}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001703s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '../../etc/passwd', 'password': -8751}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -8751, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001772s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 322
+2025-09-19 00:37:59 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': -385, 'password': []}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': -385, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001733s
+====================================================================================================
+2025-09-19 00:37:59 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 325
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': -385, 'password': 16766}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': -385, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 16766, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.00165s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 324
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': -385, 'password': -385}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': -385, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -385, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001874s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 329
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': -385, 'password': ['3Cqø']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': -385, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': ['3Cqø'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001725s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 397
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': -385, 'password': ['3Cqøçù\x12Sá', '\x1e\x91', '\U000ef6cb', '\x9d\x98Ð\U00035818ñ/µ±ç¬', '', '\x98', 'ò']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': -385, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': ['3Cqøçù\x12Sá', '\x1e\x91', '\U000ef6cb', '\x9d\x98Ð\U00035818ñ/µ±ç¬', '', '\x98', 'ò'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001641s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': False, 'password': ''}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': False, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001637s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '     ', 'password': ' '}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001542s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 167
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '', 'password': -25}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': -25, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.002087s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'Í\xa0\x06ð\U00019ccc\U0004a908ÓQn¦ø:§6\x95uO\x19\x03xö\U000eb53d\'ýÙIOÔ\x7f¢!:©ñÅ¸\x1b\U00015465NH\U0002f68bf\x7fîau\x15\x05\U000a4495wvR§S\U00039452\x01§\U0008be81¡\x8fc8t\x8eé#s𞠶\x7fì\U000f2826¬.ª\U000ebd10\U000986a4;\x02\U0010545a%\U000560fb\x84Ñ÷Ñ\x8fp\x0f\U000de08b\U000be4f8ÍW\x95\U000e7b08\x80\U0005edd7\U000bdbb0@\U000d932d\U000d7960ß9\x0bª5\x1fÈôL5Ý;w1ï\x13W\U000baa13}ü:Ä뚄\U0007ca3fႉÁÜP\x08¾\x17âP\x86}ß8É\x96¦$YDT\U000a5f54L-ÍB\x98\x84MRPm\U000ddac2éã\x92î5*èÀ\x19\U000edfc3\U000f2daa{\x02\x11?\x1fz¸\U000803c5ÀH\U000a055aÎ᧮Û\x1d_\U00080610{çð\x83b!}\x08\x1fü¸\U0001ab7f)\x1e\x9e£\x9f\x80\U00048f8d\U000974fdm\tø\xa0÷\n\x1a\x9cúç\x19ë\U00079e09\x9e¦>n\U000d220aË*\x8cm£\U000c47e7\U000437f8z;E\x00d\\\x95ÌÆ16\x7ft\U00064146¸ÇÄ\x188\x85(\U0010e089\U000d7ef77ó\U000e50af².Ì\x16\x83¹]¡¾å\xa0\U0008648c訤\U000d0026N\U00018d93Ù\x00#m÷\nÎ\x08\U00074bc6Y\x91\x85¤³\U00041943\x06\x9b\U00080309\x8e\x1cR\xa0\x90\U000dab3d\U00090876\U000acfa5X$𧅮𩇕à4£K\U000a31f4\x94𒓧\U0001679d±ºðè ÄHùú\x88\x0cúáNµZ\x1bö¯«R\x07ã\U0004a098\U000eec33SS)\U000e169a&\x95^\nl´MéªÕ\U0006cbbb\x0fe\x11\U00039331\x88)K®\U000d9247S\U000b3328ZÒÝYú\x07\U0004d51a.u\x9ebr\U000d4387&\x00b\x83Þ\U000a1c6a=\x8a¸aሲ\U0010e4f6\x92\x8cgr\x0e\U00096553\U00086963uçÃ\x8fÏ\x8d\x90\U000a9f72\U000c5b83ºª\U000671a0\x0b\x91é&&\t\x8b\U000b3999¡\x8cd\x07ü\x7f궙\U000a942c\r\x9d%\x02\U00095bc1\nÖò#Bo<mü\x04y×5ò𦑯Ô\U000c46d4ß\U000dab52\U000a7cf5\\\U001038caÃ\U0009f755\U000da4483\x18\xad\U000775efÃ\U000c34ffëË\x18¨\U000b0690\x1f\x11æ\U000364e4\U000a0bab³\xadb\x98òcYW\\\U00090f7f\x02\U000cc876áçez5\xa0ò\U000426a1cò«¶Ð\x854\x9b\x08CJ\U000e81f9méuÙ\U0004893b\xa0C\U0010edb6¾9\U0003439bV\U000d6b23\x1aﶦ\x9dÎñvèÞ\x00$«\x1f\U00083211\U001074d7\x1c𘟈\x02\U000cfe97Ñ\x9c¯\U0009b274È\x17[±ú\x928\x07cJ\x9fz\U000b3527¨\U000e25d6\x0c\U00076df6iÂÐÛç~`\U0009d7a9åPv\U000a6f52\U0001edc8\U0006fd21Õ=\x10\U0007f1d3#£¨äeª^\x17®Ø%¿CÒJ¹¨t\U0007c5a9hª\x81Ë£Yb¤\x05ö\U00084202"q\x16¬\x16\U000918b5Ó\x01\x86R\x8e\t\x86ã\x85\x7fV\U000c32101"ÇÂ\U00076ef2\x86²\U000c2b67i\tì´y`ÇR\x7fLT£ü\x17(\U00102c93\U0010e146\U000d2d70\x06\U0002ec05宓fÑ\U000efd7cÛ\x1a-\x13Æ\U00104f8dzd÷Ù\x83\x9c\x89\x12\x84]\x83\U000e56e6\x11À|F\U000d08beO\x8d¿\U000f3940Ê\U00056487\x14õ2\U000b9e756\x07\U000d8e0f\\\x7f\U00107320i\U000adb1b\x7f\U000fb060_\U000651ab~r\x1dx¢Ytß\x17{\U000e8e24\U000820a3\xa0:%w\r\U0001e730\x0e+\U000b158e$@ç½q|\U00080debl\x10È®Ã\U000859b1è\x0c\U000bfbad\U0004a828\x83-%\U0003e1e1ä\x87í\x19½\x12ÜÎ\U00074619ÛA«🌺å\U00088a3cWôô\U000d84dd\x1a\uecc9{Sö³×¦ôv£úë÷𰤍\x9a\U000f02a0\U000aa6f4:\U000c5007\x88±\U0005ad4f\x7f\U000d84a1\U000e21bd\x84SSú_im\U000d91c1\U0005ae5dñR\x92\U00091cde\x05ÎOÄUð÷ÙOÝ\U000c4dd2\U0008d19dÝã\x03æ¡¬ø;\U00052d62¸ü\U000e2464\x9fh¯\x9b\x9b\U0008d481J<\x99\x07{\U000556e8cç\U0010df7b𰸐¶§ÈL\x1fïï\x92°\U0007d356\U000846b0\U00035096\x1f\x04õ\x90\x12ôBää\U0007b414\x91h\x92ÿ5\x13F\x14\U0009bfc6]±È\U00075e33àî\x8c&LR¦\x1f\x9c¿\x8d\x16È\x95º\x82-Éâ\U000bd2acH\x80\U000fe73b\U00080d3b¬ôÁ\x13ÝO\U000e467cÅ\U00040c2aTg\U000be955úÚJ·\x8a\x8c\x88\x11\x176Î[Æ\x1e\x1c\x99\U000615e7\x94|\x1f¼\U00075165\U0010be4d\U000ee2c0\U000d25bb\'ÔI\U00054622\x05\x988Ëz¥\x93\U00079cf9°Ã\\©\x1a𦤿Â\x85\U0010ec4e\U0008883b\x95h\U000bb844\U000b9fa0\U00096c08t\U000bda22\x1c\x9b\x0e\U0009c55crÆ\U000c8cd0\U000ba0fe\t1¨öë\U000163c2𨄻fÒ𭶪\xad\x05\U000acb27Áa³á|N\U000d2cd0)\xa0\x12\x07äS:\x12\x11å\U000d4880\x9bèá\x00£\r\x85ﯧ𑘠Î\U000cc8aa·\U00094e2bIZ𭭤S]hïx\U0009284f¹\U000366ffFú8K\x02a\U000f01e2¶áས7\U00013f62þ\x89°𫐛Ý柡Ù\x16È\U000fec97\x12¢\U000a36d2\U000e4a1fß\x96\x8f²\x0b:\x97Ò`\x81/\x0f\U000fe42c\U00089d03¾Ðê\U0009944fB\U000b88db\x9a\U00034988\U0009e4c2F\U000e4e76½ò`\x90¿\U000d9d59ö\U000dc5f7\U000e08b3Ô\x08\x1aDÝ\x833\x08Àõ\U000e5bd6z\U00073819l\x8aÉ\U00032d02^\x1d£\nØ\r\x04t꽅)*\U0004f57aoçí\U000461789.\x0c¡5\x98\x01\x9ai\x06¢Ñs4°\x9b7å ÷\U00103432÷\x03\x15\x0e\x9aÇÈyMØ\x7fk\U00060c70\x1aw\x121\U000c1963R,ìË\U0006bcfb\U0006ddd3ºº𫎂6w\U000cd06b!\\\U000b9d83\U000461b9\\Ø\x92\U000b85ea¶N,Ù돊a\U000ef342\U0008b3d2¿@\U000e5edb;Ê\U000dd909\x89\x0cÿ\x0e\x93°5\x92६ÙೌòÏðÏ\x0b\U0008956dô®¡>\x83<*Æc\x82ÀäÔw\U0007207fÕ\U0010dccc\U0003a126\x84\U0006a6cc\U000b37e2\x03Ù\x83\U000767c3&\x88¯\x8cYÍ\x0c\x95ÛA\U000abd44ÍÐP©\x86Gir£ºÊ\x19ñ\x83!wß\x81\x8bËg\U000b7f98\U000d92e7\x87WhUÒuv\U000cece4¯\x15u\x8f\x06`\x14ø×L£ðD/댰\U00081ac3>®\x8dV\U0005a7d4K\U000cf84a\U00049a23R\x19\x15Ì\x08µ\x9b\U000fa230ï+ýV\U0010ae7aE퀭<Å«\x17ÁY<\U000d5551ö\x10!\x92Spï*\x10\x1a[Ð\x80=ü\U000a45e7\x86ÃJÒh©IN\U000a5991À\U0001a980-(jéI`\x94ã/\x02¯\x90k\U000e463bÕb¶Þ\x8bò@\x87𐼖\U0010b4f3·µ\x97"X\x7fø\x1a\U00053664Ô>Z\tO\x83°g*\U00015c76\x1c½éb¨àÃõþQ亭b/\t,_\x03ð\U00034b0b', 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001701s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'Í\xa0\x06ð\U00019ccc\U0004a908ÓQn¦ø:§6\x95uO\x19\x03xö\U000eb53d\'ýÙIOÔ\x7f¢!:©ñÅ¸\x1b\U00015465NH\U0002f68bf\x7fîau\x15\x05\U000a4495wvR§S\U00039452\x01§\U0008be81¡\x8fc8t\x8eé#s𞠶\x7fì\U000f2826¬.ª\U000ebd10\U000986a4;\x02\U0010545a%\U000560fb\x84Ñ÷Ñ\x8fp\x0f\U000de08b\U000be4f8ÍW\x95\U000e7b08\x80\U0005edd7\U000bdbb0@\U000d932d\U000d7960ß9\x0bª5\x1fÈôL5Ý;w1ï\x13W\U000baa13}ü:Ä뚄\U0007ca3fႉÁÜP\x08¾\x17âP\x86}ß8É\x96¦$YDT\U000a5f54L-ÍB\x98\x84MRPm\U000ddac2éã\x92î5*èÀ\x19\U000edfc3\U000f2daa{\x02\x11?\x1fz¸\U000803c5ÀH\U000a055aÎ᧮Û\x1d_\U00080610{çð\x83b!}\x08\x1fü¸\U0001ab7f)\x1e\x9e£\x9f\x80\U00048f8d\U000974fdm\tø\xa0÷\n\x1a\x9cúç\x19ë\U00079e09\x9e¦>n\U000d220aË*\x8cm£\U000c47e7\U000437f8z;E\x00d\\\x95ÌÆ16\x7ft\U00064146¸ÇÄ\x188\x85(\U0010e089\U000d7ef77ó\U000e50af².Ì\x16\x83¹]¡¾å\xa0\U0008648c訤\U000d0026N\U00018d93Ù\x00#m÷\nÎ\x08\U00074bc6YL\x85¤³\U00041943\x06\x9b\U00080309\x8e\x1cR\xa0\x90\U000dab3d\U00090876\U000acfa5X$𧅮𩇕à4£K\U000a31f4\x94𒓧\U0001679d±ºðè ÄHùú\x88\x0cúáNµZ\x1bö¯«R\x07ã\U0004a098\U000eec33SS)\U000e169a&\x95^\nl´MéªÕ\U0006cbbb\x0fe\x11\U00039331\x88)K®\U000d9247S\U000b3328ZÒÝYú\x07\U0004d51a.u\x9ebr\U000d4387&\x00b\x83Þ\U000a1c6a=\x8a¸aሲ\U0010e4f6\x92\x8cgr\x0e\U00096553\U00086963uçÃ\x8fÏ\x8d\x90\U000a9f72\U000c5b83ºª\U000671a0\x0b\x91é&&\t\x8b\U000b3999¡\x8cd\x07ü\x7f궙\U000a942c\r\x9d%\x02\U00095bc1\nÖò#Bo<mü\x04y×5ò𦑯Ô\U000c46d4ß\U000dab52\U000a7cf5\\\U001038caÃ\U0009f755\U000da4483\x18\xad\U000775efÃ\U000c34ffëË\x18¨\U000b0690\x1f\x11æ\U000364e4\U000a0bab³\xadb\x98òcYW\\\U00090f7f\x02\U000cc876áçez5\xa0ò\U000426a1cò«¶Ð\x854\x9b\x08CJ\U000e81f9méuÙ\U0004893b\xa0C\U0010edb6¾9\U0003439bV\U000d6b23\x1aﶦ\x9dÎñvèÞ\x00$«\x1f\U00083211\U001074d7\x1c𘟈\x02\U000cfe97Ñ\x9c¯\U0009b274È\x17[±ú\x928\x07cJ\x9fz\U000b3527¨\U000e25d6\x0c\U00076df6iÂÐÛç~`\U0009d7a9åPv\U000a6f52\U0001edc8\U0006fd21Õ=\x10\U0007f1d3#£¨äeª^\x17®Ø%¿CÒJ¹¨t\U0007c5a9hª\x81Ë£Yb¤\x05ö\U00084202"q\x16¬\x16\U000918b5Ó\x01\x86R\x8e\t\x86ã\x85\x7fV\U000c32101"ÇÂ\U00076ef2\x86²\U000c2b67i\tì´y`ÇR\x7fLT£ü\x17(\U00102c93\U0010e146\U000d2d70\x06\U0002ec05宓fÑ\U000efd7cÛ\x1a-\x13Æ\U00104f8dzd÷Ù\x83\x9c\x89\x12\x84]\x83\U000e56e6\x11À|F\U000d08beO\x8d¿\U000f3940Ê\U00056487\x14õ2\U000b9e756\x07\U000d8e0f\\\x7f\U00107320i\U000adb1b\x7f\U000fb060_\U000651ab~r\x1dx¢Ytß\x17{\U000e8e24\U000820a3\xa0:%w\r\U0001e730\x0e+\U000b158e$@ç½q|\U00080debl\x10È®Ã\U000859b1è\x0c\U000bfbad\U0004a828\x83-%\U0003e1e1ä\x87í\x19½\x12ÜÎ\U00074619ÛA«🌺å\U00088a3cWôô\U000d84dd\x1a\uecc9{Sö³×¦ôv£úë÷𰤍\x9a\U000f02a0\U000aa6f4:\U000c5007\x88±\U0005ad4f\x7f\U000d84a1\U000e21bd\x84SSú_im\U000d91c1\U0005ae5dñR\x92\U00091cde\x05ÎOÄUð÷ÙOÝ\U000c4dd2\U0008d19dÝã\x03æ¡¬ø;\U00052d62¸ü\U000e2464\x9fh¯\x9b\x9b\U0008d481J<\x99\x07{\U000556e8cç\U0010df7b𰸐¶§ÈL\x1fïï\x92°\U0007d356\U000846b0\U00035096\x1f\x04õ\x90\x12ôBää\U0007b414\x91h\x92ÿ5\x13F\x14\U0009bfc6]±È\U00075e33àî\x8c&LR¦\x1f\x9c¿\x8d\x16È\x95º\x82-Éâ\U000bd2acH\x80\U000fe73b\U00080d3b¬ôÁ\x13ÝO\U000e467cÅ\U00040c2aTg\U000be955úÚJ·\x8a\x8c\x88\x11\x176Î[Æ\x1e\x1c\x99\U000615e7\x94|\x1f¼\U00075165\U0010be4d\U000ee2c0\U000d25bb\'ÔI\U00054622\x05\x988Ëz¥\x93\U00079cf9°Ã\\©\x1a𦤿Â\x85\U0010ec4e\U0008883b\x95h\U000bb844\U000b9fa0\U00096c08t\U000bda22\x1c\x9b\x0e\U0009c55crÆ\U000c8cd0\U000ba0fe\t1¨öë\U000163c2𨄻fÒ𭶪\xad\x05\U000acb27Áa³á|N\U000d2cd0)\xa0\x12\x07äS:\x12\x11å\U000d4880\x9bèá\x00£\r\x85ﯧ𑘠Î\U000cc8aa·\U00094e2bIZ𭭤S]hïx\U0009284f¹\U000366ffFú8K\x02a\U000f01e2¶áས7\U00013f62þ\x89°𫐛Ý柡Ù\x16È\U000fec97\x12¢\U000a36d2\U000e4a1fß\x96\x8f²\x0b:\x97Ò`\x81/\x0f\U000fe42c\U00089d03¾Ðê\U0009944fB\U000b88db\x9a\U00034988\U0009e4c2F\U000e4e76½ò`\x90¿\U000d9d59ö\U000dc5f7\U000e08b3Ô\x08\x1aDÝ\x833\x08Àõ\U000e5bd6z\U00073819l\x8aÉ\U00032d02^\x1d£\nØ\r\x04t꽅)*\U0004f57aoçí\U000461789.\x0c¡5\x98\x01\x9ai\x06¢Ñs4°\x9b7å ÷\U00103432÷\x03\x15\x0e\x9aÇÈyMØ\x7fk\U00060c70\x1aw\x121\U000c1963R,ìË\U0006bcfb\U0006ddd3ºº𫎂6w\U000cd06b!\\\U000b9d83\U000461b9\\Ø\x92\U000b85ea¶N,Ù돊a\U000ef342\U0008b3d2¿@\U000e5edb;Ê\U000dd909\x89\x0cÿ\x0e\x93°5\x92६ÙೌòÏðÏ\x0b\U0008956dô®¡>\x83<*Æc\x82ÀäÔw\U0007207fÕ\U0010dccc\U0003a126\x84\U0006a6cc\U000b37e2\x03Ù\x83\U000767c3&\x88¯\x8cYÍ\x0c\x95ÛA\U000abd44ÍÐP©\x86Gir£ºÊ\x19ñ\x83!wß\x81\x8bËg\U000b7f98\U000d92e7\x87WhUÒuv\U000cece4¯\x15u\x8f\x06`\x14ø×L£ðD/댰\U00081ac3>®\x8dV\U0005a7d4K\U000cf84a\U00049a23R\x19\x15Ì\x08µ\x9b\U000fa230ï+ýV\U0010ae7aE퀭<Å«\x17ÁY<\U000d5551ö\x10!\x92Spï*\x10\x1a[Ð\x80=ü\U000a45e7\x86ÃJÒh©IN\U000a5991À\U0001a980-(jéI`\x94ã/\x02¯\x90k\U000e463bÕb¶Þ\x8bò@\x87𐼖\U0010b4f3·µ\x97"X\x7fø\x1a\U00053664Ô>Z\tO\x83°g*\U00015c76\x1c½éb¨àÃõþQ亭b/\t,_\x03ð\U00034b0b', 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001811s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'Í\xa0\x06ð\U00019ccc\U0004a908ÓQn¦ø:§6\x95uO\x19\x03xö\U000eb53d\'ýÙIOÔ\x7f¢!:©ñÅ¸\x1b\U00015465NH\U0002f68bf\x7fîau\x15\x05\U000a4495wvR§S\U00039452\x01§\U0008be81¡\x8fc8t\x8eé#s𞠶\x7fì\U000f2826¬.ª\U000ebd10\U000986a4;\x02\U0010545a%\U000560fb\x84Ñ÷Ñ\x8fp\x0f\U000de08b\U000be4f8ÍW\x95\U000e7b08\x80\U0005edd7\U000bdbb0@\U000d932d\U000d7960ß9\x0bª5\x1fÈôL5Ý;w1ï\x13W\U000baa13}ü:Ä뚄\U0007ca3fႉÁÜP\x08¾\x17âP\x86}ß8É\x96¦$YDT\U000a5f54L-ÍB\x98\x84MRPm\U000ddac2éã\x92î5*èÀ\x19\U000edfc3\U000f2daa{\x02\x11?\x1fz¸\U000803c5ÀH\U000a055aÎ᧮Û\x1d_\U00080610{çð\x83b!}\x08\x1fü¸\U0001ab7f)\x1e\x9e£\x9f\x80\U00048f8d\U000974fdm\tø\xa0÷\n\x1a\x9cúç\x19ë\U00079e09\x9e¦>n\U000d220aË*\x8cm£\U000c47e7\U000437f8z;E\x00d\\\x95ÌÆ16\x7ft\U00064146¸ÇÄ\x188\x85(\U0010e089\U000d7ef77ó\U000e50af².Ì\x16\x83¹]¡¾å\xa0\U0008648c訤\U000d0026N\U00018d93Ù\x00#m÷\nÎ\x08\U00074bc6YL\x85¤³\U00041943\x06\x9b\U00080309\x8e\x1cR\xa0\x90\U000dab3d\U00090876\U000acfa5X$𧅮𩇕à4£K\U000a31f4\x94𒓧\U0001679d±ºðè ÄHùú\x88\x0cúáNµZ\x1bö¯«R\x07ã\U0004a098\U000eec33SS)\U000e169a&\x95^\nl´MéªÕ\U0006cbbb\x0fe\x11\U00039331\x88)K®\U000d9247S\U000b3328ZÒÝYú\x07\U0004d51a.u\x9ebr\U000d4387&\x00b\x83Þ\U000a1c6a=\x8a¸aሲ\U0010e4f6\x92\x8cgr\x0e\U00096553\U00086963uçÃ\x8fÏ\x8d\x90\U000a9f72\U000c5b83ºª\U000671a0\x0b\x91é&&\t\x8b\U000b3999¡\x8cd\x07ü\x7f궙\U000a942c\r\x9d%\x02\U00095bc1\nÖò#Bo<mü\x04y×5ò𦑯Ô\U000c46d4ß\U000dab52\U000a7cf5\\\U001038caÃ\U0009f755\U000da4483\x18\xad\U000775efÃ\U000c34ffëË\x18¨\U000b0690\x1f\x11æ\U000364e4\U000a0bab³\xadb\x98òcYW\\\U00090f7f\x02\U000cc876áçez5\xa0ò\U000426a1cò«¶Ð\x854\x9b\x08CJ\U000e81f9méuÙ\U0004893b\xa0C\U0010edb6¾9\U0003439bV\U000d6b23\x1aﶦ\x9dÎñvèÞ\x00$«\x1f\U00083211\U001074d7\x1c𘟈\x02\U000cfe97Ñ\x9c¯\U0009b274È\x17[±ú\x928\x07cJ\x9fz\U000b3527¨\U000e25d6\x0c\U00076df6iÂÐÛç~`\U0009d7a9åPv\U000a6f52\U0001edc8\U0006fd21Õ=\x10\U0007f1d3#£¨äeª^\x17®Ø%¿CÒJ¹¨t\U0007c5a9hª\x81Ë£Yb¤\x05ö\U00084202"q\x16¬\x16\U000918b5Ó\x01\x86R\x8e\t\x86ã\x85\x7fV\U000c32101"ÇÂ\U00076ef2\x86²\U000c2b67i\tì´y`ÇR\x7fLT£ü\x17(\U00102c93\U0010e146\U000d2d70\x06\U0002ec05宓fÑ\U000efd7cÛ\x1a-\x13Æ\U00104f8dzd÷Ù\x83\x9c\x89\x12\x84]\x83\U000e56e6\x11À|F\U000d08beO\x8d¿\U000f3940Ê\U00056487\x14õ2\U000b9e756\x07\U000d8e0f\\\x7f\U00107320i\U000adb1b\x7f\U000fb060_\U000651ab~r\x1dx¢Ytß\x17{\U000e8e24\U000820a3\xa0:%w\r\U0001e730\x0e+\U000b158e$@ç½q|\U00080debl\x10È®Ã\U000859b1è\x0c\U000bfbad\U0004a828\x83-%\U0003e1e1ä\x87í\x19½\x12ÜÎ\U00074619ÛA«🌺å\U00088a3cWôô\U000d84dd\x1a\uecc9{Sö³×¦ôv£úë÷𰤍\x9a\U000f02a0\U000aa6f4:\U000c5007\x88±\U0005ad4f\x7f\U000d84a1\U000e21bd\x84SSú_im\U000d91c1\U0005ae5dñR\x92\U00091cde\x05ÎOÄUð÷ÙOÝ\U000c4dd2\U0008d19dÝã\x03æ¡¬ø;\U00052d62¸ü\U000e2464\x9fh¯\x9b\x9b\U0008d481J<\x99\x07{\U000556e8cç\U0010df7b𰸐¶§ÈL\x1fïï\x92°\U0007d356\U000846b0\U00035096\x1f\x04õ\x90\x12ôBää\U0007b414\x91h\x92ÿ5\x13F\x14\U0009bfc6]±È\U00075e33àî\x8c&LR¦\x1f\x9c¿\x8d\x16È\x95º\x82-Éâ\U000bd2acH\x80\U000fe73b\U00080d3b¬ôÁ\x13ÝO\U000e467cÅ\U00040c2aTg\U000be955úÚJ·\x8a\x8c\x88\x11\x176Î[Æ\x1e\x1c\x99\U000615e7\x94|\x1f¼\U00075165\U0010be4d\U000ee2c0\U000d25bb\'ÔI\U00054622\x05\x988Ëz¥\x93\U00079cf9°Ã\\©\x1a𦤿Â\x85\U0010ec4e\U0008883b\x95h\U000bb844\U000b9fa0\U00096c08t\U000bda22\x1c\x9b\x0e\U0009c55crÆ\U000c8cd0\U000ba0fe\t1¨öë\U000163c2𨄻fÒ𭶪\xad\x05\U000acb27Áa³á|N\U000d2cd0)\xa0\x12\x07äS:\x12\x11å\U000d4880\x9bèá\x00£\r\x85ﯧ𑘠Î\U000cc8aa·\U00094e2bIZ𭭤S]hïx\U0009284f¹\U000366ffFú8K\x02a\U000f01e2¶áས7\U00013f62þ\x89°𫐛Ý柡Ù\x16È\U000fec97\x12¢\U000a36d2\U000e4a1fß\x96\x8f²\x0b:\x97Ò`\x81/\x0f\U000fe42c\U00089d03¾Ðê\U0009944fB\U000b88db\x9a\U00034988\U0009e4c2F\U000e4e76½ò`\x90¿\U000d9d59ö\U000dc5f7\U000e08b3Ô\x08\x1aDÝ\x833\x08Àõ\U000e5bd6z\U00073819l\x8aÉ\U00032d02^\x1d£\nØ\r\x04t꽅)*\U0004f57aoçí\U000461789.\x0c¡5\x98\x01\x9ai\x06¢Ñs4°\x9b7å ÷\U00103432÷\x03\x15\x0e\x9aÇÈyMØ\x7fk\U00060c70\x1aw\x121\U000c1963R,ìË\U0006bcfb\U0006ddd3ºº𫎂6w\U000cd06b!\\\U000b9d83\U000461b9\\Ø\x92\U000b85ea¶N,Ù돊a\U000ef342\U0008b3d2¿@\U000e5edb;Ê\U000dd909\x89\x0cÿ\x0e\x93°5\x92६ÙೌòÏðÏ\x0b\U0008956dô®¡>\x83<*Æc\x82ÀäÔw\U0007207fÕ\U0010dccc\U0003a126\x84\U0006a6cc\U000b37e2\x03Ù\x83\U000767c3&\x88¯\x8cYÍ\x0c\x95ÛA\U000abd44ÍÐP©\x86Gir£ºÊ\x19ñ\x83!wß\x81\x8bËg\U000b7f98\U000d92e7\x87WhUÒuv\U000cece4¯\x15u\x8f\x06`\x14ø×L£ðD/댰\U00081ac3>®\x8dV\U0005a7d4K\U000cf84a\U00049a23R\x19\x15Ì\x08µ\x9b\U000fa230ï+ýV\U0010ae7aE퀭<Å«\x17ÁY<\U000d5551ö\x10!\x92Spï*\x10\x1a[Ð\x80=ü\U000a45e7\x86ÃJÒh©IN\U000a5991À\U0001a980-(jéI`\x94ã/\x02¯\x90k\U000e463bÕb¶Þ\x8bò@\x87𐼖\U0010b4f3·µ\x97"X\x7fø\x1a\U00053664Ô>Z\tO\x83°g*\U00015c76\x1c½éb¨àÃõþQ亭b/\t,_\x03ð\U00034b0b', 'password': "' OR '1'='1' --"}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001667s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'Í\xa0\x06ð\U00019ccc\U0004a908ÓQn¦ø:§6\x95uO\x19\x03xö\U000eb53d\'ýÙIOÔ\x7f¢!:©ñÅ¸\x1b\U00015465NH\U0002f68bf\x7fîau\x15\x05\U000a4495wvR§S\U00039452\x01§\U0008be81¡\x8fc8t\x8eé#s𞠶\x7fì\U000f2826¬.ª\U000ebd10\U000986a4;\x02\U0010545a%\U000560fb\x84Ñ÷Ñ\x8fp\x0f\U000de08b\U000be4f8ÍW\x95\U000e7b08\x80\U0005edd7\U000bdbb0@\U000d932d\U000d7960ß9\x0bª5\x1fÈôL5Ý;w1ï\x13W\U000baa13}ü:Ä뚄\U0007ca3fႉÁÜP\x08¾\x17âP\x86}ß8É\x96¦$YDT\U000a5f54L-ÍB\x98\x84MRPm\U000ddac2éã\x92î5*èÀ\x19\U000edfc3\U000f2daa{\x02\x11?\x1fz¸\U000803c5ÀH\U000a055aÎ᧮Û\x1d_\U00080610{çð\x83b!}\x08\x1fü¸\U0001ab7f)\x1e\x9e£\x9f\x80\U00048f8d\U000974fdm\tø\xa0÷\n\x1a\x9cúç\x19ë\U00079e09\x9e¦>n\U000d220aË*\x8cm£\U000c47e7\U000437f8z;E\x00d\\\x95ÌÆ16\x7ft\U00064146¸ÇÄ\x188\x85(\U0010e089\U000d7ef77ó\U000e50af².Ì\x16\x83¹]¡¾å\xa0\U0008648c訤\U000d0026N\U00018d93Ù\x00#m÷\nÎ\x08\U00074bc6YL\x85¤³\U00041943\x06\x9b\U00080309\x8e\x1cR\xa0\x90\U000dab3d\U00090876\U000acfa5X$𧅮𩇕à4£K\U000a31f4\x94𒓧\U0001679d±ºðè ÄHùú\x88\x0cúáNµZ\x1bö¯«R\x07ã\U0004a098\U000eec33SS)\U000e169a&\x95^\nl´MéªÕ\U0006cbbb\x0fe\x11\U00039331\x88)K®\U000d9247S\U000b3328ZÒÝYú\x07\U0004d51a.u\x9ebr\U000d4387&\x00b\x83Þ\U000a1c6a=\x8a¸aሲ\U0010e4f6\x92\x8cgr\x0e\U00096553\U00086963uçÃ\x8fÏ\x8d\x90\U000a9f72\U000c5b83ºª\U000671a0\x0b\x91é&&\t\x8b\U000b3999¡\x8cd\x07ü\x7f궙\U000a942c\r\x9d%\x02\U00095bc1\nÖò#Bo<mü\x04y×5ò𦑯Ô\U000c46d4ß\U000dab52\U000a7cf5\\\U001038caÃ\U0009f755\U000da4483\x18\xad\U000775efÃ\U000c34ffëË\x18¨\U000b0690\x1f\x11æ\U000364e4\U000a0bab³\xadb\x98òcYW\\\U00090f7f\x02\U000cc876áçez5\xa0ò\U000426a1cò«¶Ð\x854\x9b\x08CJ\U000e81f9méuÙ\U0004893b\xa0C\U0010edb6¾9\U0003439bV\U000d6b23\x1aﶦ\x9dÎñvèÞ\x00$«\x1f\U00083211\U001074d7\x1c𘟈\x02\U000cfe97Ñ\x9c¯\U0009b274È\x17[±ú\x928\x07cJ\x9fz\U000b3527¨\U000e25d6\x0c\U00076df6iÂÐÛç~`\U0009d7a9åPv\U000a6f52\U0001edc8\U0006fd21Õ=\x10\U0007f1d3#£¨äeª^\x17®Ø%¿CÒJ¹¨t\U0007c5a9hª\x81Ë£Yb¤\x05ö\U00084202"q\x16¬\x16\U000918b5Ó\x01\x86R\x8e\t\x86ã\x85\x7fV\U000c32101"ÇÂ\U00076ef2\x86²\U000c2b67i\tì´y`ÇR\x7fLT£ü\x17(\U00102c93\U0010e146\U000d2d70\x06\U0002ec05宓fÑ\U000efd7cÛ\x1a-\x13Æ\U00104f8dzd÷Ù\x83\x9c\x89\x12\x84]\x83\U000e56e6\x11À|F\U000d08beO\x8d¿\U000f3940Ê\U00056487\x14õ2\U000b9e756\x07\U000d8e0f\\\x7f\U00107320i\U000adb1b\x7f\U000fb060_\U000651ab~r\x1dx¢Ytß\x17{\U000e8e24\U000820a3\xa0:%w\r\U0001e730\x0e+\U000b158e$@ç½q|\U00080debl\x10È®Ã\U000859b1è\x0c\U000bfbad\U0004a828\x83-%\U0003e1e1ä\x87í\x19½\x12ÜÎ\U00074619ÛA«🌺å\U00088a3cWôô\U000d84dd\x1a\uecc9{Sö³×¦ôv£úë÷𰤍\x9a\U000f02a0\U000aa6f4:\U000c5007\x88±\U0005ad4f\x7f\U000d84a1\U000e21bd\x84SSú_im\U000d91c1\U0005ae5dñR\x92\U00091cde\x05ÎOÄUð÷ÙOÝ\U000c4dd2\U0008d19dÝã\x03æ¡¬ø;\U00052d62¸ü\U000e2464\x9fh¯\x9b\x9b\U0008d481J<\x99\x07{\U000556e8cç\U0010df7b𰸐¶§ÈL\x1fïï\x92°\U0007d356\U000846b0\U00035096\x1f\x04õ\x90\x12ôBää\U0007b414\x91h\x92ÿ5\x13F\x14\U0009bfc6]±È\U00075e33àî\x8c&LR¦\x1f\x9c¿\x8d\x16È\x95º\x82-Éâ\U000bd2acH\x80\U000fe73b\U00080d3b¬ôÁ\x13ÝO\U000e467cÅ\U00040c2aTg\U000be955úÚJ·\x8a\x8c\x88\x11\x176Î[Æ\x1e\x1c\x99\U000615e7\x94|\x1f¼\U00075165\U0010be4d\U000ee2c0\U000d25bb\'ÔI\U00054622\x05\x988Ëz¥\x93\U00079cf9°Ã\\©\x1a𦤿Â\x85\U0010ec4e\U0008883b\x95h\U000bb844\U000b9fa0\U00096c08t\U000bda22\x1c\x9b\x0e\U0009c55crÆ\U000c8cd0\U000ba0fe\t1¨öë\U000163c2𨄻fÒ𭶪\xad\x05\U000acb27Áa³á|N\U000d2cd0)\xa0\x12\x07äS:\x12\x11å\U000d4880\x9bèá\x00£\r\x85ﯧ𑘠Î\U000cc8aa·\U00094e2bIZ𭭤S]hïx\U0009284f¹\U000366ffFú8K\x02a\U000f01e2¶áས7\U00013f62þ\x89°𫐛Ý柡Ù\x16È\U000fec97\x12¢\U000a36d2\U000e4a1fß\x96\x8f²\x0b:\x97Ò`\x81/\x0f\U000fe42c\U00089d03¾Ðê\U0009944fB\U000b88db\x9a\U00034988\U0009e4c2F\U000e4e76½ò`\x90¿\U000d9d59ö\U000dc5f7\U000e08b3Ô\x08\x1aDÝ\x833\x08Àõ\U000e5bd6z\U00073819l\x8aÉ\U00032d02^\x1d£\nØ\r\x04t꽅)*\U0004f57aoçí\U000461789.\x0c¡5\x98\x01\x9ai\x06¢Ñs4°\x9b7å ÷\U00103432÷\x03\x15\x0e\x9aÇÈyMØ\x7fk\U00060c70\x1aw\x121\U000c1963R,ìË\U0006bcfb\U0006ddd3ºº𫎂6w\U000cd06b!\\\U000b9d83\U000461b9\\Ø\x92\U000b85ea¶N,Ù돊a\U000ef342\U0008b3d2¿@\U000e5edb;Ê\U000dd909\x89\x0cÿ\x0e\x93°5\x92६ÙೌòÏðÏ\x0b\U0008956dô®¡>\x83<*Æc\x82ÀäÔw\U0007207fÕ\U0010dccc\U0003a126\x84\U0006a6cc\U000b37e2\x03Ù\x83\U000767c3&\x88¯\x8cYÍ\x0c\x95ÛA\U000abd44ÍÐP©\x86Gir£ºÊ\x19ñ\x83!wß\x81\x8bËg\U000b7f98\U000d92e7\x87WhUÒuv\U000cece4¯\x15u\x8f\x06`\x14ø×L£ðD/댰\U00081ac3>®\x8dV\U0005a7d4K\U000cf84a\U00049a23R\x19\x15Ì\x08µ\x9b\U000fa230ï+ýV\U0010ae7aE퀭<Å«\x17ÁY<\U000d5551ö\x10!\x92Spï*\x10\x1a[Ð\x80=ü\U000a45e7\x86ÃJÒh©IN\U000a5991À\U0001a980-(jéI`\x94ã/\x02¯\x90k\U000e463bÕb¶Þ\x8bò@\x87𐼖\U0010b4f3·µ\x97"X\x7fø\x1a\U00053664Ô>Z\tO\x83°g*\U00015c76\x1c½éb¨àÃõþQ亭b/\t,_\x03ð\U00034b0b', 'password': "<script>alert('xss')</script>"}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001703s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 349
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ['', '0\xa0', '', '', '0\U00019ccc', '\xa0'], 'password': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': ['', '0\xa0', '', '', '0\U00019ccc', '\xa0'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001937s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 160
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'password': '     '}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': {'password': '     '}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001704s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 169
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 24544, 'password': "' OR '1'='1' --"}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': 24544, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001624s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 311
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': -95}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': -95, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': {'username': -95}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001757s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 186
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': '\U000f63a9$\U000ecaaaï\x13ô\U00033be8é\U00014ba0L\U000e2ab1g\U001010c8\x85\x9a¯I5ÿt_\U000a01ed1²¢\x0bü\x01gS\x9bÇÐM_Yé\U000f290a捳4\U0007cc28\U0010a294Ú\U0005cac8\x8eÑèb\U00095f9b\U000db4baÍ+\x11*Ù\'°\U0003608bÖ6¬ëo\U000d1be5L¤{D$\U000c7663\x19\x82¸çâ±\U000718ae\x83W\x7f\x9aH\x8eåø\U0009ea0dÙ\x88ÿ²âg\x08±·Â¦;\x14\x17Ï\x8a¥X\x0c\x8c,\U00038ae4$\U00014115\U0009ac2bO(NÕ0è\U00091ed5iSOhNî\U0009203c#v¿\U000b94a5\U000d85e3¼\x9dÒ\x18:ÌÖ\x84¹¿÷áb,𣓈\U00054536ø\x9ar\x1eâøÁ\x1aè\x9a\x01³A£\x19𒓥\U00105f75\x88¨¶\U0006dded\x9d𧾧\U00035fd1\x8cmÊÕ\r\x1d¾ú~ÉE\x13\U00038a40%©³H²äÀï𠅴6¼\x18HÍ,\U0006fc77I\x1a¬8·z\U001085a2ØÏ3íôÓE&\x92\x83â1\x93\x12\U000bd101\ts|8\U00101015A²¢\U000b2ffcç×|\U000e1f24äÉt{¸Ã\U000b9b80\U0006f79aâ\U00013577\x89 ×\tJgs\x82s©\x1a\x7f\x12üRË\x1ae\U00046d74\x0c\x1d\'Q\U000f8f0cÍ\U000ca0b4s\U00019e4fg¡¤[\U0001ca8fÞ\x96\U000c39f79\U000c4dcf\U0006e7a8𨤁#Ùòú\U000eb15e\x86ÅꂏJ´&X\U00054182"\x7f\U00087833â\x86\x9aã\U000c7fd0D{¦\x0cy\x16\x85\x89\x8dìÜ\U0008416fÒ>\U00096de4Û`¬\U000accc7\x1fᇡ\U00080a74\x90»¡\U000bbcddUÐ\n\x1e\x9c\U000c2cba(\x9c×\U000f9e85U_\U000a6d92{Xä²\U0006a5e2CúxùJ\U00069274\x06\U000fc71bæywØ\x81*&iì\U0001dcf4\x1f\U000d7734b?Èï"ÇÚ\x84`\U00103658\x1f¶\U000bfa6bp\U00061e0e\x04~üú\U00052714\x8e´\x1dê\U000e6d28Qýb²\x91\U00094a68\U000cbc4ad1a\U000b3ab3è\x04¸I𬲁\x08(}FÞÁó\x94𫻡À¾ÿí \U000ab88f\U0006da5c¿è\U000b4397\U000fbeaa\x9f\x8c\U000c9d45Í§Ù1ü\U000c4ff5G\x00Â\x96\x82Ä\x8bÀüc£v\U000b817fm\xadi\U000fba30\U0010fb21ÿ0hÂg\U0010c8abûQ³sÍ\x7f\U000d0a9f®+\x93\U0008e08fò¾\'\U000e0ebbaè\x8f\U00108f34\U000a0897\U000fc8b5<ßTw\U00109449ÆRò\U000cb086³\U00067b7e\x86\x16#ô=}¨\U00066559\x0cü\x7fÆ\x98\x05¹𤴛79\U00087ce7\x93¾tÇßñ\'\U000a9f05\x1eZ\x86¨3\rØ\x95öë:G0\x1br²Ââ\x13Ó\x08`\x91q\x8aè`l\uf3dc\U000ca1b2¹T\x1d®6(\x12¾\U000f6d74Ã\x98遣G¦\U0001a788RØs\x8a\x1d\x0b\x89»\U000a38eeu\U000c9277J2\x99\U001068c5×\U00098cb4\xad\x9f\x1b\x00¿\U000e29ce\t^uý\U001095a4\x06\x91\U0005958eÊD\U00051554%-Ê\U0007d53c侧ò\x0cR×hS\x0e·\U0007e6b6hâ\U00100f6dXÀ\U0010ef53𫤓\U000c91e4\U000dd541oÑ\x90\U000c9e53Tv\x89È4Þ\x13^\x19\x17©7ñ¢Å\x97R7\U00101ee5\x8dÄ\U00101819üêÀ=\U000a2cbfT\U000a4921ò\U0004234f¹þ\U000ae0a5\U00082e25B\x1bg×Îþ\U00106880±\x0f\U000626152\U0003f966\U000ac6e2\x94\U0006d49bÿ\U000f100d0\x03g\U000b2f1a3·6\x08ý\x87\U00106f43ài龫\U00076412[y{Ç¢R\U0004d280»\x02en`ê\x9a6\U000b3634\'\x92\U000a2d41Iõà*OeÃÒ\x1dÏ\x127ì+»6+\x88𦰑-¢\x10-\x18ÙMÐ\U0008a242\U0003b796,\U0008e477"\U000abf35\U00102f3b|\x15\x1a©\U0005d054úÑ\U00041647\U000b74a5Bx\U0009feec;Ûßñå\x05\x918»?Ù\x05\U000e9da4nK\U000134d8ÏºÚåñ\x8a蜨?µ\x95\U000e133a\x85ø©ýMs\x04\x98ô\U000b5259qØ\x1e𢹨\x0e\U0003ed03\U000bce57\U000b8bc4\xadI24U\n,àp\x8c\t\U000326d2Í\U000d3d91\x85\x8bxF;\U0006df26{䚾 \U00044fe5ã𠌹𭲬\U000817afò]n?Ñ\x07\x97\U00056bbf@$pYä刂µO\U000433e7í\x965õ\U0007d86f1Qæ\U0007e46bêP¸\U000ccb0bÇ\U00076fd0\\T\x9b\U000ccb2a;\\ì²¾e\x8cÅ\U000b30bf\x0f©\x9a\U00048875]\x8fÈ/D\U000824d0\x90fjî\U000ef657¤£\U000fbbffÈN\x81|Uâ\x96\x84ÔÓSV¿ÓE\x98È9ð.\r,7%©ù mà\x0f\x7f\U000735a9𤲎Y\U00053789\U00099b98麎:n\x8fÿ\U0010ea30\x1cî\U00046396\x18£5¬a\U00101d20ãØ\x0b¨{âÊ\'´ÖÚ\x9b𨝳\U000d4d2cq:5\x9bòí\U00097f1cæ-\x0bW\U0005d38a\x83\x17¾\U000808a9B¹\x06\U0004cf5a\x8d³É𭰛\x142C\x16¯3\U000b384c(¹\x1e\x11©Ü2\x8eH\U000d592b$\x95{U\x9b7\U000e0711û\U000efa38¬óÊu4\x01\x9f\U00097975\U000e58c2¸\x89U\x94\x9d=§\x05S\U000f3f46\U00056f33\U000ad5c9\U000f4f5d1\U000862d3\x06\x99\x9b\n\x7f\U0004be0ay¿\U0004a7e5\U000e6bf4\x1c횢M\U000ab5a4\U000c1fa4`冉T\x94VØ\x00µc\U0009f9fdUj\U0010d341H\U0010da75_\U000484be\x8f\x0b\U000eddff5\x05\x82\U0003493dÕ\U000f3b72\x03\x8a°³Y\U0006a176\x99ç±\x9e\x04\x95\x84¨)𬦗n\U000985c3º!ÆÁ\x8c¾eÏ𫫸k\x88ZX0\x95\xad\U00068c55U\x11ÆÕÌ|\U0003770b\x82s\x18ª¢\x98+\x90\U0004b0e2D\U000a7cc1âz\x01ó69å´·\x0f@oê\x8b?èè\U0010da55¬,+_>\x88\U0010ebf7\U0006c0f1\U00064e9dQß\x82\x8e%É\U000abaa7w\x7fªÌ`h𪖕`ì\U00074ce0\x00\'·âJ\x0b\U00060e74\U0006ea49é\x16Y\\\U00062414\r\x060𗚠ú\U0005540b\x81g\x19\U000fb276~f\x10\U000626c8oi*🭠\x9aâ\x14\U0005a28cx½1À\U000a367c.\U00014907\x9c¡\x13\x1fØ\U0001e45dÇÃíá\x7f»õ\x0f¤\x91.\U00074aff\x9eó`\x10s©\U00073244\x9b𦵯V3\x93\x00=\U000f9fbcK\x07\x02º\x08\x91\U000198c8\x9dß\U000fce77\U0007a274\U000df009D;0\x8e\U00070f01\U000d0770\U000dfdd6\x8b\x07æ\x07\U000941df\x01¿\\AA\U00092417\t\U00079dd3+ÆD]Ô\U0007a15f]%aö+\x12\x97Ï\x7fz\U000b8e78´t÷é\x19\x8eꕕ\x8c×äaì)\U000c1590×8kZ\x01âÍ\x10\x13\U0008539d\U001044d9\x13\x82«\U0010a561zmô@¡X\U0001bb63¥\x0fÇÖ{iÝæ~«³\x08𬑁L\x82', 'password': ['"¢#<\x86\U000851bc\r\U000f2230']}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': ['"¢#<\x86\U000851bc\r\U000f2230'], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001874s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 322
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': [], 'password': True}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'username'], 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}, {'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': True, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001782s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 159
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'password': '    '}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': {'password': '    '}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.001929s
+====================================================================================================
+2025-09-19 00:38:00 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 422 165
+2025-09-19 00:38:00 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': ' ', 'password': 0}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'string_type', 'loc': ['body', 'password'], 'msg': 'Input should be a valid string', 'input': 0, 'url': 'https://errors.pydantic.dev/2.10/v/string_type'}]}
+     Elapsed: 0.001669s
+====================================================================================================
