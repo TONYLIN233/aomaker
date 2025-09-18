@@ -7,7 +7,7 @@ from attrs import define, field
 from aomaker.core.router import router
 from aomaker.core.api_object import BaseAPIObject
 from hypothesis import given, strategies as st, assume
-"""跑通了，但是我需要对信息进行补充"""
+"""跑通了，但是我需要对信息进行补充1"""
 
 @given(
     st.fixed_dictionaries({
