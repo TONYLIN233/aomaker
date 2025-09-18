@@ -1,0 +1,23 @@
+# Python 编译文件和缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 日志文件
+*.log
+logs/
+
+# 测试报告和生成数据
+reports/
+html/
+
+# 数据库文件 (SQLite)
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
+# 系统或IDE生成的文件
+.DS_Store
+.idea/
+.vscode/
