@@ -1,0 +1,40 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/login/token",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "username": false
+    }
+  },
+  "response": {
+    "status_code": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "string_type",
+          "loc": [
+            "body",
+            "username"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.10/v/string_type"
+        },
+        {
+          "type": "missing",
+          "loc": [
+            "body",
+            "password"
+          ],
+          "msg": "Field required",
+          "input": {
+            "username": false
+          },
+          "url": "https://errors.pydantic.dev/2.10/v/missing"
+        }
+      ]
+    }
+  }
+}

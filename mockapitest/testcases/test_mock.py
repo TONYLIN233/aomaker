@@ -43,6 +43,7 @@ def test_get_user():
     assert res.response_model.data.username is not None
 
 
+
 @pytest.mark.mock_api
 def test_create_user():
     """测试创建用户API"""

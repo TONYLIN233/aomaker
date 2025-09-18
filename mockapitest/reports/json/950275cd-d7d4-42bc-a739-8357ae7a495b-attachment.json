@@ -1,0 +1,18 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/login/token",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "username": "Rd!00@T.T.THJbQQH5LfXXxqwWdpJt-qpDKxCe.NOW",
+      "password": "𑕾1"
+    }
+  },
+  "response": {
+    "status_code": 401,
+    "body": {
+      "detail": "用户名或密码错误"
+    }
+  }
+}

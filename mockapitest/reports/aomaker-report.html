@@ -300,7 +300,7 @@
     currentCaseId: '',
     chartData: {
         labels: ['通过', '失败', '阻塞', '跳过'],
-        values: [5, 0, 0, 0],
+        values: [3, 0, 0, 0],
         colors: ['#5CBA95', '#E88A8A', '#E6B55C', '#7A9FE2']
     }
 }" x-init="
@@ -418,15 +418,15 @@
                         </div>
                         <div class="flex justify-between">
                             <span class="text-gray-500">开始时间:</span>
-                            <span class="font-medium text-gray-700">2025-09-18 16:42:30</span>
+                            <span class="font-medium text-gray-700">2025-09-19 00:37:57</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-gray-500">结束时间:</span>
-                            <span class="font-medium text-gray-700">2025-09-18 16:42:30</span>
+                            <span class="font-medium text-gray-700">2025-09-19 00:38:03</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-gray-500">运行时长:</span>
-                            <span class="font-medium text-gray-700">00h:00m:00s</span>
+                            <span class="font-medium text-gray-700">00h:00m:06s</span>
                         </div>
                     </div>
 
@@ -435,7 +435,7 @@
                         <div class="flex items-baseline justify-between">
                             <h4 class="text-gray-500">总计</h4>
                             <div class="flex items-baseline space-x-1">
-                                <span class="text-2xl font-bold text-aomaker-purple">5</span>
+                                <span class="text-2xl font-bold text-aomaker-purple">3</span>
                                 <span class="text-xs text-gray-500">个用例</span>
                             </div>
                         </div>
@@ -466,7 +466,7 @@
                              <div class="legend-item" @click="$store.reportData.filterCases('passed')">
                                  <span class="legend-icon bg-status-passed"></span>
                                  <span class="legend-text">通过</span>
-                                 <span class="legend-value">5</span>
+                                 <span class="legend-value">3</span>
                              </div>
                              <!-- Failed -->
                              <div class="legend-item" @click="$store.reportData.filterCases('failed')">
@@ -570,13 +570,13 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                                 </svg>
                                             </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_scenario.auth.test_auth</div>
+                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.auth.test_auth</div>
                                         </div>
                                     </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_get_auth_right</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="测试获取access_token">测试获取access_token</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.02s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-09-18 16:42:30</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_login_with_valid_format_but_wrong_credential</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="测试格式有效但凭证错误的登录请求，预期返回明确的错误信息（如401 Unauthorized）或特定的错误码。">测试格式有效但凭证错误的登录请求，预期返回明确的错误信息（如401 Unauthorized）或特定的错误码。</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1.67s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-09-19 00:38:00</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm">
                                         
                                         <span class="status-badge"
@@ -597,14 +597,14 @@
                                         </span>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-f2d50e29c2865a1bf1f7d4507a7e4b78').innerText; currentCaseId = 'testcases.test_scenario.auth.test_auth.test_get_auth_right'"
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-6518439d242b577979505847e3c64b2a').innerText; currentCaseId = 'testcases.test_api.auth.test_auth.test_login_with_valid_format_but_wrong_credential'"
                                                 class="action-button group-hover:opacity-100 focus-ring"
                                                 title="查看日志">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                             </svg>
                                         </button>
-                                        <div id="log-f2d50e29c2865a1bf1f7d4507a7e4b78" style="display: none;"></div>
+                                        <div id="log-6518439d242b577979505847e3c64b2a" style="display: none;"></div>
                                     </td>
                                 </tr>
                                 
@@ -622,13 +622,13 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                                 </svg>
                                             </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_scenario.auth.test_auth</div>
+                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.auth.test_auth</div>
                                         </div>
                                     </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_get_auth_without_password</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="测试不输入password获取access_token">测试不输入password获取access_token</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.01s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-09-18 16:42:30</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_login_with_invalid_inputs</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="测试使用无效数据类型、超长字符串、空值、攻击字符串等异常输入进行登录，预期接口能妥善处理（如返回4xx状态码）而非抛出服务器错误（5xx）。">测试使用无效数据类型、超长字符串、空值、攻击字符串等异常输入进行登录，预期接口能妥善处理（如返回4xx状态码）而非抛出服务器错误（5xx）。</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">3.46s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-09-19 00:37:57</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm">
                                         
                                         <span class="status-badge"
@@ -649,14 +649,14 @@
                                         </span>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-733b598c6f32f1f35bfa19c20f9f4674').innerText; currentCaseId = 'testcases.test_scenario.auth.test_auth.test_get_auth_without_password'"
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-53cf0495ca00545dd83208e19a2cc555').innerText; currentCaseId = 'testcases.test_api.auth.test_auth.test_login_with_invalid_inputs'"
                                                 class="action-button group-hover:opacity-100 focus-ring"
                                                 title="查看日志">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                             </svg>
                                         </button>
-                                        <div id="log-733b598c6f32f1f35bfa19c20f9f4674" style="display: none;"></div>
+                                        <div id="log-53cf0495ca00545dd83208e19a2cc555" style="display: none;"></div>
                                     </td>
                                 </tr>
                                 
@@ -674,13 +674,13 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                                 </svg>
                                             </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_scenario.auth.test_auth</div>
+                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.auth.test_auth</div>
                                         </div>
                                     </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_get_auth_without_username</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="测试不输入uersname获取access_token">测试不输入uersname获取access_token</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.01s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-09-18 16:42:30</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_login_success_with_hypothesis_variation</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="示例：结合已知有效用户名和hypothesis生成的密码变体进行测试。">示例：结合已知有效用户名和hypothesis生成的密码变体进行测试。</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1.20s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-09-19 00:38:02</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm">
                                         
                                         <span class="status-badge"
@@ -701,118 +701,14 @@
                                         </span>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-ea221d4626b97dd8bf5ca382d87bf201').innerText; currentCaseId = 'testcases.test_scenario.auth.test_auth.test_get_auth_without_username'"
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-695c74ce13e2f4e060b8cd37b9601204').innerText; currentCaseId = 'testcases.test_api.auth.test_auth.test_login_success_with_hypothesis_variation'"
                                                 class="action-button group-hover:opacity-100 focus-ring"
                                                 title="查看日志">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                             </svg>
                                         </button>
-                                        <div id="log-ea221d4626b97dd8bf5ca382d87bf201" style="display: none;"></div>
-                                    </td>
-                                </tr>
-                                
-                                <tr
-                                    x-show="$store.reportData.shouldShow('passed')"
-                                    x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="opacity-0"
-                                    x-transition:enter-end="opacity-100"
-                                    class="group"
-                                >
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="table-icon flex-shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                                </svg>
-                                            </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_scenario.auth.test_auth</div>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_get_auth_with_errusername</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="测试输入错误uersname获取access_token">测试输入错误uersname获取access_token</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.01s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-09-18 16:42:30</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                        
-                                        <span class="status-badge"
-                                              :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'passed' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'passed' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'passed' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'passed' === 'skipped'
-                                              }">
-                                            <span class="status-dot"
-                                                  :class="{
-                                                      'bg-status-passed': 'passed' === 'passed',
-                                                      'bg-status-failed': 'passed' === 'failed',
-                                                      'bg-status-broken': 'passed' === 'broken',
-                                                      'bg-status-skipped': 'passed' === 'skipped'
-                                                  }"></span>
-                                            Passed
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-88078b7220eac28562d016da3f959de8').innerText; currentCaseId = 'testcases.test_scenario.auth.test_auth.test_get_auth_with_errusername'"
-                                                class="action-button group-hover:opacity-100 focus-ring"
-                                                title="查看日志">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                            </svg>
-                                        </button>
-                                        <div id="log-88078b7220eac28562d016da3f959de8" style="display: none;"></div>
-                                    </td>
-                                </tr>
-                                
-                                <tr
-                                    x-show="$store.reportData.shouldShow('passed')"
-                                    x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="opacity-0"
-                                    x-transition:enter-end="opacity-100"
-                                    class="group"
-                                >
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="table-icon flex-shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                                </svg>
-                                            </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_scenario.auth.test_auth</div>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_get_auth_with_errpassword</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="测试输入错误的password获取access_token">测试输入错误的password获取access_token</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.01s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-09-18 16:42:30</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                        
-                                        <span class="status-badge"
-                                              :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'passed' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'passed' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'passed' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'passed' === 'skipped'
-                                              }">
-                                            <span class="status-dot"
-                                                  :class="{
-                                                      'bg-status-passed': 'passed' === 'passed',
-                                                      'bg-status-failed': 'passed' === 'failed',
-                                                      'bg-status-broken': 'passed' === 'broken',
-                                                      'bg-status-skipped': 'passed' === 'skipped'
-                                                  }"></span>
-                                            Passed
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-53cdce8c0755db7990a2f74be0704d04').innerText; currentCaseId = 'testcases.test_scenario.auth.test_auth.test_get_auth_with_errpassword'"
-                                                class="action-button group-hover:opacity-100 focus-ring"
-                                                title="查看日志">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                            </svg>
-                                        </button>
-                                        <div id="log-53cdce8c0755db7990a2f74be0704d04" style="display: none;"></div>
+                                        <div id="log-695c74ce13e2f4e060b8cd37b9601204" style="display: none;"></div>
                                     </td>
                                 </tr>
                                 
@@ -822,10 +718,10 @@
                 </div>
 
                 <div class="table-footer">
-                    <span class="font-medium text-gray-600">总计: <span class="font-bold text-aomaker-purple">5</span></span>
+                    <span class="font-medium text-gray-600">总计: <span class="font-bold text-aomaker-purple">3</span></span>
                     <span class="flex items-center text-[var(--color-success)]">
                         <span class="h-1.5 w-1.5 rounded-full bg-status-passed mr-1"></span>
-                        通过: <span class="font-medium ml-0.5">5</span>
+                        通过: <span class="font-medium ml-0.5">3</span>
                     </span>
                     <span class="flex items-center text-[var(--color-error)]">
                         <span class="h-1.5 w-1.5 rounded-full bg-status-failed mr-1"></span>
@@ -845,7 +741,7 @@
 
         <!-- 页脚 -->
         <footer class="mt-10 py-4 text-center text-xs text-gray-400 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-            <p>AoMaker 自动化测试报告 &copy; | 生成时间: 2025-09-18 16:42:30</p>
+            <p>AoMaker 自动化测试报告 &copy; | 生成时间: 2025-09-19 00:38:03</p>
         </footer>
     </div>
 

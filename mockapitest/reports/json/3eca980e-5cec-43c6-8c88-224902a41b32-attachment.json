@@ -1,0 +1,43 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/login/token",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "username": [
+        "öþXÛ𠸃75\u001f54𽜆5񠰙𓵏捲¬R3¢"
+      ],
+      "password": -17701465
+    }
+  },
+  "response": {
+    "status_code": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "string_type",
+          "loc": [
+            "body",
+            "username"
+          ],
+          "msg": "Input should be a valid string",
+          "input": [
+            "öþXÛ𠸃75\u001f54𽜆5񠰙𓵏捲¬R3¢"
+          ],
+          "url": "https://errors.pydantic.dev/2.10/v/string_type"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "body",
+            "password"
+          ],
+          "msg": "Input should be a valid string",
+          "input": -17701465,
+          "url": "https://errors.pydantic.dev/2.10/v/string_type"
+        }
+      ]
+    }
+  }
+}
