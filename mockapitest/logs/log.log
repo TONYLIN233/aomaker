@@ -449,3 +449,311 @@
      Response Body: {'ret_code': 0, 'message': '头像上传成功', 'data': {'file_id': 'avatar_1_20250916140352', 'file_name': 'avatar.png', 'file_size': 2048, 'file_type': 'image/png', 'upload_time': '2025-09-16T14:03:52.933472', 'download_url': 'https://example.com/files/avatar_1_20250916140352'}}
      Elapsed: 0.003849s
 ====================================================================================================
+2025-09-18 08:51:28 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginAPI 登录
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': '123456'}
+✅ <Response>
+     Response Body: 
+====================================================================================================
+2025-09-18 08:51:41 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginAPI 登录
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': '123456'}
+✅ <Response>
+     Response Body: 
+====================================================================================================
+2025-09-18 08:52:44 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginAPI 登录
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': '123456'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '登录成功', 'data': {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhb21ha2VyIiwiZXhwIjoxNzU4MTg3MzY0fQ.TwWiw0lMSCOczlBk6YJIVtKRumVDusm_xgqdhgwQOMg', 'token_type': 'bearer', 'expires_in': 1799}}
+     Elapsed: 0.005555s
+====================================================================================================
+2025-09-18 08:52:44 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'password': '123456'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': {'password': '123456'}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.004314s
+====================================================================================================
+2025-09-18 08:52:44 [MainProcess]-[MainThread]-[api_object.get_diff:276]-[WARNING]:[SchemaDiff] 模型<TokenResponseData> 发生变化：
+ {
+  "type_changes": {
+    "root['properties']['ret_code']['type']": {
+      "old_type": "str",
+      "new_type": "list",
+      "old_value": "integer",
+      "new_value": [
+        "integer",
+        "null"
+      ]
+    },
+    "root['properties']['message']['type']": {
+      "old_type": "str",
+      "new_type": "list",
+      "old_value": "string",
+      "new_value": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
+2025-09-18 08:52:44 [MainProcess]-[MainThread]-[api_object.update_schema_if_needed:291]-[INFO]:[SchemaDiff] 模型<TokenResponseData> ，已更新schema缓存
+2025-09-18 08:52:44 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': ''}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002011s
+====================================================================================================
+2025-09-18 08:52:44 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker2', 'password': '123456'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00189s
+====================================================================================================
+2025-09-18 08:52:44 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': '234567'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.00189s
+====================================================================================================
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginAPI 登录
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': '123456'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '登录成功', 'data': {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhb21ha2VyIiwiZXhwIjoxNzU4MTg3NjMzfQ.-O5QhME78Fr6JNAYRlrLGzs4nSxfCOacgoeTKHBsbCk', 'token_type': 'bearer', 'expires_in': 1800}}
+     Elapsed: 0.003377s
+====================================================================================================
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[api_object.get_diff:276]-[WARNING]:[SchemaDiff] 模型<TokenResponseData> 发生变化：
+ {
+  "type_changes": {
+    "root['properties']['ret_code']['type']": {
+      "old_type": "list",
+      "new_type": "JsonType",
+      "old_value": [
+        "integer",
+        "null"
+      ],
+      "new_value": "integer"
+    },
+    "root['properties']['message']['type']": {
+      "old_type": "list",
+      "new_type": "JsonType",
+      "old_value": [
+        "string",
+        "null"
+      ],
+      "new_value": "string"
+    }
+  }
+}
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[api_object.update_schema_if_needed:291]-[INFO]:[SchemaDiff] 模型<TokenResponseData> ，已更新schema缓存
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'password': '123456'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': {'password': '123456'}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.002512s
+====================================================================================================
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[api_object.get_diff:276]-[WARNING]:[SchemaDiff] 模型<TokenResponseData> 发生变化：
+ {
+  "type_changes": {
+    "root['properties']['ret_code']['type']": {
+      "old_type": "str",
+      "new_type": "list",
+      "old_value": "integer",
+      "new_value": [
+        "integer",
+        "null"
+      ]
+    },
+    "root['properties']['message']['type']": {
+      "old_type": "str",
+      "new_type": "list",
+      "old_value": "string",
+      "new_value": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[api_object.update_schema_if_needed:291]-[INFO]:[SchemaDiff] 模型<TokenResponseData> ，已更新schema缓存
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': ''}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002404s
+====================================================================================================
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker2', 'password': '123456'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001981s
+====================================================================================================
+2025-09-18 08:57:13 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': '234567'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.001804s
+====================================================================================================
+2025-09-18 09:09:48 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginAPI 登录
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': '123456'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '登录成功', 'data': {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhb21ha2VyIiwiZXhwIjoxNzU4MTg4Mzg4fQ.yVJsaeIfTdGxVXkaMJ-J_HGBTby7-Tvp7iiNILAxU-s', 'token_type': 'bearer', 'expires_in': 1800}}
+     Elapsed: 0.00315s
+====================================================================================================
+2025-09-18 09:09:48 [MainProcess]-[MainThread]-[api_object.get_diff:276]-[WARNING]:[SchemaDiff] 模型<TokenResponseData> 发生变化：
+ {
+  "type_changes": {
+    "root['properties']['ret_code']['type']": {
+      "old_type": "list",
+      "new_type": "JsonType",
+      "old_value": [
+        "integer",
+        "null"
+      ],
+      "new_value": "integer"
+    },
+    "root['properties']['message']['type']": {
+      "old_type": "list",
+      "new_type": "JsonType",
+      "old_value": [
+        "string",
+        "null"
+      ],
+      "new_value": "string"
+    }
+  }
+}
+2025-09-18 09:09:48 [MainProcess]-[MainThread]-[api_object.update_schema_if_needed:291]-[INFO]:[SchemaDiff] 模型<TokenResponseData> ，已更新schema缓存
+2025-09-18 09:09:49 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'password': '123456'}
+✅ <Response>
+     Response Body: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': {'password': '123456'}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}]}
+     Elapsed: 0.00322s
+====================================================================================================
+2025-09-18 09:09:49 [MainProcess]-[MainThread]-[api_object.get_diff:276]-[WARNING]:[SchemaDiff] 模型<TokenResponseData> 发生变化：
+ {
+  "type_changes": {
+    "root['properties']['ret_code']['type']": {
+      "old_type": "str",
+      "new_type": "list",
+      "old_value": "integer",
+      "new_value": [
+        "integer",
+        "null"
+      ]
+    },
+    "root['properties']['message']['type']": {
+      "old_type": "str",
+      "new_type": "list",
+      "old_value": "string",
+      "new_value": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "dictionary_item_added": [
+    "root['properties']['detail']"
+  ]
+}
+2025-09-18 09:09:49 [MainProcess]-[MainThread]-[api_object.update_schema_if_needed:291]-[INFO]:[SchemaDiff] 模型<TokenResponseData> ，已更新schema缓存
+2025-09-18 09:09:49 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': ''}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002463s
+====================================================================================================
+2025-09-18 09:09:49 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker2', 'password': '123456'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002346s
+====================================================================================================
+2025-09-18 09:09:49 [MainProcess]-[MainThread]-[logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker', 'password': '234567'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.004794s
+====================================================================================================

@@ -18,3 +18,4 @@ class TokenResponseData:
     ret_code: Optional[int] = field(default=0)
     message: Optional[str] = field(default="success")
     data: Optional[TokenResponse] = field(default=None)
+    detail: Optional[str] = field(default=None)

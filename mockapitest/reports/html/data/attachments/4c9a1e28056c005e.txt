@@ -1,0 +1,12 @@
+2025-09-18 09:09:49 http://127.0.0.1:9999 "POST /api/login/token HTTP/1.1" 401 37
+2025-09-18 09:09:49 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: LoginForAccessTokenApiLoginTokenPostAPI 用户提供用户名和密码进行登录，成功后返回JWT令牌
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/login/token
+     Method: POST
+     Request Json: {'username': 'aomaker2', 'password': '123456'}
+✅ <Response>
+     Response Body: {'detail': '用户名或密码错误'}
+     Elapsed: 0.002346s
+====================================================================================================
