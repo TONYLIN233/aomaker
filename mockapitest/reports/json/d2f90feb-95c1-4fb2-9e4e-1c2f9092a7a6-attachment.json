@@ -1,0 +1,24 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/login/token",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "username": "aomaker",
+      "password": "123456"
+    }
+  },
+  "response": {
+    "status_code": 200,
+    "body": {
+      "ret_code": 0,
+      "message": "登录成功",
+      "data": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhb21ha2VyIiwiZXhwIjoxNzU4MjE1NTUwfQ.EyMVYMRi8wVXElX2zglRLaOZkMLQ4e_Xg6EhPI6Uhik",
+        "token_type": "bearer",
+        "expires_in": 1800
+      }
+    }
+  }
+}
