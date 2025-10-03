@@ -1,0 +1,11 @@
+2025-10-03 23:07:46 http://127.0.0.1:9999 "GET /api/products/1 HTTP/1.1" 200 163
+2025-10-03 23:07:46 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetProductAPI 获取单个产品信息
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/products/1
+     Method: GET
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': {'id': 1, 'name': '笔记本电脑', 'price': 5999.0, 'description': '高性能笔记本', 'stock': 100, 'category': '电子产品'}}
+     Elapsed: 0.001925s
+====================================================================================================

@@ -1,0 +1,12 @@
+2025-10-03 23:07:46 http://127.0.0.1:9999 "PUT /api/orders/1/status HTTP/1.1" 200 51
+2025-10-03 23:07:46 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: UpdateOrderStatusAPI 更新订单状态
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/orders/1/status
+     Method: PUT
+     Request Json: {'status': '已发货'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '订单状态更新成功'}
+     Elapsed: 0.002009s
+====================================================================================================
