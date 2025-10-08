@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 [{"uid":"c8d462caed866fa9","name":"test_login_with_valid_format_but_wrong_credential","time":{"start":1758213480876,"stop":1758213482550,"duration":1674},"status":"passed","severity":"normal"},{"uid":"3d3ddca26b22b5dc","name":"test_login_with_invalid_inputs","time":{"start":1758213477360,"stop":1758213480824,"duration":3464},"status":"passed","severity":"normal"},{"uid":"165f0f9ce05caa7b","name":"test_login_success_with_hypothesis_variation","time":{"start":1758213482614,"stop":1758213483818,"duration":1204},"status":"passed","severity":"normal"}]
+=======
+[{"uid":"8d7841087971c84b","name":"test_user_processing_basic","time":{"start":1759567099703,"stop":1759567214932,"duration":115229},"status":"broken","severity":"normal"}]
+>>>>>>> Stashed changes
