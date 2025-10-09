@@ -88,6 +88,7 @@ def test_get_product():
     assert res.response_model.data.name is not None
 
 
+
 @pytest.mark.mock_api
 def test_create_order():
     """测试创建订单API"""

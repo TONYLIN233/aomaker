@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-{"total":1,"items":[{"uid":"5ef6f1012ec1fc9b0c387340eea481a6","name":"testcases.test_api.auth","statistic":{"failed":0,"broken":0,"skipped":0,"passed":3,"unknown":0,"total":3}}]}
-=======
-{"total":1,"items":[{"uid":"8a1895787e95e7e4b5958683b0b7926f","name":"testcases.test_api.user","statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1}}]}
->>>>>>> Stashed changes
+{"total":1,"items":[{"uid":"00b7332bdab877a1648d7f696b678056","name":"testcases.test_scenario.user","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
