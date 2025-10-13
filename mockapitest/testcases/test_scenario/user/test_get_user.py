@@ -15,3 +15,9 @@ def test_fuzzy_search_user():
     # print(response.response_model.data)
     for info in response.response_model.data:
         assert info.username is not None and "张" in info.username
+        
+
+@pytest.mark.userscenario
+def test_exact_search_user():
+    """获取系统中的用户列表精确检索"""
+    request_body = apis.GetUsersApiUsersGetAPI.QueryParams()
