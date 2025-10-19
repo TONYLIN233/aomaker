@@ -1,0 +1,72 @@
+2025-10-19 23:14:51 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=1&username=test HTTP/1.1" 200 54
+2025-10-19 23:14:51 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 1, 'username': 'test'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001785s
+====================================================================================================
+2025-10-19 23:14:51 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=1&username=test HTTP/1.1" 200 54
+2025-10-19 23:14:51 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 1, 'username': 'test'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001671s
+====================================================================================================
+2025-10-19 23:14:51 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=0&username=test HTTP/1.1" 200 54
+2025-10-19 23:14:51 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 0, 'username': 'test'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.006919s
+====================================================================================================
+2025-10-19 23:14:51 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=0&username=test HTTP/1.1" 200 54
+2025-10-19 23:14:51 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 0, 'username': 'test'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.003795s
+====================================================================================================
+2025-10-19 23:14:51 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=101&username=test HTTP/1.1" 200 54
+2025-10-19 23:14:51 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 101, 'username': 'test'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.003814s
+====================================================================================================
+2025-10-19 23:14:51 http://127.0.0.1:9999 "GET /api/users?offset=1001&limit=101&username=test HTTP/1.1" 200 54
+2025-10-19 23:14:51 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 1001, 'limit': 101, 'username': 'test'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.003855s
+====================================================================================================

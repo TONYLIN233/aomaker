@@ -46,7 +46,7 @@ from hypothesis import given, strategies as st, assume
 @pytest.mark.auth2
 def test_login_with_invalid_inputs(invalid_credentials):
     """测试使用无效数据类型、超长字符串、空值、攻击字符串等异常输入进行登录，预期接口能妥善处理（如返回4xx状态码）而非抛出服务器错误（5xx）。"""
-    # 实例化请求体模型，传入 hypothesis 生成的数据
+    # 实例化请求体模型，传入 custom_hypothesis 生成的数据
     request_body = LoginForAccessTokenApiLoginTokenPostAPI.RequestBodyModel(
         username=invalid_credentials['username'],
         password=invalid_credentials['password']
@@ -90,8 +90,8 @@ def test_login_with_valid_format_but_wrong_credential(valid_format_credentials):
     # assert response.response_model.error_message == "Invalid credentials"  # 根据实际响应结构调整
 
 # 如果需要测试登录成功的情况，通常需要一个已知有效的测试账号
-# 注意：hypothesis 不太适合直接用于测试成功的流程，因为需要特定的已知值
-# 但可以结合 hypothesis 生成密码的一部分，或者测试成功登录后的其他属性
+# 注意：custom_hypothesis 不太适合直接用于测试成功的流程，因为需要特定的已知值
+# 但可以结合 custom_hypothesis 生成密码的一部分，或者测试成功登录后的其他属性
 @given(
     st.text(min_size=1, max_size=5).map(lambda s: f"test_password_{s}")  # 生成密码后缀，与已知有效用户名组合
 )

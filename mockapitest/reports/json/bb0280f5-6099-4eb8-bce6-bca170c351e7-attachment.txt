@@ -1,0 +1,1200 @@
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=0&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 0, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001757s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=10000&limit=0&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 10000, 'limit': 0, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001748s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=10000&limit=675&username=aaaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 10000, 'limit': 675, 'username': 'aaaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001484s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=0&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 0, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001688s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-8&limit=4&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -8, 'limit': 4, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001473s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=10000&limit=0&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 10000, 'limit': 0, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001419s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=10000&limit=46&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 10000, 'limit': 46, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001458s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=0&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 0, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001417s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-2&limit=524&username= HTTP/1.1" 200 285
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -2, 'limit': 524, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [{'id': 2, 'username': '李四', 'email': 'lisi@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 3, 'username': '王五', 'email': 'wangwu@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}], 'total': 3}
+     Elapsed: 0.001562s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-5&limit=0&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -5, 'limit': 0, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001623s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-5&limit=969&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -5, 'limit': 969, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001501s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-5&limit=969&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -5, 'limit': 969, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001601s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-5&limit=969&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -5, 'limit': 969, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001617s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-3&limit=771&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -3, 'limit': 771, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.002037s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=259&username=aaaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 259, 'username': 'aaaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001501s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=259&username=+ HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 259, 'username': ' '}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001558s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=265&username=+ HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 265, 'username': ' '}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001514s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=987&username=%15%F0%9C%8C%A6T%C3%9D%3E%F3%87%B9%B0%F2%83%BB%A6%C2%B7%C3%A0%C3%AB HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 987, 'username': '\x15\U0001c326TÝ>\U000c7e70\U00083ee6·àë'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001658s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=987&username=%15%F0%9C%8C%A6T%C3%9D%3E%F3%87%B9%B0%F2%83%BB%A6%C2%B7%C3%A0%C3%AB HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 987, 'username': '\x15\U0001c326TÝ>\U000c7e70\U00083ee6·àë'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001548s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=771&username=%15%F0%9C%8C%A6T%C3%9D%3E%F3%87%B9%B0%F2%83%BB%A6%C2%B7%C3%A0%C3%AB HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 771, 'username': '\x15\U0001c326TÝ>\U000c7e70\U00083ee6·àë'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.0016s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=256&username=%15%F0%9C%8C%A6T%C3%9D%3E%F3%87%B9%B0%F2%83%BB%A6%C2%B7%C3%A0%C3%AB HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 256, 'username': '\x15\U0001c326TÝ>\U000c7e70\U00083ee6·àë'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001508s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=257&username= HTTP/1.1" 200 170
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 257, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [{'id': 3, 'username': '王五', 'email': 'wangwu@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}], 'total': 3}
+     Elapsed: 0.001569s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=257&username= HTTP/1.1" 200 170
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 257, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [{'id': 3, 'username': '王五', 'email': 'wangwu@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}], 'total': 3}
+     Elapsed: 0.001464s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=257&username= HTTP/1.1" 200 170
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 257, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [{'id': 3, 'username': '王五', 'email': 'wangwu@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}], 'total': 3}
+     Elapsed: 0.001533s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=9673&limit=67&username=+ HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 9673, 'limit': 67, 'username': ' '}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001854s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=875&limit=769&username=%C2%9E%F3%A9%95%82%C3%88%C3%BD%F3%BE%BC%95%C3%A1%C3%8B HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 875, 'limit': 769, 'username': '\x9e\U000e9542Èý\U000fef15áË'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001517s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=875&limit=769&username=%C2%9E%F3%A9%95%82%C3%88%C3%BD%F3%BE%BC%95%C3%A1%C3%8B HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 875, 'limit': 769, 'username': '\x9e\U000e9542Èý\U000fef15áË'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001627s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=875&limit=769&username=%C2%9E%F3%A9%95%82%C3%88%C3%BD%F3%BE%BC%952%C3%8B HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 875, 'limit': 769, 'username': '\x9e\U000e9542Èý\U000fef152Ë'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001912s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=875&limit=769&username=%C2%9E%F3%A9%95%82%C2%9E%C3%BD%F3%BE%BC%952%C3%8B HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 875, 'limit': 769, 'username': '\x9e\U000e9542\x9eý\U000fef152Ë'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001613s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=875&limit=3&username=%C2%9E%F3%A9%95%82%C2%9E%C3%BD%F3%BE%BC%952%C3%8B HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 875, 'limit': 3, 'username': '\x9e\U000e9542\x9eý\U000fef152Ë'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001585s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=875&limit=3&username=%C2%9E%F3%A9%95%82%C2%9E%C3%BD%F3%BE%BC%952%3F0%24 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 875, 'limit': 3, 'username': '\x9e\U000e9542\x9eý\U000fef152?0$'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001624s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=7&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 7, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001634s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=7&username=%10%C2%8F%C3%9F HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 7, 'username': '\x10\x8fß'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001537s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=265&username=%10%C2%8F%C3%9F HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 265, 'username': '\x10\x8fß'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001602s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=783&username=%10%C2%8F%C3%9F HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 783, 'username': '\x10\x8fß'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001546s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=783&username=%C3%9F%C2%8F%C3%9F HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 783, 'username': 'ß\x8fß'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001494s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-9&limit=783&username=%C3%9F%C2%8F%C3%9F HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -9, 'limit': 783, 'username': 'ß\x8fß'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001567s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-3&limit=771&username=%C3%9F%C2%8F%C3%9F HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -3, 'limit': 771, 'username': 'ß\x8fß'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001529s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-4&limit=28&username=%C3%82Z%1E%1B HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -4, 'limit': 28, 'username': 'ÂZ\x1e\x1b'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001617s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-4&limit=5&username=+ HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -4, 'limit': 5, 'username': ' '}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001389s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=256&username=%C3%98%C2%8D%E7%BB%87%F2%94%9A%88 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 256, 'username': 'Ø\x8d织\U00094688'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001947s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=257&username=%C3%98%C2%8D%E7%BB%87%F2%94%9A%88 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 257, 'username': 'Ø\x8d织\U00094688'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001867s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=257&username=%C3%98%F2%94%9A%88%E7%BB%87%F2%94%9A%88 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 257, 'username': 'Ø\U00094688织\U00094688'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001444s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=257&username=%C3%98%F2%94%9A%88%F2%94%9A%88 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 257, 'username': 'Ø\U00094688\U00094688'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001433s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=-1&limit=257&username=%C3%98%F0%91%B6%8F%F0%92%84%82%C2%8F%E9%80%86I%F3%B8%BA%8E%C3%86%C2%B3%F3%B2%B3%87 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -1, 'limit': 257, 'username': 'Ø\U00011d8f𒄂\x8f逆I\U000f8e8eÆ³\U000f2cc7'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001693s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=77&limit=53&username=%C3%B1 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 77, 'limit': 53, 'username': 'ñ'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.00149s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=77&limit=53&username=%C3%B1%C3%B1a%C2%A0 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 77, 'limit': 53, 'username': 'ñña\xa0'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001566s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=77&limit=256&username=5%C3%B1%C3%B1a%C2%A0 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 77, 'limit': 256, 'username': '5ñña\xa0'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001599s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=77&limit=1&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 77, 'limit': 1, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001479s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=257&limit=256&username=+ HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 257, 'limit': 256, 'username': ' '}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001466s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=256&limit=1&username=%F2%99%B4%B2%F0%97%8D%83%C3%AB6%10%C3%AE%EE%B9%B1%C3%87 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 256, 'limit': 1, 'username': '\U00099d32𗍃ë6\x10î\uee71Ç'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001606s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=256&limit=1&username= HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 256, 'limit': 1, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001553s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=5435&limit=977&username=%EA%A1%BF%C3%8E%C2%A2%03 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 5435, 'limit': 977, 'username': '\ua87fÎ¢\x03'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001865s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=5435&limit=977&username=%EA%A1%BF%C3%8E%C2%A2%03%EA%A1%BF HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 5435, 'limit': 977, 'username': '\ua87fÎ¢\x03\ua87f'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001678s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=5435&limit=21&username=%EA%A1%BF%C3%8E%C2%A2%03%EA%A1%BF HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 5435, 'limit': 21, 'username': '\ua87fÎ¢\x03\ua87f'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001966s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=5435&limit=21&username=%EA%A1%BF%C3%8EF HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 5435, 'limit': 21, 'username': '\ua87fÎF'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001497s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=5435&limit=21&username=%F3%A0%B8%83%C3%B5%7C HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 5435, 'limit': 21, 'username': '\U000e0e03õ|'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001502s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=5435&limit=21&username=%F3%A0%B8%83 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 5435, 'limit': 21, 'username': '\U000e0e03'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001566s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=5476&limit=267&username=%F3%A0%B8%83 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 5476, 'limit': 267, 'username': '\U000e0e03'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001401s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=327&limit=910&username=%27+AND+1%3D1 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 327, 'limit': 910, 'username': "' AND 1=1"}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001601s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=327&limit=50&username=+ HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 327, 'limit': 50, 'username': ' '}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001396s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=327&limit=256&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 327, 'limit': 256, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001586s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=256&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 256, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001479s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=2&username=%F1%BD%AB%A3 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 2, 'username': '\U0007dae3'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001522s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=12&username=%F1%BD%AB%A3 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 12, 'username': '\U0007dae3'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001437s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=12&username=%F1%BD%AB%A3%0C%C3%91 HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 12, 'username': '\U0007dae3\x0cÑ'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.00153s
+====================================================================================================
+2025-10-19 23:14:52 http://127.0.0.1:9999 "GET /api/users?offset=3657&limit=536&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:52 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 3657, 'limit': 536, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001307s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=14&limit=2&username=Tx HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 14, 'limit': 2, 'username': 'Tx'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001522s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=14&limit=0&username=Tx HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 14, 'limit': 0, 'username': 'Tx'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001673s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=14&limit=526&username=Tx HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 14, 'limit': 526, 'username': 'Tx'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.00166s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=14&limit=514&username=Tx HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 14, 'limit': 514, 'username': 'Tx'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001619s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=14&limit=0&username=Tx HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 14, 'limit': 0, 'username': 'Tx'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001525s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=14&limit=0&username=TT HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 14, 'limit': 0, 'username': 'TT'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001418s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=9778&limit=59&username=+ HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 9778, 'limit': 59, 'username': ' '}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001512s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=9778&limit=38&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 9778, 'limit': 38, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.00168s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=9778&limit=38&username=%27+OR+1%3D1-- HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 9778, 'limit': 38, 'username': "' OR 1=1--"}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001981s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=38&limit=512&username=%27+OR+1%3D1-- HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 38, 'limit': 512, 'username': "' OR 1=1--"}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001601s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=50&limit=6&username=%27+OR+1%3D1-- HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 50, 'limit': 6, 'username': "' OR 1=1--"}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001495s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=50&limit=512&username=%27+OR+1%3D1-- HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 50, 'limit': 512, 'username': "' OR 1=1--"}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001454s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=50&limit=0&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 50, 'limit': 0, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001629s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=2028&limit=853&username=aaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 2028, 'limit': 853, 'username': 'aaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001597s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=2028&limit=52&username=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 2028, 'limit': 52, 'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001943s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=52&limit=672&username=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 52, 'limit': 672, 'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.002003s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=8308&limit=13&username=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 8308, 'limit': 13, 'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001784s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=8308&limit=32&username=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 8308, 'limit': 32, 'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.00193s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=8308&limit=4&username= HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 8308, 'limit': 4, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001543s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=1024&limit=11&username= HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 1024, 'limit': 11, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.001523s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=-7&limit=784&username= HTTP/1.1" 200 404
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -7, 'limit': 784, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [{'id': 1, 'username': '张三', 'email': 'zhangsan@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 2, 'username': '李四', 'email': 'lisi@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 3, 'username': '王五', 'email': 'wangwu@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}], 'total': 3}
+     Elapsed: 0.001629s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=784&username= HTTP/1.1" 200 404
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 784, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [{'id': 1, 'username': '张三', 'email': 'zhangsan@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 2, 'username': '李四', 'email': 'lisi@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 3, 'username': '王五', 'email': 'wangwu@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}], 'total': 3}
+     Elapsed: 0.001807s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=0&limit=256&username= HTTP/1.1" 200 404
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 0, 'limit': 256, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [{'id': 1, 'username': '张三', 'email': 'zhangsan@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 2, 'username': '李四', 'email': 'lisi@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 3, 'username': '王五', 'email': 'wangwu@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}], 'total': 3}
+     Elapsed: 0.002143s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=256&limit=256&username= HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 256, 'limit': 256, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 3}
+     Elapsed: 0.002015s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=257&limit=256&username=%01%C2%82%F0%9E%8C%81%26%C2%86%C2%BE4%C3%A6%1A%24%F2%AE%A8%93 HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 257, 'limit': 256, 'username': '\x01\x82\U0001e301&\x86¾4æ\x1a$\U000aea13'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001727s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=257&limit=256&username=%01%C2%82%F0%9E%8C%81%26%C2%86%C2%BE4%C3%A6%C2%82%24%F2%AE%A8%93 HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 257, 'limit': 256, 'username': '\x01\x82\U0001e301&\x86¾4æ\x82$\U000aea13'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001819s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=257&limit=256&username=%01%24%F0%9E%8C%81%26%C2%86%C2%BE4%C3%A6%C2%82%24%F2%AE%A8%93 HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 257, 'limit': 256, 'username': '\x01$\U0001e301&\x86¾4æ\x82$\U000aea13'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001828s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=5405&limit=153&username=true HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 5405, 'limit': 153, 'username': 'true'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001703s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=1846&limit=11&username=%27+OR+%27a%27%3D%27a HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 1846, 'limit': 11, 'username': "' OR 'a'='a"}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001625s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=1846&limit=7&username=%27+AND+1%3D1 HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 1846, 'limit': 7, 'username': "' AND 1=1"}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001725s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=1878&limit=774&username=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': 1878, 'limit': 774, 'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001977s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=-6&limit=774&username=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1" 200 54
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -6, 'limit': 774, 'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [], 'total': 0}
+     Elapsed: 0.001975s
+====================================================================================================
+2025-10-19 23:14:53 http://127.0.0.1:9999 "GET /api/users?offset=-6&limit=774&username= HTTP/1.1" 200 404
+2025-10-19 23:14:53 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: GetUsersApiUsersGetAPI 获取系统中的用户列表，支持分页和按用户名模糊搜索
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: GET
+     Request Params: {'offset': -6, 'limit': 774, 'username': ''}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': 'success', 'data': [{'id': 1, 'username': '张三', 'email': 'zhangsan@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 2, 'username': '李四', 'email': 'lisi@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}, {'id': 3, 'username': '王五', 'email': 'wangwu@example.com', 'created_at': '2025-10-19T22:59:24.130502', 'is_active': True}], 'total': 3}
+     Elapsed: 0.001529s
+====================================================================================================
