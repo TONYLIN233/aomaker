@@ -20,6 +20,4 @@ class LoginForAccessTokenApiLoginTokenPostAPI(BaseAPI[TokenResponseData]):
     request_body: RequestBodyModel
 
     response: Optional[TokenResponseData] = field(default=TokenResponseData)
-    endpoint_id: Optional[str] = field(
-        default="login_for_access_token_api_login_token_post"
-    )
+    endpoint_id: Optional[str] = field(default="login_for_access_token_api_login_token_post")

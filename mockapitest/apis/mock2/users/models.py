@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Optional, Dict, List
+from typing import Optional, Dict, List, Union
 from attrs import define, field
 
 __ALL__ = [
@@ -37,7 +37,9 @@ class UserListResponse:
 class UserResponse:
     ret_code: Optional[int] = field(default=0)
     message: Optional[str] = field(default="success")
-    data: Optional[User] = field(default=None)
+    data: Optional[Union[User, List[User]]] = field(default=None)
+    detail: Optional[Union[str, list]] = field(default=None)
+    total: Optional[int] = field(default=0)
 
 
 @define(kw_only=True)

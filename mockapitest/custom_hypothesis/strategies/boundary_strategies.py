@@ -15,10 +15,10 @@ class BoundaryStrategies:
         return st.one_of(
             st.just(""),  # 空字符串
             st.just(" "),  # 单个空格
-            st.just("a" * min_len) if min_len > 0 else st.nothing(),
-            st.just("a" * max_len),
-            st.just("a" * (max_len + 1)),  # 超过最大长度
-            st.just("a" * 1000),  # 超长字符串
+            st.just("1" * min_len) if min_len > 0 else st.nothing(),
+            st.just("1" * max_len),
+            st.just("1" * (max_len + 1)),  # 超过最大长度
+            st.just("1" * 1000),  # 超长字符串
             st.text(min_size=1, max_size=10),  # 正常范围字符串
         )
 
