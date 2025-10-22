@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Oct 20 16:25:08 CST 2025","Mon Oct 20 16:25:08 CST 2025","511","testcases.test_api.user","test_get_user_by_id","","","","test_get_user_by_id_length_validation","通过ID获取单个用户信息-用户名长度边界验证"
+"passed","Wed Oct 22 11:01:37 CST 2025","Wed Oct 22 11:01:37 CST 2025","47","testcases.test_smoke.user","test_create_user","","","","test_create_user_duplicate","创建一个重复的用户"

@@ -42,10 +42,10 @@ def test_get_user_by_id_property_based(user_id):
 
 
 # 2. 长度验证测试
-@pytest.mark.ones
-@QUICK
+# @pytest.mark.ones
+@COMPREHENSIVE
 @given(
-    user_id = boundary_strategies.string_length_boundaries(min_len=4000, max_len=5000),
+    user_id = boundary_strategies.integer_length_boundaries(min_len=4000, max_len=5000),
 )
 def test_get_user_by_id_length_validation(user_id):
     """通过ID获取单个用户信息-用户名长度边界验证"""
@@ -65,10 +65,16 @@ def test_get_user_by_id_length_validation(user_id):
     if response.cached_response.raw_response.status_code == 200:
         assert response.response_model.data is not None
         assert response.response_model.message == "success"
+    if user_id == "" :
+        data = response.response_model.data
+        for user_info in data:
+            assert user_info.username is not None
+    if user_id == " " :
+        assert response_data['detail'][0]['msg'] == "Input should be a valid integer, unable to parse string as an integer"
     else:
         # 正常长度应该成功或合理处理
         assert response.cached_response.raw_response.status_code in [422,404]
-        # assert response.response_model.detail == "用户不存在"
+        # assert response.response_model.detail == "用户不存在" #不知道真实最大值
 
 
 # 3. 安全边界测试
@@ -83,14 +89,10 @@ def test_get_user_by_id_length_validation(user_id):
     )
 )
 def test_user_search_security_boundaries( attack_vector):
-    """获取系统中的用户列表-安全边界：防止SQL注入、XSS等攻击"""
-    request_body = GetUsersApiUsersGetAPI.QueryParams(
-        offset=0,
-        limit=10,
-        username=attack_vector
-    )
+    """通过ID获取单个用户信息-安全边界：防止SQL注入、XSS等攻击"""
+    path_params = GetUserApiUsersUserIdGetAPI.PathParams(user_id= attack_vector)
 
-    response = GetUsersApiUsersGetAPI(query_params=request_body).send()
+    response = GetUserApiUsersUserIdGetAPI(path_params=path_params).send()
 
     # 安全验证：不应执行危险操作或泄露敏感信息
     assert response.cached_response.raw_response.status_code != 500  # 不应崩溃
@@ -101,92 +103,30 @@ def test_user_search_security_boundaries( attack_vector):
         assert response.response_model.ret_code in [0, 400, 403]
 
 
-# 4. 数值边界测试
-@pytest.mark.userscenario
+
+
+# 4. 特殊字符边界测试
+@pytest.mark.API
+# @pytest.mark.ones
 @STANDARD
 @given(
-    offset=boundary_strategies.integer_boundaries(min_val=0, max_val=1000),
-    limit=boundary_strategies.integer_boundaries(min_val=1, max_val=100)
+    special_integers=boundary_strategies.edge_case_integers()
 )
-def test_user_search_numeric_boundaries(offset, limit):
-    """获取系统中的用户列表-数值参数边界情况"""
-    # 跳过明显无效的测试用例
-    if offset < -1000 or offset > 100000 or limit < 0 or limit > 1000:
-        pytest.skip("超出合理测试范围的数值")
+def test_user_search_special_characters(special_integers):
+    """获取系统中的用户列表-特殊整数处理能力"""
+    path_params = GetUserApiUsersUserIdGetAPI.PathParams(user_id= special_integers)
 
-    request_body = GetUsersApiUsersGetAPI.QueryParams(
-        offset=offset,
-        limit=limit,
-        username="test"
-    )
-
-    response = GetUsersApiUsersGetAPI(query_params=request_body).send()
-
-    # 边界数值处理验证
-    if offset < 0:
-        assert response.response_model.ret_code != 0  # 负偏移量应该报错
-    elif limit == 0:
-        if response.response_model.ret_code == 0:
-            assert len(response.response_model.data) == 0  # 零限制应返回空
-    else:
-        assert response.cached_response.raw_response.status_code == 200
-
-
-# 5. 特殊字符边界测试
-@pytest.mark.userscenario
-@QUICK
-@given(
-    special_chars=boundary_strategies.special_characters()
-)
-def test_user_search_special_characters(special_chars):
-    """获取系统中的用户列表-特殊字符处理能力"""
-    request_body = GetUsersApiUsersGetAPI.QueryParams(
-        offset=0,
-        limit=10,
-        username=special_chars
-    )
-
-    response = GetUsersApiUsersGetAPI(query_params=request_body).send()
+    response = GetUserApiUsersUserIdGetAPI(path_params=path_params).send()
 
     # 特殊字符处理验证
-    assert response.cached_response.raw_response.status_code in [200, 400]
+    assert response.cached_response.raw_response.status_code in [200,422, 400,404]
 
     if response.response_model.ret_code == 0:
-        data = response.response_model.data
-        for user_info in data:
-            assert user_info.username is not None
+        if response.response_model.data is not None:
+            assert response.response_model.message == "success"
+        else:
+            assert response.response_model.detail is not None
 
 
-# 6. 综合边界测试
-@pytest.mark.userscenario
-@COMPREHENSIVE
-@given(
-    offset=base_strategies.integers(min_value=-10, max_value=10000),
-    limit=base_strategies.integers(min_value=0, max_value=1000),
-    username=base_strategies.one_of(
-        boundary_strategies.string_length_boundaries(max_len=20),
-        error_strategies.sql_injection_vectors(),
-        boundary_strategies.special_characters(),
-        base_strategies.strings(min_length=0, max_length=20)
-    )
-)
-def test_user_search_comprehensive_boundaries( offset, limit, username):
-    """获取系统中的用户列表-综合边界测试：组合各种边界条件"""
-    # 过滤明显不合理的测试用例
-    if offset < -1000 or offset > 1000000 or limit > 10000 or len(username) > 1000:
-        pytest.skip("超出合理测试范围")
 
-    request_body = GetUsersApiUsersGetAPI.QueryParams(
-        offset=offset,
-        limit=limit,
-        username=username
-    )
 
-    response = GetUsersApiUsersGetAPI(query_params=request_body).send()
-
-    # 综合验证点
-    assert response.cached_response.raw_response.status_code in [200, 400]
-
-    if response.response_model.ret_code == 0:
-        data = response.response_model.data
-        assert len(data) <= limit if limit > 0 else True

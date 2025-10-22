@@ -95,6 +95,10 @@ class BaseStrategies:
         return st.one_of(*strategies)
 
     # ==================== 特定格式策略 ====================
+    @staticmethod
+    def chinese_characters():
+        """生成中文字符串"""
+        return st.text(alphabet=st.characters(min_codepoint=0x4E00, max_codepoint=0x9FFF))
 
     @staticmethod
     def emails() -> st.SearchStrategy:
