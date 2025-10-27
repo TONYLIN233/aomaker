@@ -300,7 +300,7 @@
     currentCaseId: '',
     chartData: {
         labels: ['通过', '失败', '阻塞', '跳过'],
-        values: [1, 1, 6, 1],
+        values: [2, 1, 5, 1],
         colors: ['#5CBA95', '#E88A8A', '#E6B55C', '#7A9FE2']
     }
 }" x-init="
@@ -418,15 +418,15 @@
                         </div>
                         <div class="flex justify-between">
                             <span class="text-gray-500">开始时间:</span>
-                            <span class="font-medium text-gray-700">2025-10-27 09:33:56</span>
+                            <span class="font-medium text-gray-700">2025-10-27 16:57:27</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-gray-500">结束时间:</span>
-                            <span class="font-medium text-gray-700">2025-10-27 09:34:19</span>
+                            <span class="font-medium text-gray-700">2025-10-27 16:58:12</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-gray-500">运行时长:</span>
-                            <span class="font-medium text-gray-700">00h:00m:22s</span>
+                            <span class="font-medium text-gray-700">00h:00m:44s</span>
                         </div>
                     </div>
 
@@ -454,7 +454,7 @@
                                  <canvas id="donutChart"></canvas>
                                  <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
                                      
-                                     <span class="text-3xl font-bold text-gray-800">12.50%</span>
+                                     <span class="text-3xl font-bold text-gray-800">25.00%</span>
                                      <span class="text-xs text-gray-500 mt-1">通过率</span>
                                      
                                  </div>
@@ -466,7 +466,7 @@
                              <div class="legend-item" @click="$store.reportData.filterCases('passed')">
                                  <span class="legend-icon bg-status-passed"></span>
                                  <span class="legend-text">通过</span>
-                                 <span class="legend-value">1</span>
+                                 <span class="legend-value">2</span>
                              </div>
                              <!-- Failed -->
                              <div class="legend-item" @click="$store.reportData.filterCases('failed')">
@@ -478,7 +478,7 @@
                              <div class="legend-item" @click="$store.reportData.filterCases('broken')">
                                  <span class="legend-icon bg-status-broken"></span>
                                  <span class="legend-text">阻塞</span>
-                                 <span class="legend-value">6</span>
+                                 <span class="legend-value">5</span>
                              </div>
                              <!-- Skipped -->
                              <div class="legend-item" @click="$store.reportData.filterCases('skipped')">
@@ -573,386 +573,10 @@
                                             <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
                                         </div>
                                     </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_id_and_boolean_validation</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - ID和布尔值边界验证">创建用户 - ID和布尔值边界验证</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.00s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:34:06</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                        
-                                        <span class="status-badge"
-                                              :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
-                                              }">
-                                            <span class="status-dot"
-                                                  :class="{
-                                                      'bg-status-passed': 'broken' === 'passed',
-                                                      'bg-status-failed': 'broken' === 'failed',
-                                                      'bg-status-broken': 'broken' === 'broken',
-                                                      'bg-status-skipped': 'broken' === 'skipped'
-                                                  }"></span>
-                                            Broken
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-06e81ed6893a9cf6eb32adefa418bafb').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_id_and_boolean_validation'"
-                                                class="action-button group-hover:opacity-100 focus-ring"
-                                                title="查看日志">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                            </svg>
-                                        </button>
-                                        <div id="log-06e81ed6893a9cf6eb32adefa418bafb" style="display: none;">@pytest.mark.hypothesis
->   @pytest.mark.creatuser
-
-testcases\test_api\user\test_create_user.py:240: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-D:\aomaker\venv\lib\site-packages\hypothesis\core.py:758: in process_arguments_to_given
-    check_strategy(s, name=k)
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-arg = None, name = 'is_active='
-
-    @check_function
-    def check_strategy(arg: object, name: str = "") -> None:
-        assert isinstance(name, str)
-        if not isinstance(arg, SearchStrategy):
-            hint = ""
-            if isinstance(arg, (list, tuple)):
-                hint = ", such as st.sampled_from({}),".format(name or "...")
-            if name:
-                name += "="
->           raise InvalidArgument(
-                f"Expected a SearchStrategy{hint} but got {name}{arg!r} "
-                f"(type={type(arg).__name__})"
-            )
-E           hypothesis.errors.InvalidArgument: Expected a SearchStrategy but got is_active=None (type=NoneType)
-
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:1228: InvalidArgument</div>
-                                    </td>
-                                </tr>
-                                
-                                <tr
-                                    x-show="$store.reportData.shouldShow('broken')"
-                                    x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="opacity-0"
-                                    x-transition:enter-end="opacity-100"
-                                    class="group"
-                                >
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="table-icon flex-shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                                </svg>
-                                            </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_email_length_validation</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 邮箱长度边界验证">创建用户 - 邮箱长度边界验证</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">5.27s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:33:59</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                        
-                                        <span class="status-badge"
-                                              :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
-                                              }">
-                                            <span class="status-dot"
-                                                  :class="{
-                                                      'bg-status-passed': 'broken' === 'passed',
-                                                      'bg-status-failed': 'broken' === 'failed',
-                                                      'bg-status-broken': 'broken' === 'broken',
-                                                      'bg-status-skipped': 'broken' === 'skipped'
-                                                  }"></span>
-                                            Broken
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-9e34439b5ae8470c369a5a72afcb2a67').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_email_length_validation'"
-                                                class="action-button group-hover:opacity-100 focus-ring"
-                                                title="查看日志">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                            </svg>
-                                        </button>
-                                        <div id="log-9e34439b5ae8470c369a5a72afcb2a67" style="display: none;">+ Exception Group Traceback (most recent call last):
-  |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 151, in test_create_user_email_length_validation
-  |     @pytest.mark.creatuser
-  |   File "D:\aomaker\venv\lib\site-packages\hypothesis\core.py", line 2124, in wrapped_test
-  |     raise the_error_hypothesis_found
-  | exceptiongroup.ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
-  +-+---------------- 1 ----------------
-    | Traceback (most recent call last):
-    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 175, in test_create_user_email_length_validation
-    |     assert response.response_model.ret_code != 0
-    | AssertionError: assert 0 != 0
-    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='testuser', email='a', created_at=datetime.datetime(2025, 10, 27, 9, 34, 4, 508711), is_active=True), detail=None, total=0).ret_code
-    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='testuser', email='a', created_at=datetime.datetime(2025, 10, 27, 9, 34, 4, 508711), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x00000157AFBEC370>, response_model=User... created_at=datetime.datetime(2025, 10, 27, 9, 34, 4, 508711), is_active=True), detail=None, total=0), is_stream=False).response_model
-    | Falsifying example: test_create_user_email_length_validation(
-    |     email='a',  # or any other generated value
-    | )
-    +---------------- 2 ----------------
-    | Traceback (most recent call last):
-    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 172, in test_create_user_email_length_validation
-    |     assert response.response_model.ret_code != 0
-    | AssertionError: assert 0 != 0
-    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='testuser', email='', created_at=datetime.datetime(2025, 10, 27, 9, 34, 4, 530669), is_active=True), detail=None, total=0).ret_code
-    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='testuser', email='', created_at=datetime.datetime(2025, 10, 27, 9, 34, 4, 530669), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x00000157AED08D60>, response_model=User... created_at=datetime.datetime(2025, 10, 27, 9, 34, 4, 530669), is_active=True), detail=None, total=0), is_stream=False).response_model
-    | Falsifying example: test_create_user_email_length_validation(
-    |     email='',
-    | )
-    +------------------------------------</div>
-                                    </td>
-                                </tr>
-                                
-                                <tr
-                                    x-show="$store.reportData.shouldShow('skipped')"
-                                    x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="opacity-0"
-                                    x-transition:enter-end="opacity-100"
-                                    class="group"
-                                >
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="table-icon flex-shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                                </svg>
-                                            </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_comprehensive_boundaries</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 综合边界测试：组合各种边界条件">创建用户 - 综合边界测试：组合各种边界条件</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">12.70s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:34:06</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                        
-                                        <span class="status-badge"
-                                              :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'skipped' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'skipped' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'skipped' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'skipped' === 'skipped'
-                                              }">
-                                            <span class="status-dot"
-                                                  :class="{
-                                                      'bg-status-passed': 'skipped' === 'passed',
-                                                      'bg-status-failed': 'skipped' === 'failed',
-                                                      'bg-status-broken': 'skipped' === 'broken',
-                                                      'bg-status-skipped': 'skipped' === 'skipped'
-                                                  }"></span>
-                                            Skipped
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-89f08a07484d3646d3d737310e3f4ae6').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_comprehensive_boundaries'"
-                                                class="action-button group-hover:opacity-100 focus-ring"
-                                                title="查看日志">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                            </svg>
-                                        </button>
-                                        <div id="log-89f08a07484d3646d3d737310e3f4ae6" style="display: none;">('D:\\GitHub\\aomaker\\mockapitest\\testcases\\test_api\\user\\test_create_user.py', 365, 'Skipped: 超出合理测试范围')</div>
-                                    </td>
-                                </tr>
-                                
-                                <tr
-                                    x-show="$store.reportData.shouldShow('broken')"
-                                    x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="opacity-0"
-                                    x-transition:enter-end="opacity-100"
-                                    class="group"
-                                >
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="table-icon flex-shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                                </svg>
-                                            </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_missing_fields</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 字段缺失测试">创建用户 - 字段缺失测试</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.17s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:34:06</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                        
-                                        <span class="status-badge"
-                                              :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
-                                              }">
-                                            <span class="status-dot"
-                                                  :class="{
-                                                      'bg-status-passed': 'broken' === 'passed',
-                                                      'bg-status-failed': 'broken' === 'failed',
-                                                      'bg-status-broken': 'broken' === 'broken',
-                                                      'bg-status-skipped': 'broken' === 'skipped'
-                                                  }"></span>
-                                            Broken
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-9e1cfd00b5d3443fd6ce92c1610dc4c4').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_missing_fields'"
-                                                class="action-button group-hover:opacity-100 focus-ring"
-                                                title="查看日志">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                            </svg>
-                                        </button>
-                                        <div id="log-9e1cfd00b5d3443fd6ce92c1610dc4c4" style="display: none;">@pytest.mark.hypothesis
->   @pytest.mark.creatuser
-
-testcases\test_api\user\test_create_user.py:307: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-missing_field = 'id'
-
-    @pytest.mark.hypothesis
-    @pytest.mark.creatuser
-    @STANDARD
-    @given(missing_field=base_strategies.sampled_from(["id", "username", "email", "created_at", "is_active"]))
-    def test_create_user_missing_fields(missing_field):
-        """创建用户 - 字段缺失测试"""
-        # 创建完整请求体
-        request_data = {
-            "id": 123,
-            "username": "testuser",
-            "email": "test@example.com",
-            "created_at": datetime.now(),
-            "is_active": True
-        }
-    
-        # 移除指定字段
-        del request_data[missing_field]
-    
->       request_body = apis.CreateUserApiUsersPostAPI.RequestBodyModel(**request_data)
-E       TypeError: CreateUserApiUsersPostAPI.RequestBodyModel.__init__() missing 1 required positional argument: 'id'
-E       Falsifying example: test_create_user_missing_fields(
-E           missing_field='id',
-E       )
-
-testcases\test_api\user\test_create_user.py:324: TypeError</div>
-                                    </td>
-                                </tr>
-                                
-                                <tr
-                                    x-show="$store.reportData.shouldShow('broken')"
-                                    x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="opacity-0"
-                                    x-transition:enter-end="opacity-100"
-                                    class="group"
-                                >
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="table-icon flex-shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                                </svg>
-                                            </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_datetime_validation</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 日期时间格式验证">创建用户 - 日期时间格式验证</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.00s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:34:06</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                        
-                                        <span class="status-badge"
-                                              :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
-                                              }">
-                                            <span class="status-dot"
-                                                  :class="{
-                                                      'bg-status-passed': 'broken' === 'passed',
-                                                      'bg-status-failed': 'broken' === 'failed',
-                                                      'bg-status-broken': 'broken' === 'broken',
-                                                      'bg-status-skipped': 'broken' === 'skipped'
-                                                  }"></span>
-                                            Broken
-                                        </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-78663678cd0ff1ea44bcaf20b1eaca45').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_datetime_validation'"
-                                                class="action-button group-hover:opacity-100 focus-ring"
-                                                title="查看日志">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                            </svg>
-                                        </button>
-                                        <div id="log-78663678cd0ff1ea44bcaf20b1eaca45" style="display: none;">@pytest.mark.hypothesis
->   @pytest.mark.creatuser
-
-testcases\test_api\user\test_create_user.py:272: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-D:\aomaker\venv\lib\site-packages\hypothesis\core.py:759: in process_arguments_to_given
-    s.validate()
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:498: in validate
-    self.do_validate()
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:847: in do_validate
-    for e in self.element_strategies:
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:821: in element_strategies
-    check_strategy(arg)
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-arg = None, name = ''
-
-    @check_function
-    def check_strategy(arg: object, name: str = "") -> None:
-        assert isinstance(name, str)
-        if not isinstance(arg, SearchStrategy):
-            hint = ""
-            if isinstance(arg, (list, tuple)):
-                hint = ", such as st.sampled_from({}),".format(name or "...")
-            if name:
-                name += "="
->           raise InvalidArgument(
-                f"Expected a SearchStrategy{hint} but got {name}{arg!r} "
-                f"(type={type(arg).__name__})"
-            )
-E           hypothesis.errors.InvalidArgument: Expected a SearchStrategy but got None (type=NoneType)
-
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:1228: InvalidArgument</div>
-                                    </td>
-                                </tr>
-                                
-                                <tr
-                                    x-show="$store.reportData.shouldShow('broken')"
-                                    x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="opacity-0"
-                                    x-transition:enter-end="opacity-100"
-                                    class="group"
-                                >
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="table-icon flex-shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                                </svg>
-                                            </div>
-                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
-                                        </div>
-                                    </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_username_length_validation</td>
                                     <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 用户名长度边界验证">创建用户 - 用户名长度边界验证</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2.43s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:33:56</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.34s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:57:30</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm">
                                         
                                         <span class="status-badge"
@@ -981,43 +605,37 @@ D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:
                                             </svg>
                                         </button>
                                         <div id="log-70d2a432cde473e0a3a82e5ec85f56e8" style="display: none;">+ Exception Group Traceback (most recent call last):
-  |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 118, in test_create_user_username_length_validation
+  |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 124, in test_create_user_username_length_validation
   |     @pytest.mark.creatuser
   |   File "D:\aomaker\venv\lib\site-packages\hypothesis\core.py", line 2124, in wrapped_test
   |     raise the_error_hypothesis_found
   | exceptiongroup.ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
   +-+---------------- 1 ----------------
     | Traceback (most recent call last):
-    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 147, in test_create_user_username_length_validation
+    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 153, in test_create_user_username_length_validation
     |     assert response.response_model.ret_code != 0
     | AssertionError: assert 0 != 0
-    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...est@example.com', created_at=datetime.datetime(2025, 10, 27, 9, 33, 59, 225660), is_active=True), detail=None, total=0).ret_code
-    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...est@example.com', created_at=datetime.datetime(2025, 10, 27, 9, 33, 59, 225660), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x00000157AD260D30>, response_model=User...created_at=datetime.datetime(2025, 10, 27, 9, 33, 59, 225660), is_active=True), detail=None, total=0), is_stream=False).response_model
+    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...st@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 658580), is_active=True), detail=None, total=0).ret_code
+    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...st@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 658580), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x000001A47E0879D0>, response_model=User...reated_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 658580), is_active=True), detail=None, total=0), is_stream=False).response_model
     | Falsifying example: test_create_user_username_length_validation(
     |     username='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
     | )
-    | Explanation:
-    |     These lines were always and only run by failing examples:
-    |         D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py:147
     +---------------- 2 ----------------
     | Traceback (most recent call last):
-    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 139, in test_create_user_username_length_validation
+    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 145, in test_create_user_username_length_validation
     |     assert response.response_model.ret_code != 0
     | AssertionError: assert 0 != 0
-    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='', email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 9, 33, 59, 247765), is_active=True), detail=None, total=0).ret_code
-    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='', email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 9, 33, 59, 247765), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x00000157AD16F3D0>, response_model=User...created_at=datetime.datetime(2025, 10, 27, 9, 33, 59, 247765), is_active=True), detail=None, total=0), is_stream=False).response_model
+    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='', email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 679699), is_active=True), detail=None, total=0).ret_code
+    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='', email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 679699), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x000001A47E0853F0>, response_model=User...reated_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 679699), is_active=True), detail=None, total=0), is_stream=False).response_model
     | Falsifying example: test_create_user_username_length_validation(
     |     username='',
     | )
-    | Explanation:
-    |     These lines were always and only run by failing examples:
-    |         D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py:139
     +------------------------------------</div>
                                     </td>
                                 </tr>
                                 
                                 <tr
-                                    x-show="$store.reportData.shouldShow('passed')"
+                                    x-show="$store.reportData.shouldShow('skipped')"
                                     x-transition:enter="transition ease-out duration-100"
                                     x-transition:enter-start="opacity-0"
                                     x-transition:enter-end="opacity-100"
@@ -1033,38 +651,136 @@ D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:
                                             <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
                                         </div>
                                     </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_special_characters</td>
-                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 特殊字符处理能力">创建用户 - 特殊字符处理能力</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.19s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:34:06</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_comprehensive_boundaries</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 综合边界测试：组合各种边界条件">创建用户 - 综合边界测试：组合各种边界条件</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.12s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:58:11</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm">
                                         
                                         <span class="status-badge"
                                               :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'passed' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'passed' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'passed' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'passed' === 'skipped'
+                                                  'bg-status-passed/10 text-status-passed': 'skipped' === 'passed',
+                                                  'bg-status-failed/10 text-status-failed': 'skipped' === 'failed',
+                                                  'bg-status-broken/10 text-status-broken': 'skipped' === 'broken',
+                                                  'bg-status-skipped/10 text-status-skipped': 'skipped' === 'skipped'
                                               }">
                                             <span class="status-dot"
                                                   :class="{
-                                                      'bg-status-passed': 'passed' === 'passed',
-                                                      'bg-status-failed': 'passed' === 'failed',
-                                                      'bg-status-broken': 'passed' === 'broken',
-                                                      'bg-status-skipped': 'passed' === 'skipped'
+                                                      'bg-status-passed': 'skipped' === 'passed',
+                                                      'bg-status-failed': 'skipped' === 'failed',
+                                                      'bg-status-broken': 'skipped' === 'broken',
+                                                      'bg-status-skipped': 'skipped' === 'skipped'
                                                   }"></span>
-                                            Passed
+                                            Skipped
                                         </span>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
-                                        <button @click="showModal = true; currentLog = document.getElementById('log-efe21cd245815ec0dbe4e8ebe8bd45dd').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_special_characters'"
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-89f08a07484d3646d3d737310e3f4ae6').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_comprehensive_boundaries'"
                                                 class="action-button group-hover:opacity-100 focus-ring"
                                                 title="查看日志">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                             </svg>
                                         </button>
-                                        <div id="log-efe21cd245815ec0dbe4e8ebe8bd45dd" style="display: none;"></div>
+                                        <div id="log-89f08a07484d3646d3d737310e3f4ae6" style="display: none;">('D:\\GitHub\\aomaker\\mockapitest\\testcases\\test_api\\user\\test_create_user.py', 371, 'Skipped: 超出合理测试范围')</div>
+                                    </td>
+                                </tr>
+                                
+                                <tr
+                                    x-show="$store.reportData.shouldShow('broken')"
+                                    x-transition:enter="transition ease-out duration-100"
+                                    x-transition:enter-start="opacity-0"
+                                    x-transition:enter-end="opacity-100"
+                                    class="group"
+                                >
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="table-icon flex-shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_datetime_validation</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 日期时间格式验证">创建用户 - 日期时间格式验证</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1.37s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:58:10</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        
+                                        <span class="status-badge"
+                                              :class="{
+                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
+                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
+                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
+                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
+                                              }">
+                                            <span class="status-dot"
+                                                  :class="{
+                                                      'bg-status-passed': 'broken' === 'passed',
+                                                      'bg-status-failed': 'broken' === 'failed',
+                                                      'bg-status-broken': 'broken' === 'broken',
+                                                      'bg-status-skipped': 'broken' === 'skipped'
+                                                  }"></span>
+                                            Broken
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-78663678cd0ff1ea44bcaf20b1eaca45').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_datetime_validation'"
+                                                class="action-button group-hover:opacity-100 focus-ring"
+                                                title="查看日志">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </button>
+                                        <div id="log-78663678cd0ff1ea44bcaf20b1eaca45" style="display: none;">+ Exception Group Traceback (most recent call last):
+  |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 278, in test_create_user_datetime_validation
+  |     @pytest.mark.creatuser
+  |   File "D:\aomaker\venv\lib\site-packages\hypothesis\core.py", line 2124, in wrapped_test
+  |     raise the_error_hypothesis_found
+  | exceptiongroup.ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 297, in test_create_user_datetime_validation
+    |     response = apis.CreateUserApiUsersPostAPI(request_body=request_body).send()
+    |   File "D:\aomaker\venv\lib\site-packages\aomaker\core\api_object.py", line 103, in send
+    |     req = self._prepare_request(stream)
+    |   File "D:\aomaker\venv\lib\site-packages\aomaker\core\api_object.py", line 129, in _prepare_request
+    |     req = self.converter.convert()
+    |   File "D:\aomaker\venv\lib\site-packages\aomaker\core\converters.py", line 294, in convert
+    |     request_data = self.prepare()
+    |   File "D:\aomaker\venv\lib\site-packages\aomaker\core\converters.py", line 365, in prepare
+    |     unstructured_request_data = self._serialize_data(request_data)
+    |   File "D:\aomaker\venv\lib\site-packages\aomaker\core\converters.py", line 403, in _serialize_data
+    |     unstructured = self.unstructure(data)
+    |   File "D:\aomaker\venv\lib\site-packages\aomaker\core\converters.py", line 313, in unstructure
+    |     return self._converter.unstructure(data)
+    |   File "D:\aomaker\venv\lib\site-packages\cattrs\converters.py", line 300, in unstructure
+    |     return self._unstructure_func.dispatch(
+    |   File "", line 2, in unstructure_mapping
+    |   File "", line 2, in <genexpr>
+    |   File "D:\aomaker\venv\lib\site-packages\cattrs\converters.py", line 300, in unstructure
+    |     return self._unstructure_func.dispatch(
+    |   File "<cattrs generated unstructure mockapitest.apis.mock2.users.apis.CreateUserApiUsersPostAPI.RequestBodyModel>", line 6, in unstructure_RequestBodyModel
+    |     'created_at': __c_unstr_created_at(instance.created_at),
+    |   File "D:\aomaker\venv\lib\site-packages\aomaker\core\converters.py", line 251, in <lambda>
+    |     lambda dt: dt.isoformat() if dt else None
+    | AttributeError: 'str' object has no attribute 'isoformat'. Did you mean: 'format'?
+    | Falsifying example: test_create_user_datetime_validation(
+    |     datetime_input='2025-05-10 14:30:00',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 307, in test_create_user_datetime_validation
+    |     assert response.response_model.ret_code != 0
+    | AssertionError: assert 0 != 0
+    |  +  where 0 = UserResponse(ret_code=0, message='success', data=None, detail=[{'type': 'missing', 'loc': ['body', 'created_at'], 'msg...user', 'email': 'test@example.com', 'is_active': True}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}], total=0).ret_code
+    |  +    where UserResponse(ret_code=0, message='success', data=None, detail=[{'type': 'missing', 'loc': ['body', 'created_at'], 'msg...user', 'email': 'test@example.com', 'is_active': True}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}], total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x000001A4078719C0>, response_model=User...est@example.com', 'is_active': True}, 'url': 'https://errors.pydantic.dev/2.10/v/missing'}], total=0), is_stream=False).response_model
+    | Falsifying example: test_create_user_datetime_validation(
+    |     datetime_input=None,
+    | )
+    +------------------------------------</div>
                                     </td>
                                 </tr>
                                 
@@ -1087,8 +803,8 @@ D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_security_validation</td>
                                     <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 安全边界验证：防止注入攻击">创建用户 - 安全边界验证：防止注入攻击</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1.54s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:34:04</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.04s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:57:30</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm">
                                         
                                         <span class="status-badge"
@@ -1119,7 +835,7 @@ D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:
                                         <div id="log-aa2a21bc550f2b690a369b33a7ef208e" style="display: none;">@pytest.mark.hypothesis
 >   @pytest.mark.creatuser
 
-testcases\test_api\user\test_create_user.py:186: 
+testcases\test_api\user\test_create_user.py:192: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 attack_vector = "' OR 1=1--"
@@ -1153,21 +869,314 @@ attack_vector = "' OR 1=1--"
         if any(pattern in attack_vector for pattern in dangerous_patterns):
 >           assert response.response_model.ret_code != 0
 E           assert 0 != 0
-E            +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username="' OR 1=1--", email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 9, 34, 6, 73076), is_active=True), detail=None, total=0).ret_code
-E            +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username="' OR 1=1--", email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 9, 34, 6, 73076), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x00000157AFF03DF0>, response_model=User..., created_at=datetime.datetime(2025, 10, 27, 9, 34, 6, 73076), is_active=True), detail=None, total=0), is_stream=False).response_model
+E            +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username="' OR 1=1--", email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 57, 31, 18637), is_active=True), detail=None, total=0).ret_code
+E            +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username="' OR 1=1--", email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 57, 31, 18637), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x000001A47DDDD5D0>, response_model=User...created_at=datetime.datetime(2025, 10, 27, 16, 57, 31, 18637), is_active=True), detail=None, total=0), is_stream=False).response_model
 E           Falsifying example: test_create_user_security_validation(
 E               attack_vector="' OR 1=1--",
 E           )
-E           Explanation:
-E               These lines were always and only run by failing examples:
-E                   D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py:212
 
-testcases\test_api\user\test_create_user.py:212: AssertionError</div>
+testcases\test_api\user\test_create_user.py:218: AssertionError</div>
+                                    </td>
+                                </tr>
+                                
+                                <tr
+                                    x-show="$store.reportData.shouldShow('passed')"
+                                    x-transition:enter="transition ease-out duration-100"
+                                    x-transition:enter-start="opacity-0"
+                                    x-transition:enter-end="opacity-100"
+                                    class="group"
+                                >
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="table-icon flex-shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_special_characters</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 特殊字符处理能力">创建用户 - 特殊字符处理能力</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.19s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:57:31</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        
+                                        <span class="status-badge"
+                                              :class="{
+                                                  'bg-status-passed/10 text-status-passed': 'passed' === 'passed',
+                                                  'bg-status-failed/10 text-status-failed': 'passed' === 'failed',
+                                                  'bg-status-broken/10 text-status-broken': 'passed' === 'broken',
+                                                  'bg-status-skipped/10 text-status-skipped': 'passed' === 'skipped'
+                                              }">
+                                            <span class="status-dot"
+                                                  :class="{
+                                                      'bg-status-passed': 'passed' === 'passed',
+                                                      'bg-status-failed': 'passed' === 'failed',
+                                                      'bg-status-broken': 'passed' === 'broken',
+                                                      'bg-status-skipped': 'passed' === 'skipped'
+                                                  }"></span>
+                                            Passed
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-efe21cd245815ec0dbe4e8ebe8bd45dd').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_special_characters'"
+                                                class="action-button group-hover:opacity-100 focus-ring"
+                                                title="查看日志">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </button>
+                                        <div id="log-efe21cd245815ec0dbe4e8ebe8bd45dd" style="display: none;"></div>
                                     </td>
                                 </tr>
                                 
                                 <tr
                                     x-show="$store.reportData.shouldShow('broken')"
+                                    x-transition:enter="transition ease-out duration-100"
+                                    x-transition:enter-start="opacity-0"
+                                    x-transition:enter-end="opacity-100"
+                                    class="group"
+                                >
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="table-icon flex-shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_missing_fields</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 字段缺失测试">创建用户 - 字段缺失测试</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.01s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:58:11</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        
+                                        <span class="status-badge"
+                                              :class="{
+                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
+                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
+                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
+                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
+                                              }">
+                                            <span class="status-dot"
+                                                  :class="{
+                                                      'bg-status-passed': 'broken' === 'passed',
+                                                      'bg-status-failed': 'broken' === 'failed',
+                                                      'bg-status-broken': 'broken' === 'broken',
+                                                      'bg-status-skipped': 'broken' === 'skipped'
+                                                  }"></span>
+                                            Broken
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-9e1cfd00b5d3443fd6ce92c1610dc4c4').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_missing_fields'"
+                                                class="action-button group-hover:opacity-100 focus-ring"
+                                                title="查看日志">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </button>
+                                        <div id="log-9e1cfd00b5d3443fd6ce92c1610dc4c4" style="display: none;">@pytest.mark.hypothesis
+>   @pytest.mark.creatuser
+
+testcases\test_api\user\test_create_user.py:313: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+missing_field = 'id'
+
+    @pytest.mark.hypothesis
+    @pytest.mark.creatuser
+    @STANDARD
+    @given(missing_field=base_strategies.sampled_from(["id", "username", "email", "created_at", "is_active"]))
+    def test_create_user_missing_fields(missing_field):
+        """创建用户 - 字段缺失测试"""
+        # 创建完整请求体
+        request_data = {
+            "id": 123,
+            "username": "testuser",
+            "email": "test@example.com",
+            "created_at": datetime.now(),
+            "is_active": True
+        }
+    
+        # 移除指定字段
+        del request_data[missing_field]
+    
+>       request_body = apis.CreateUserApiUsersPostAPI.RequestBodyModel(**request_data)
+E       TypeError: CreateUserApiUsersPostAPI.RequestBodyModel.__init__() missing 1 required positional argument: 'id'
+E       Falsifying example: test_create_user_missing_fields(
+E           missing_field='id',
+E       )
+
+testcases\test_api\user\test_create_user.py:330: TypeError</div>
+                                    </td>
+                                </tr>
+                                
+                                <tr
+                                    x-show="$store.reportData.shouldShow('broken')"
+                                    x-transition:enter="transition ease-out duration-100"
+                                    x-transition:enter-start="opacity-0"
+                                    x-transition:enter-end="opacity-100"
+                                    class="group"
+                                >
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="table-icon flex-shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_email_length_validation</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - 邮箱长度边界验证">创建用户 - 邮箱长度边界验证</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.28s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:57:30</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        
+                                        <span class="status-badge"
+                                              :class="{
+                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
+                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
+                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
+                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
+                                              }">
+                                            <span class="status-dot"
+                                                  :class="{
+                                                      'bg-status-passed': 'broken' === 'passed',
+                                                      'bg-status-failed': 'broken' === 'failed',
+                                                      'bg-status-broken': 'broken' === 'broken',
+                                                      'bg-status-skipped': 'broken' === 'skipped'
+                                                  }"></span>
+                                            Broken
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-9e34439b5ae8470c369a5a72afcb2a67').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_email_length_validation'"
+                                                class="action-button group-hover:opacity-100 focus-ring"
+                                                title="查看日志">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </button>
+                                        <div id="log-9e34439b5ae8470c369a5a72afcb2a67" style="display: none;">+ Exception Group Traceback (most recent call last):
+  |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 157, in test_create_user_email_length_validation
+  |     @pytest.mark.creatuser
+  |   File "D:\aomaker\venv\lib\site-packages\hypothesis\core.py", line 2124, in wrapped_test
+  |     raise the_error_hypothesis_found
+  | exceptiongroup.ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 181, in test_create_user_email_length_validation
+    |     assert response.response_model.ret_code != 0
+    | AssertionError: assert 0 != 0
+    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='testuser', email='a', created_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 940573), is_active=True), detail=None, total=0).ret_code
+    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='testuser', email='a', created_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 940573), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x000001A47DB87520>, response_model=User...reated_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 940573), is_active=True), detail=None, total=0), is_stream=False).response_model
+    | Falsifying example: test_create_user_email_length_validation(
+    |     email='a',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 178, in test_create_user_email_length_validation
+    |     assert response.response_model.ret_code != 0
+    | AssertionError: assert 0 != 0
+    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='testuser', email='', created_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 962665), is_active=True), detail=None, total=0).ret_code
+    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=123, username='testuser', email='', created_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 962665), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x000001A47DE10880>, response_model=User...reated_at=datetime.datetime(2025, 10, 27, 16, 57, 30, 962665), is_active=True), detail=None, total=0), is_stream=False).response_model
+    | Falsifying example: test_create_user_email_length_validation(
+    |     email='',
+    | )
+    +------------------------------------</div>
+                                    </td>
+                                </tr>
+                                
+                                <tr
+                                    x-show="$store.reportData.shouldShow('broken')"
+                                    x-transition:enter="transition ease-out duration-100"
+                                    x-transition:enter-start="opacity-0"
+                                    x-transition:enter-end="opacity-100"
+                                    class="group"
+                                >
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="table-icon flex-shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                                </svg>
+                                            </div>
+                                            <div class="text-sm text-gray-700 font-medium">testcases.test_api.user.test_create_user</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">test_create_user_id_and_boolean_validation</td>
+                                    <td class="px-6 py-4 text-sm text-gray-500 max-w-xs truncate" title="创建用户 - ID和布尔值边界验证">创建用户 - ID和布尔值边界验证</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">39.23s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:57:31</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        
+                                        <span class="status-badge"
+                                              :class="{
+                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
+                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
+                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
+                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
+                                              }">
+                                            <span class="status-dot"
+                                                  :class="{
+                                                      'bg-status-passed': 'broken' === 'passed',
+                                                      'bg-status-failed': 'broken' === 'failed',
+                                                      'bg-status-broken': 'broken' === 'broken',
+                                                      'bg-status-skipped': 'broken' === 'skipped'
+                                                  }"></span>
+                                            Broken
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
+                                        <button @click="showModal = true; currentLog = document.getElementById('log-06e81ed6893a9cf6eb32adefa418bafb').innerText; currentCaseId = 'testcases.test_api.user.test_create_user.test_create_user_id_and_boolean_validation'"
+                                                class="action-button group-hover:opacity-100 focus-ring"
+                                                title="查看日志">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </button>
+                                        <div id="log-06e81ed6893a9cf6eb32adefa418bafb" style="display: none;">+ Exception Group Traceback (most recent call last):
+  |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 246, in test_create_user_id_and_boolean_validation
+  |     @pytest.mark.creatuser
+  |   File "D:\aomaker\venv\lib\site-packages\hypothesis\core.py", line 2124, in wrapped_test
+  |     raise the_error_hypothesis_found
+  | exceptiongroup.ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 272, in test_create_user_id_and_boolean_validation
+    |     assert response.response_model.ret_code != 0  # 无效布尔值应报错
+    | AssertionError: assert 0 != 0
+    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=10000, username='testuser', email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 58, 10, 431550), is_active=True), detail=None, total=0).ret_code
+    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=10000, username='testuser', email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 58, 10, 431550), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x000001A4163D0100>, response_model=User...reated_at=datetime.datetime(2025, 10, 27, 16, 58, 10, 431550), is_active=True), detail=None, total=0), is_stream=False).response_model
+    | Falsifying example: test_create_user_id_and_boolean_validation(
+    |     # The test always failed when commented parts were varied together.
+    |     id=10000,  # or any other generated value
+    |     is_active='True',  # or any other generated value
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\GitHub\aomaker\mockapitest\testcases\test_api\user\test_create_user.py", line 270, in test_create_user_id_and_boolean_validation
+    |     assert response.response_model.ret_code != 0  # 负ID应报错
+    | AssertionError: assert 0 != 0
+    |  +  where 0 = UserResponse(ret_code=0, message='用户创建成功', data=User(id=-100, username='testuser', email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 58, 10, 455611), is_active=True), detail=None, total=0).ret_code
+    |  +    where UserResponse(ret_code=0, message='用户创建成功', data=User(id=-100, username='testuser', email='test@example.com', created_at=datetime.datetime(2025, 10, 27, 16, 58, 10, 455611), is_active=True), detail=None, total=0) = AoResponse(cached_response=<aomaker.core.http_client.CachedResponse object at 0x000001A4138E3FD0>, response_model=User...reated_at=datetime.datetime(2025, 10, 27, 16, 58, 10, 455611), is_active=True), detail=None, total=0), is_stream=False).response_model
+    | Falsifying example: test_create_user_id_and_boolean_validation(
+    |     # The test always failed when commented parts were varied together.
+    |     id=-100,  # or any other generated value
+    |     is_active='True',  # or any other generated value
+    | )
+    +------------------------------------</div>
+                                    </td>
+                                </tr>
+                                
+                                <tr
+                                    x-show="$store.reportData.shouldShow('passed')"
                                     x-transition:enter="transition ease-out duration-100"
                                     x-transition:enter-start="opacity-0"
                                     x-transition:enter-end="opacity-100"
@@ -1199,25 +1208,25 @@ testcases\test_api\user\test_create_user.py:212: AssertionError</div>
     属性3: 对于有效输入应返回成功响应
     属性4: 对于无效输入应返回适当的错误信息
     </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0.02s</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 09:33:56</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2.55s</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2025-10-27 16:57:27</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm">
                                         
                                         <span class="status-badge"
                                               :class="{
-                                                  'bg-status-passed/10 text-status-passed': 'broken' === 'passed',
-                                                  'bg-status-failed/10 text-status-failed': 'broken' === 'failed',
-                                                  'bg-status-broken/10 text-status-broken': 'broken' === 'broken',
-                                                  'bg-status-skipped/10 text-status-skipped': 'broken' === 'skipped'
+                                                  'bg-status-passed/10 text-status-passed': 'passed' === 'passed',
+                                                  'bg-status-failed/10 text-status-failed': 'passed' === 'failed',
+                                                  'bg-status-broken/10 text-status-broken': 'passed' === 'broken',
+                                                  'bg-status-skipped/10 text-status-skipped': 'passed' === 'skipped'
                                               }">
                                             <span class="status-dot"
                                                   :class="{
-                                                      'bg-status-passed': 'broken' === 'passed',
-                                                      'bg-status-failed': 'broken' === 'failed',
-                                                      'bg-status-broken': 'broken' === 'broken',
-                                                      'bg-status-skipped': 'broken' === 'skipped'
+                                                      'bg-status-passed': 'passed' === 'passed',
+                                                      'bg-status-failed': 'passed' === 'failed',
+                                                      'bg-status-broken': 'passed' === 'broken',
+                                                      'bg-status-skipped': 'passed' === 'skipped'
                                                   }"></span>
-                                            Broken
+                                            Passed
                                         </span>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-center">
@@ -1228,39 +1237,7 @@ testcases\test_api\user\test_create_user.py:212: AssertionError</div>
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                             </svg>
                                         </button>
-                                        <div id="log-fe48d384afb607897a1005bf8b3b250f" style="display: none;">@pytest.mark.hypothesis
->   @pytest.mark.creatuser
-
-testcases\test_api\user\test_create_user.py:12: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-D:\aomaker\venv\lib\site-packages\hypothesis\core.py:759: in process_arguments_to_given
-    s.validate()
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:498: in validate
-    self.do_validate()
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:847: in do_validate
-    for e in self.element_strategies:
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:821: in element_strategies
-    check_strategy(arg)
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-arg = None, name = ''
-
-    @check_function
-    def check_strategy(arg: object, name: str = "") -> None:
-        assert isinstance(name, str)
-        if not isinstance(arg, SearchStrategy):
-            hint = ""
-            if isinstance(arg, (list, tuple)):
-                hint = ", such as st.sampled_from({}),".format(name or "...")
-            if name:
-                name += "="
->           raise InvalidArgument(
-                f"Expected a SearchStrategy{hint} but got {name}{arg!r} "
-                f"(type={type(arg).__name__})"
-            )
-E           hypothesis.errors.InvalidArgument: Expected a SearchStrategy but got None (type=NoneType)
-
-D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:1228: InvalidArgument</div>
+                                        <div id="log-fe48d384afb607897a1005bf8b3b250f" style="display: none;"></div>
                                     </td>
                                 </tr>
                                 
@@ -1273,7 +1250,7 @@ D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:
                     <span class="font-medium text-gray-600">总计: <span class="font-bold text-aomaker-purple">9</span></span>
                     <span class="flex items-center text-[var(--color-success)]">
                         <span class="h-1.5 w-1.5 rounded-full bg-status-passed mr-1"></span>
-                        通过: <span class="font-medium ml-0.5">1</span>
+                        通过: <span class="font-medium ml-0.5">2</span>
                     </span>
                     <span class="flex items-center text-[var(--color-error)]">
                         <span class="h-1.5 w-1.5 rounded-full bg-status-failed mr-1"></span>
@@ -1281,7 +1258,7 @@ D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:
                     </span>
                     <span class="flex items-center text-[var(--color-warning)]">
                         <span class="h-1.5 w-1.5 rounded-full bg-status-broken mr-1"></span>
-                        阻塞: <span class="font-medium ml-0.5">6</span>
+                        阻塞: <span class="font-medium ml-0.5">5</span>
                     </span>
                     <span class="flex items-center text-[var(--color-info)]">
                         <span class="h-1.5 w-1.5 rounded-full bg-status-skipped mr-1"></span>
@@ -1293,7 +1270,7 @@ D:\aomaker\venv\lib\site-packages\hypothesis\strategies\_internal\strategies.py:
 
         <!-- 页脚 -->
         <footer class="mt-10 py-4 text-center text-xs text-gray-400 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-            <p>AoMaker 自动化测试报告 &copy; | 生成时间: 2025-10-27 09:34:19</p>
+            <p>AoMaker 自动化测试报告 &copy; | 生成时间: 2025-10-27 16:58:12</p>
         </footer>
     </div>
 

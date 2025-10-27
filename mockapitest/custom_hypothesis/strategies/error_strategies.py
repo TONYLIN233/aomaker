@@ -1,5 +1,4 @@
 import random
-
 from hypothesis import strategies as st
 from hypothesis.strategies import composite
 from typing import Optional, List, Dict, Any
@@ -278,6 +277,7 @@ class ErrorStrategies:
                 f"user@{domain}" for domain in custom_domains
             ])
             strategies.append(custom_strategy)
+        return st.one_of(strategies) if strategies else st.nothing()
 
         # 生成随机无效邮箱
         def generate_random_invalid():
@@ -493,6 +493,7 @@ class ErrorStrategies:
         if custom_formats:
             custom_strategy = st.sampled_from(custom_formats)
             strategies.append(custom_strategy)
+        return st.one_of(strategies) if strategies else st.nothing()
 
     @staticmethod
     def invalid_boolean_values(
@@ -647,4 +648,7 @@ class ErrorStrategies:
         if custom_values:
             custom_strategy = st.sampled_from(custom_values)
             strategies.append(custom_strategy)
+        return st.one_of(strategies) if strategies else st.nothing()
+
+
 error_strategies = ErrorStrategies()

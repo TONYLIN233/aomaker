@@ -1,0 +1,46 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/users",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "username": "null",
+      "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "created_at": "2002-07-29T20:56:55.647419",
+      "is_active": "None"
+    }
+  },
+  "response": {
+    "status_code": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "missing",
+          "loc": [
+            "body",
+            "id"
+          ],
+          "msg": "Field required",
+          "input": {
+            "username": "null",
+            "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "created_at": "2002-07-29T20:56:55.647419",
+            "is_active": "None"
+          },
+          "url": "https://errors.pydantic.dev/2.10/v/missing"
+        },
+        {
+          "type": "bool_parsing",
+          "loc": [
+            "body",
+            "is_active"
+          ],
+          "msg": "Input should be a valid boolean, unable to interpret input",
+          "input": "None",
+          "url": "https://errors.pydantic.dev/2.10/v/bool_parsing"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/users",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "id": 0,
+      "username": "' OR 'a'='a",
+      "email": "/api/comments@A.BUzZ",
+      "created_at": "2000-01-01T00:00:00",
+      "is_active": "False"
+    }
+  },
+  "response": {
+    "status_code": 200,
+    "body": {
+      "ret_code": 0,
+      "message": "用户创建成功",
+      "data": {
+        "id": 0,
+        "username": "' OR 'a'='a",
+        "email": "/api/comments@A.BUzZ",
+        "created_at": "2000-01-01T00:00:00",
+        "is_active": false
+      }
+    }
+  }
+}

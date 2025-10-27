@@ -1,0 +1,32 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/users",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "id": "",
+      "username": "0",
+      "email": "0@A.COM",
+      "created_at": "2000-01-01T00:00:00",
+      "is_active": false
+    }
+  },
+  "response": {
+    "status_code": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "int_parsing",
+          "loc": [
+            "body",
+            "id"
+          ],
+          "msg": "Input should be a valid integer, unable to parse string as an integer",
+          "input": "",
+          "url": "https://errors.pydantic.dev/2.10/v/int_parsing"
+        }
+      ]
+    }
+  }
+}
