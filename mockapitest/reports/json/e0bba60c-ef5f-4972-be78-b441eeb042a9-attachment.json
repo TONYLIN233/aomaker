@@ -1,0 +1,15 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/users",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "id": -10,
+      "username": NaN,
+      "email": "zAm5Dm_1|_lavcb@Ty-AfM.U.mx",
+      "created_at": "2025-10-27T09:34:17.883783",
+      "is_active": true
+    }
+  }
+}

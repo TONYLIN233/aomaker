@@ -1,0 +1,15 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/users",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "id": -10,
+      "username": NaN,
+      "email": "user@hotmial.com",
+      "created_at": "2025-10-27T09:34:18.584558",
+      "is_active": true
+    }
+  }
+}

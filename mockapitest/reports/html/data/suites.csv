@@ -1,2 +1,17 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Oct 22 11:01:37 CST 2025","Wed Oct 22 11:01:37 CST 2025","47","testcases.test_smoke.user","test_create_user","","","","test_create_user_duplicate","创建一个重复的用户"
+"skipped","Mon Oct 27 09:34:06 CST 2025","Mon Oct 27 09:34:19 CST 2025","12697","testcases.test_api.user","test_create_user","","","","test_create_user_comprehensive_boundaries","创建用户 - 综合边界测试：组合各种边界条件"
+"broken","Mon Oct 27 09:33:59 CST 2025","Mon Oct 27 09:34:04 CST 2025","5273","testcases.test_api.user","test_create_user","","","","test_create_user_email_length_validation","创建用户 - 邮箱长度边界验证"
+"failed","Mon Oct 27 09:34:04 CST 2025","Mon Oct 27 09:34:06 CST 2025","1537","testcases.test_api.user","test_create_user","","","","test_create_user_security_validation","创建用户 - 安全边界验证：防止注入攻击"
+"broken","Mon Oct 27 09:33:56 CST 2025","Mon Oct 27 09:33:56 CST 2025","21","testcases.test_api.user","test_create_user","","","","test_create_user_property_based","
+    创建用户 - 属性测试：验证各种输入组合下的API行为
+
+    属性1: 接口不应崩溃，应返回定义良好的状态码
+    属性2: 响应模型应可正确解析
+    属性3: 对于有效输入应返回成功响应
+    属性4: 对于无效输入应返回适当的错误信息
+    "
+"broken","Mon Oct 27 09:34:06 CST 2025","Mon Oct 27 09:34:06 CST 2025","172","testcases.test_api.user","test_create_user","","","","test_create_user_missing_fields","创建用户 - 字段缺失测试"
+"passed","Mon Oct 27 09:34:06 CST 2025","Mon Oct 27 09:34:06 CST 2025","190","testcases.test_api.user","test_create_user","","","","test_create_user_special_characters","创建用户 - 特殊字符处理能力"
+"broken","Mon Oct 27 09:34:06 CST 2025","Mon Oct 27 09:34:06 CST 2025","0","testcases.test_api.user","test_create_user","","","","test_create_user_datetime_validation","创建用户 - 日期时间格式验证"
+"broken","Mon Oct 27 09:33:56 CST 2025","Mon Oct 27 09:33:59 CST 2025","2431","testcases.test_api.user","test_create_user","","","","test_create_user_username_length_validation","创建用户 - 用户名长度边界验证"
+"broken","Mon Oct 27 09:34:06 CST 2025","Mon Oct 27 09:34:06 CST 2025","0","testcases.test_api.user","test_create_user","","","","test_create_user_id_and_boolean_validation","创建用户 - ID和布尔值边界验证"

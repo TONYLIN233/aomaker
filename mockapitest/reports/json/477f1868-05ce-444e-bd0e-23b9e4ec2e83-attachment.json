@@ -1,0 +1,36 @@
+{
+  "request": {
+    "url": "http://127.0.0.1:9999/api/users",
+    "method": "POST",
+    "params": null,
+    "data": null,
+    "json": {
+      "username": "!@#$%^&*()",
+      "email": "5rkuq6@@lsw8tk2x.com",
+      "created_at": "2025-10-27T09:34:08.783927",
+      "is_active": true
+    }
+  },
+  "response": {
+    "status_code": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "missing",
+          "loc": [
+            "body",
+            "id"
+          ],
+          "msg": "Field required",
+          "input": {
+            "username": "!@#$%^&*()",
+            "email": "5rkuq6@@lsw8tk2x.com",
+            "created_at": "2025-10-27T09:34:08.783927",
+            "is_active": true
+          },
+          "url": "https://errors.pydantic.dev/2.10/v/missing"
+        }
+      ]
+    }
+  }
+}

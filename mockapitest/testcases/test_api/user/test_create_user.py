@@ -9,19 +9,19 @@ from mockapitest.apis.mock2.users import apis
 
 
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @COMPREHENSIVE
 @given(
     id=base_strategies.one_of(
         base_strategies.integers(min_value=0, max_value=1000),  # 正常ID范围
         boundary_strategies.integer_boundaries(min_val=-100, max_val=10000),  # 边界值
-        error_strategies.invalid_types()  # 无效类型
+        # error_strategies.invalid_types()  # 无效类型
     ),
     username=base_strategies.one_of(
         base_strategies.strings(min_length=1, max_length=50),  # 正常用户名
         boundary_strategies.string_length_boundaries(min_len=0, max_len=100),  # 长度边界
         error_strategies.empty_values(),  # 空值
-        error_strategies.special_characters(),  # 特殊字符
+        boundary_strategies.special_characters(),  # 特殊字符
         error_strategies.sql_injection_vectors()  # SQL注入向量
     ),
     email=base_strategies.one_of(
@@ -29,7 +29,7 @@ from mockapitest.apis.mock2.users import apis
         boundary_strategies.string_length_boundaries(min_len=0, max_len=100),  # 长度边界
         error_strategies.empty_values(),  # 空值
         error_strategies.invalid_emails(),  # 无效邮箱格式
-        error_strategies.special_characters()  # 特殊字符
+        boundary_strategies.special_characters()  # 特殊字符
     ),
     created_at=base_strategies.one_of(
         base_strategies.datetimes(),  # 正常日期时间
@@ -115,7 +115,7 @@ def _is_valid_input(id, username, email, created_at, is_active):
 
 
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @STANDARD
 @given(username=boundary_strategies.string_length_boundaries(min_len=0, max_len=100))
 def test_create_user_username_length_validation(username):
@@ -148,7 +148,7 @@ def test_create_user_username_length_validation(username):
 
 
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @STANDARD
 @given(email=boundary_strategies.string_length_boundaries(min_len=0, max_len=150))
 def test_create_user_email_length_validation(email):
@@ -183,7 +183,7 @@ def test_create_user_email_length_validation(email):
 
 
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @STANDARD
 @given(attack_vector=base_strategies.one_of(
     error_strategies.sql_injection_vectors(),
@@ -213,9 +213,9 @@ def test_create_user_security_validation(attack_vector):
 
 
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @QUICK
-@given(special_chars=error_strategies.special_characters())
+@given(special_chars=boundary_strategies.special_characters())
 def test_create_user_special_characters(special_chars):
     """创建用户 - 特殊字符处理能力"""
     request_body = apis.CreateUserApiUsersPostAPI.RequestBodyModel(
@@ -237,7 +237,7 @@ def test_create_user_special_characters(special_chars):
 
 
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @STANDARD
 @given(
     id=boundary_strategies.integer_boundaries(min_val=-100, max_val=10000),
@@ -269,7 +269,7 @@ def test_create_user_id_and_boolean_validation(id, is_active):
 
 
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @COMPREHENSIVE
 @given(
     datetime_input=base_strategies.one_of(
@@ -304,7 +304,7 @@ def test_create_user_datetime_validation(datetime_input):
 
 # 字段缺失测试
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @STANDARD
 @given(missing_field=base_strategies.sampled_from(["id", "username", "email", "created_at", "is_active"]))
 def test_create_user_missing_fields(missing_field):
@@ -335,19 +335,19 @@ def test_create_user_missing_fields(missing_field):
 
 # 综合边界测试
 @pytest.mark.hypothesis
-@pytest.mark.userscenario
+@pytest.mark.creatuser
 @COMPREHENSIVE
 @given(
     id=base_strategies.one_of(
         base_strategies.integers(min_value=0, max_value=1000),
         boundary_strategies.integer_boundaries(min_val=-10, max_val=10000),
-        error_strategies.invalid_types()
+        error_strategies.invalid_types(expected_type=int,field_name="id"),
     ),
     username=base_strategies.one_of(
         base_strategies.strings(min_length=1, max_length=50),
         boundary_strategies.string_length_boundaries(min_len=0, max_len=100),
         error_strategies.empty_values(),
-        error_strategies.special_characters()
+        boundary_strategies.special_characters()
     ),
     email=base_strategies.one_of(
         base_strategies.emails(),

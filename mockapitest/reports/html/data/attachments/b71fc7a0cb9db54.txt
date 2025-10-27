@@ -1,0 +1,156 @@
+2025-10-27 09:34:04 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 174
+2025-10-27 09:34:04 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "' OR '1'='1", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.561684', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "' OR '1'='1", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.561684', 'is_active': True}}
+     Elapsed: 0.0024s
+====================================================================================================
+2025-10-27 09:34:04 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 192
+2025-10-27 09:34:04 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "<script>alert('XSS')</script>", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.578381', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "<script>alert('XSS')</script>", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.578381', 'is_active': True}}
+     Elapsed: 0.002556s
+====================================================================================================
+2025-10-27 09:34:04 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 195
+2025-10-27 09:34:04 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "<img src=x onerror=alert('XSS')>", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.604626', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "<img src=x onerror=alert('XSS')>", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.604626', 'is_active': True}}
+     Elapsed: 0.004039s
+====================================================================================================
+2025-10-27 09:34:04 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 186
+2025-10-27 09:34:04 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "'; DROP TABLE users; --", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.744498', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "'; DROP TABLE users; --", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.744498', 'is_active': True}}
+     Elapsed: 0.004759s
+====================================================================================================
+2025-10-27 09:34:04 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 179
+2025-10-27 09:34:04 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': '../../etc/passwd', 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.895249', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': '../../etc/passwd', 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:04.895249', 'is_active': True}}
+     Elapsed: 0.004525s
+====================================================================================================
+2025-10-27 09:34:05 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 185
+2025-10-27 09:34:05 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': '....//....//etc/passwd', 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.039870', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': '....//....//etc/passwd', 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.039870', 'is_active': True}}
+     Elapsed: 0.004201s
+====================================================================================================
+2025-10-27 09:34:05 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 188
+2025-10-27 09:34:05 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "<svg onload=alert('XSS')>", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.185660', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "<svg onload=alert('XSS')>", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.185660', 'is_active': True}}
+     Elapsed: 0.004113s
+====================================================================================================
+2025-10-27 09:34:05 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 184
+2025-10-27 09:34:05 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': '%2e%2e%2fetc%2fpasswd', 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.325668', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': '%2e%2e%2fetc%2fpasswd', 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.325668', 'is_active': True}}
+     Elapsed: 0.00393s
+====================================================================================================
+2025-10-27 09:34:05 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 209
+2025-10-27 09:34:05 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': '..\\..\\windows\\system32\\drivers\\etc\\hosts', 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.467396', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': '..\\..\\windows\\system32\\drivers\\etc\\hosts', 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.467396', 'is_active': True}}
+     Elapsed: 0.003949s
+====================================================================================================
+2025-10-27 09:34:05 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 209
+2025-10-27 09:34:05 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "' UNION SELECT username, password FROM users--", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.612138', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "' UNION SELECT username, password FROM users--", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.612138', 'is_active': True}}
+     Elapsed: 0.004182s
+====================================================================================================
+2025-10-27 09:34:05 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 186
+2025-10-27 09:34:05 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "'; DROP TABLE users; --", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.751877', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "'; DROP TABLE users; --", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.751877', 'is_active': True}}
+     Elapsed: 0.004332s
+====================================================================================================
+2025-10-27 09:34:05 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 173
+2025-10-27 09:34:05 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "' OR 1=1--", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.907953', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "' OR 1=1--", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:05.907953', 'is_active': True}}
+     Elapsed: 0.004167s
+====================================================================================================
+2025-10-27 09:34:06 http://127.0.0.1:9999 "POST /api/users HTTP/1.1" 200 173
+2025-10-27 09:34:06 [logging_middleware._process_log_outputs:143]-[INFO]:
+====================================================================================================
+🅰️ <API>: CreateUserApiUsersPostAPI 创建一个新的用户
+🚀 <Request>
+     URL: http://127.0.0.1:9999/api/users
+     Method: POST
+     Request Json: {'id': 123, 'username': "' OR 1=1--", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:06.073076', 'is_active': True}
+✅ <Response>
+     Response Body: {'ret_code': 0, 'message': '用户创建成功', 'data': {'id': 123, 'username': "' OR 1=1--", 'email': 'test@example.com', 'created_at': '2025-10-27T09:34:06.073076', 'is_active': True}}
+     Elapsed: 0.002104s
+====================================================================================================
