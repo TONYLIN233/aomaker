@@ -154,7 +154,6 @@ def test_create_user_username_length_validation(username):
 
 
 @pytest.mark.hypothesis
-@pytest.mark.creatuser
 @STANDARD
 @given(email=boundary_strategies.string_length_boundaries(min_len=0, max_len=150))
 def test_create_user_email_length_validation(email):
@@ -308,9 +307,10 @@ def test_create_user_datetime_validation(datetime_input):
         assert any("created_at" in error.get("loc", []) for error in response.response_model.detail)
 
 
-# 字段缺失测试
+"""必填字段的空值校验"""
 @pytest.mark.hypothesis
 @pytest.mark.creatuser
+@pytest.mark.ones1
 @STANDARD
 @given(missing_field=base_strategies.sampled_from(["id", "username", "email", "created_at", "is_active"]))
 def test_create_user_missing_fields(missing_field):
@@ -325,19 +325,25 @@ def test_create_user_missing_fields(missing_field):
     }
 
     # 移除指定字段
-    del request_data[missing_field]
+    request_data[missing_field] = None
 
-    request_body = apis.CreateUserApiUsersPostAPI.RequestBodyModel(**request_data)
-    response = apis.CreateUserApiUsersPostAPI(request_body=request_body).send()
+    # 根据字段重要性区分测试预期
+    if missing_field in ["id", "username", "email", "created_at"]:  # 必填字段
+        # 对于必填字段，即使设置为None也应该能初始化模型，但API调用应返回错误
+        request_body = apis.CreateUserApiUsersPostAPI.RequestBodyModel(**request_data)
+        response = apis.CreateUserApiUsersPostAPI(request_body=request_body).send()
 
-    # 字段缺失处理验证
-    if missing_field in ["username", "email"]:  # 假设这些是必填字段
-        assert response.response_model.ret_code != 0
-        assert any(missing_field in error.get("loc", []) for error in response.response_model.detail)
+        # 必填字段为空时，期望API返回错误状态码
+        assert response.cached_response.raw_response.status_code != 200
+        # 验证错误信息中是否包含该字段
+        assert any(missing_field in error.get("loc", [])
+                   for error in getattr(response.response_model, 'detail', []))
     else:
-        # 非必填字段缺失可能成功
+        # 对于非必填字段（如is_active），空值可能被接受
+        request_body = apis.CreateUserApiUsersPostAPI.RequestBodyModel(**request_data)
+        response = apis.CreateUserApiUsersPostAPI(request_body=request_body).send()
+        # 非必填字段为空可能成功或失败，取决于业务逻辑
         assert response.cached_response.raw_response.status_code in [200, 400]
-
 
 # 综合边界测试
 @pytest.mark.hypothesis
