@@ -5,7 +5,11 @@ from mockapitest.custom_hypothesis.strategies.base_strategies import base_strate
 from mockapitest.custom_hypothesis.strategies.boundary_strategies import boundary_strategies
 from mockapitest.custom_hypothesis.strategies.error_strategies import error_strategies
 from mockapitest.custom_hypothesis.Profile.test_profile import QUICK,STANDARD,COMPREHENSIVE
-
+"""
+1.Get接口的QueryParams格式
+2.获取系统中的用户列表-安全边界：防止SQL注入、XSS等攻击测试内容完整，可以作为范例
+3.获取系统中的用户列表-综合边界测试：组合各种边界条件测试内容完整，可以作为范例
+"""
 
 @pytest.mark.userscenario
 @pytest.mark.hypothesis

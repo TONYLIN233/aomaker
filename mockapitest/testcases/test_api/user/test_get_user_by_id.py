@@ -6,7 +6,11 @@ from mockapitest.custom_hypothesis.strategies.boundary_strategies import boundar
 from mockapitest.custom_hypothesis.strategies.error_strategies import error_strategies
 from mockapitest.custom_hypothesis.Profile.test_profile import QUICK,STANDARD,COMPREHENSIVE
 
-
+"""
+1.Get接口的PathParams格式
+2.获取系统中的用户列表-特殊整数处理能力测试内容完整，可以作为范例
+3.通过ID获取单个用户信息-用户名长度边界验证测试内容完整，可以作为范例
+"""
 # @pytest.mark.ones
 @pytest.mark.hypothesis
 @given(

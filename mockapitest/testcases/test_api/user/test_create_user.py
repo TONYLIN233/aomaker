@@ -6,6 +6,11 @@ from mockapitest.custom_hypothesis.strategies.boundary_strategies import boundar
 from mockapitest.custom_hypothesis.strategies.error_strategies import error_strategies
 from mockapitest.custom_hypothesis.Profile.test_profile import QUICK, STANDARD, COMPREHENSIVE
 from mockapitest.apis.mock2.users import apis
+"""
+1.Post方式的JSON 格式
+2.test_create_user_missing_fields创建用户 - 字段缺失测试内容完整，可以作为范例
+3.
+"""
 
 @pytest.mark.oness
 @pytest.mark.hypothesis
